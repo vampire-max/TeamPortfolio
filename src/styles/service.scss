@@ -1,0 +1,25 @@
+.o_service_row {
+  @media (min-width: 1200px) {
+    padding: 0 100px;
+  }
+}
+
+.service-item {
+  text-align: center;
+  margin-bottom: 128px;
+
+  .item-img {
+    max-width: 200px;
+  }
+
+  .item-desc {
+    padding: 0 40px;
+  }
+
+  .learnMore {
+    font-weight: 600;
+    color: #ffb248;
+    border-bottom: 1px solid #ffb248;
+    transition: 0.3s all;
+  }
+}

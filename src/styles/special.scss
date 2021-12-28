@@ -1,0 +1,69 @@
+.o-special {
+  .desktop-mod {
+    padding: 0 100px;
+  }
+
+  .o_special_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -24px 40px;
+
+    .o_special_nav_item {
+      position: relative;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 0 24px 12px;
+      color: #363645;
+      opacity: 0.4;
+      transition: 0.3s all;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 24px;
+        right: 24px;
+        height: 3px;
+        background-color: #ffb248;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s all;
+      }
+
+      &.active::before {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    .active {
+      opacity: 1;
+      color: #363645;
+    }
+  }
+
+  .o_special_item_title {
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  .o_special_item_desc {
+    margin-bottom: 40px;
+  }
+
+  .o-btn-primary {
+    font-weight: 700;
+    color: #fff;
+    border-radius: 12px;
+    padding: 10px 24px;
+    background-color: #ffd36a;
+    transition: 0.3s all;
+
+    &:hover {
+      background-color: #ffb248;
+    }
+  }
+}
