@@ -1,9 +1,14 @@
 import React from 'react'
-import Banner from '../components/banner'
 import Header from '../components/header'
-import Projects from '../components/projects'
+import Banner from '../components/banner'
 import Service from '../components/service/service'
 import Special from '../components/special'
+import Projects from '../components/projects'
+import Test from '../components/test'
+import Articles from '../components/articles'
+import Feedback from '../components/feedback'
+import Footer from '../components/Footer'
+import CardCarousel from '../components/Testimonials/Carousel'
 
 const HomePage = () => {
   return (
@@ -12,7 +17,12 @@ const HomePage = () => {
       <Banner />
       <Service />
       <Special />
-      {/* <Projects /> */}
+      <Projects />
+      <Test />
+      <Articles />
+      <CardCarousel />
+      <Feedback />
+      <Footer />
     </div>
   )
 }

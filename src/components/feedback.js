@@ -1,60 +1,84 @@
 import React from 'react'
-import person1 from '../image/projects/person1.png'
-import person2 from '../image/projects/person2.jpg'
-import person3 from '../image/projects/person3.jpeg'
+import '../styles/feedback.scss'
+import validator from 'validator'
+import { useState } from 'react'
 
 const Feedback = () => {
-  const feedbackItem = [
-    {
-      image: person1,
-      name: 'Jennifer Solitario ',
-      position: 'Senior Vice President, Medibio Limitedh',
-      quote:
-        'The team has been extremely responsive and has used their best efforts to offer solutions, workarounds, and options. Communication is key and the team values close communication with the client. We are very much looking forward to the ongoing development of future features with the team.',
-    },
-  ]
+  const [emailError, setEmailError] = useState('')
+  const validateEmail = (e) => {
+    var email = e.target.value
+
+    if (!validator.isEmail(email)) {
+      setEmailError('The e-mail address entered is invalid.')
+    }
+  }
 
   return (
-    <div className="col-lg-10 offset-lg-1">
-      <div className="o-projects_feedback">
-        <div
-          className="o-projects__feedback-client-photo s-back-switch"
-          style={{ backgroundImage: `url("../image/projects/person1"` }}
-        >
-          <img
-            className="s-img-switch"
-            src={person1}
-            alt="Jennifer Solitario"
-          />
-        </div>
-        <div className="o-projects_feedback-client-info">
-          <p className="o-projects_feedback-client-name">{feedbackItem.name}</p>
-          <p className="o-projects_feedback-client-position">
-            {feedbackItem.position}
-          </p>
+    <div id="feedback">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 offset-lg-3 col-md-10 offset-md-1">
+            <p className="o-feedback-desc">
+              Subscribe to our blog to learn about tech trends and innovative
+              solutions.
+            </p>
+            <div className="footer-form-wrapper">
+              <form
+                className="footer-form"
+                action=""
+                // method="post"
+                noValidate="novalidate"
+              >
+                <input
+                  type="email"
+                  placeholder="Email"
+                  required="true"
+                  className={emailError ? 'red-line' : ''}
+                  onChange={(e) => validateEmail(e)}
+                />
+                <button type="button" onClick={(e) => validateEmail(e)}>
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <span className="validate-tip">{emailError}</span>
+            <div className="footer-form-info">
+              <p>
+                <svg
+                  width="15"
+                  height="12"
+                  viewBox="0 0 15 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.99997 8.58597L1.70697 5.29297L0.292969 6.70697L4.99997 11.414L14.707 1.70697L13.293 0.292969L4.99997 8.58597Z"
+                    fill="#FFB248"
+                  ></path>
+                </svg>
+                no spam
+              </p>
+              <p>
+                <svg
+                  width="15"
+                  height="12"
+                  viewBox="0 0 15 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.99997 8.58597L1.70697 5.29297L0.292969 6.70697L4.99997 11.414L14.707 1.70697L13.293 0.292969L4.99997 8.58597Z"
+                    fill="#FFB248"
+                  ></path>
+                </svg>
+                100% Useful content, always
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <p
-        className="o-projects__feedback-text wow fadeInRight"
-        style="visibility: visible; animation-name: fadeInRight;"
-      >
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M5 8H19V20.7692L13.3859 31H6.40704L11.993 20.7692H5V8Z"
-            fill="#FFB248"
-          ></path>
-          <path
-            d="M21 8H35V20.7692L29.3859 31H22.407L27.993 20.7692H21V8Z"
-            fill="#FFB248"
-          ></path>
-        </svg>{' '}
-      </p>
     </div>
   )
 }
+
+export default Feedback

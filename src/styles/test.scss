@@ -1,0 +1,51 @@
+.o-test-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.o-test-desc {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.o-test-item {
+  padding: 0 60px;
+  box-sizing: border-box;
+
+  @media (max-width: 991px) {
+    padding: 0px;
+  }
+
+  .item-feedback {
+    position: relative;
+    font-size: 24px;
+    color: #363645;
+    padding: 0 54px;
+    margin-bottom: 52px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .item-client {
+    display: flex;
+    align-items: center;
+
+    .item-client-photo {
+      flex-basis: 90px;
+      flex-shrink: 0;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin-right: 24px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.o-test-divider {
+  padding-top: 250px;
+}

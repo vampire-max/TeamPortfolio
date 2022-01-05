@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.59e5fd0f.css",
+    "main.js": "/static/js/main.2f078b5a.js",
+    "static/js/787.cf250828.chunk.js": "/static/js/787.cf250828.chunk.js",
+    "static/media/special2.png": "/static/media/special2.a79bb7f3ce1f9489cb7c.png",
+    "static/media/special3.png": "/static/media/special3.3dd0dbc739da11fd7c58.png",
+    "static/media/special4.png": "/static/media/special4.27b6a454a656c2d002fe.png",
+    "static/media/special1.png": "/static/media/special1.1331f26af7d42a2ebe7d.png",
+    "static/media/pr3.png": "/static/media/pr3.8db4c329e4ce48dd0803.png",
+    "static/media/oril-banner-updated-1.jpg": "/static/media/oril-banner-updated-1.1ab5eeb47e974d2b5b21.jpg",
+    "static/media/pr2.png": "/static/media/pr2.164170e0496df9e209a7.png",
+    "static/media/pr1.png": "/static/media/pr1.2585cee5eddd40c5b691.png",
+    "static/media/service3.png": "/static/media/service3.962817578a7e1cfa06f7.png",
+    "static/media/service2.png": "/static/media/service2.ac84c860e11fe337a46f.png",
+    "static/media/service1.png": "/static/media/service1.73e34a65cb9b332975c4.png",
+    "static/media/service4.png": "/static/media/service4.ee25ea01aee469c92a1d.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "static/media/arrow-black.svg": "/static/media/arrow-black.789197760d6851ecc524.svg",
+    "static/media/arrow.svg": "/static/media/arrow.c5a68007233bd1b2b603.svg",
+    "main.59e5fd0f.css.map": "/static/css/main.59e5fd0f.css.map",
+    "main.2f078b5a.js.map": "/static/js/main.2f078b5a.js.map",
+    "787.cf250828.chunk.js.map": "/static/js/787.cf250828.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59e5fd0f.css",
+    "static/js/main.2f078b5a.js"
+  ]
+}

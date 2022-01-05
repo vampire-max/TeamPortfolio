@@ -1,14 +1,22 @@
 .o_projects {
+  .o-projects-title {
+    margin-bottom: 44px;
+  }
+
   .o_projects_desc {
     text-align: center;
     max-width: 670px;
+    margin: 0 auto 80px;
   }
 
   .o_projects_list {
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
 
     .o_projects_item {
+      align-items: center;
+
       .o_projects_item-tags {
         margin: 0 -12px 24px;
 
@@ -35,16 +43,49 @@
       }
     }
   }
-
-  .o-projects_feedback {
-    display: flex;
-    align-items: center;
-    margin-top: 100px;
-
-    .o-projects_feedback {
-
-  }
 }
+
+.o-projects_feedback {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .o-projects-feedback-info {
+    @media (max-width: 767px) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  .o-projects_feedback-client-photo {
+    width: 72px;
+    height: 72px;
+    margin-right: 24px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+  }
+
+  .o-projects_feedback-client-info {
+    width: 200px;
+  }
+
+  .o-projects__feedback-text {
+    position: relative;
+    padding-left: 50px;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 .o-projects-btn {
@@ -69,5 +110,30 @@
 
   &:hover::after {
     right: 12px;
+  }
+}
+
+.o-projects-inks {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: #363645;
+  margin: 150px auto 0;
+  font-size: 24px;
+  width: fit-content;
+  cursor: pointer;
+
+  @media (max-width: 991px) {
+    margin-top: 90px;
+  }
+
+  svg {
+    margin-left: 16px;
+    transition: 0.3s all;
+  }
+  &:hover {
+    svg {
+      margin-left: 36px;
+    }
   }
 }

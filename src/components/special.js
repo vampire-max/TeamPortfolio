@@ -45,8 +45,9 @@ const Special = () => {
       <div className="container">
         <div className="desktop-mod">
           <div className="o_special_nav">
-            {specializeItem.map((item) => (
+            {specializeItem.map((item, index) => (
               <li
+                key={index}
                 className={`o_special_nav_item ${
                   item.title === selectedItem.title ? 'active' : ''
                 }`}

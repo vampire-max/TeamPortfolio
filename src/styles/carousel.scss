@@ -1,0 +1,97 @@
+.slick-dots {
+  position: absolute;
+  top: calc(100% + 60px);
+  left: 0;
+  text-align: start;
+
+  @media (max-width: 991px) {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  li {
+    width: 15px;
+    height: 15px;
+    margin: 7px;
+    button {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #dde0e4;
+      border-radius: 7px;
+      &:before {
+        color: transparent;
+      }
+    }
+  }
+  li.slick-active {
+    width: 15px;
+    height: 15px;
+    button {
+      width: 15px;
+      height: 15px;
+      background: #ffb248;
+      color: #ffb248;
+      &::before {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.slick-prev {
+  background-image: url('../image/rightArrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: calc(100% + 60px);
+  left: 79.5%;
+  &:before {
+    content: '';
+  }
+  &:active {
+    background-image: url('../image/rightArrowActive.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &:hover {
+    background-image: url('../image/rightArrowActive.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.slick-next {
+  background-image: url('../image/leftArrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: calc(100% + 60px);
+  left: 85.5%;
+  padding: 12px;
+  &:before {
+    content: '';
+  }
+  &:hover {
+    background-image: url('../image/leftArrowActive.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &:active {
+    background-image: url('../image/leftArrowActive.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

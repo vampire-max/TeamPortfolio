@@ -35,15 +35,12 @@ const ourServices = [
 ]
 
 const Service = () => {
-  const [direction, setDirection] = useState('false')
-  useEffect(() => {
-    console.log('direction', direction)
-  })
-
   return (
     <div id="o_service" className="o-service section">
       <div className="container">
-        <SectionTitle>Services We Deliver</SectionTitle>
+        <SectionTitle className="o-service-title">
+          Services We Deliver
+        </SectionTitle>
         <div className="row o_service_row">
           {ourServices.map((item, index) => (
             <ServiceItem item={item} key={index} index={index} />
