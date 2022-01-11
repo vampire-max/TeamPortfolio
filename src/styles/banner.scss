@@ -63,54 +63,46 @@
   }
 }
 
-.o-banner__awards {
+.top-block {
+  margin-top: 100px;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 140px -24px 0;
 
-  @media (max-width: 991px) {
-    margin: 80px 0 0;
-    justify-content: space-between;
+  h1 {
+    margin-bottom: 30px;
   }
 
-  @media (max-width: 767px) {
-    margin-top: 60px;
-    overflow: auto;
+  p {
+    margin-bottom: 30px;
+  }
+
+  .left {
+    flex-basis: 50%;
+    @media (max-width: 767px) {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  .right {
+    flex-basis: 43%;
+    @media (max-width: 767px) {
+      flex-basis: 100%;
+    }
+  }
+
+  .o-banner__awards {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
   }
 
   .o-banner__awards-item {
-    padding: 0 24px;
-
-    @media (max-width: 991px) {
-      padding: 0 15px;
-    }
-
-    a {
-      position: relative;
-      display: inline-block;
-    }
-
-    .active {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      visibility: hidden;
-      transition: 0.3s all;
-
-      @media (max-width: 991px) {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-
-    img {
-      max-height: 48px;
-    }
-
-    &:hover .active {
-      opacity: 1;
-      visibility: visible;
-    }
+    margin-bottom: 60px;
+    text-align: center;
   }
 }

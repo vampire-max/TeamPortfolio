@@ -1,0 +1,82 @@
+h1 {
+  font-size: 48px;
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.o-section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.mark-wrapper {
+  mark {
+    background-color: transparent !important;
+    color: #ffb248 !important;
+  }
+}
+
+.o-btn-primary {
+  font-weight: 700;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 24px;
+  background-color: #ffd36a;
+  transition: 0.3s all;
+  display: inline-block;
+
+  &:hover {
+    background-color: #ffb248;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.o-projects-btn {
+  font-weight: 500;
+  color: #363645;
+  background-color: transparent;
+  border-radius: 28px;
+  border: 1px solid #ffd36a;
+  padding: 9px 50px 9px 24px;
+  display: inline-block;
+
+  &:hover {
+    color: #363645;
+  }
+
+  &::after {
+    content: url(../image/arrow-black.svg);
+    position: absolute;
+    top: 12px;
+    right: 24px;
+    transition: 0.3s all;
+  }
+
+  &:hover::after {
+    right: 12px;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+    text-align: center;
+  }
+}

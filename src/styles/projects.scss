@@ -1,4 +1,9 @@
 .o_projects {
+  margin-bottom: 126px;
+
+  @media (max-width: 991px) {
+    margin-bottom: 80px;
+  }
   .o-projects-title {
     margin-bottom: 44px;
   }
@@ -88,31 +93,6 @@
   }
 }
 
-.o-projects-btn {
-  font-weight: 500;
-  color: #363645;
-  background-color: transparent;
-  border-radius: 28px;
-  border: 1px solid #ffd36a;
-  padding: 9px 50px 9px 24px;
-
-  &:hover {
-    color: #363645;
-  }
-
-  &::after {
-    content: url(../image/arrow-black.svg);
-    position: absolute;
-    top: 12px;
-    right: 24px;
-    transition: 0.3s all;
-  }
-
-  &:hover::after {
-    right: 12px;
-  }
-}
-
 .o-projects-inks {
   display: flex;
   align-items: center;
@@ -135,5 +115,13 @@
     svg {
       margin-left: 36px;
     }
+  }
+}
+
+.o-projects-divider {
+  padding-top: 126px;
+
+  @media (max-width: 991px) {
+    padding-top: 36px;
   }
 }

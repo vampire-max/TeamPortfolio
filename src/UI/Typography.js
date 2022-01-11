@@ -1,11 +1,11 @@
-import '../styles/typography.scss'
+import '../styles/UI.scss'
 
 export function Typography({ className, children, ...rest }) {
   return <p className={`${className}`}>{children}</p>
 }
 
 export function H1({ className, children, ...rest }) {
-  return <h1 className={`${className}`}>{children}</h1>
+  return <h1 className={`mb-24 ${className}`}>{children}</h1>
 }
 
 export function SectionTitle({ className, children }) {

@@ -1,6 +1,10 @@
 .o-special {
   .desktop-mod {
     padding: 0 100px;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
 
   .o_special_nav {
@@ -54,16 +58,23 @@
     margin-bottom: 40px;
   }
 
-  .o-btn-primary {
-    font-weight: 700;
-    color: #fff;
-    border-radius: 12px;
-    padding: 10px 24px;
-    background-color: #ffd36a;
-    transition: 0.3s all;
+  .o-special_item_img {
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+  }
 
-    &:hover {
-      background-color: #ffb248;
+  .mobile-mod {
+    @media (min-width: 991px) {
+      display: none;
+    }
+  }
+
+  .o-special-divider {
+    padding-top: 100px;
+
+    @media (max-width: 991px) {
+      padding-top: 90px;
     }
   }
 }

@@ -40,3 +40,36 @@
     margin-bottom: 60px;
   }
 }
+
+.expertiService {
+  .industries-block {
+    margin-bottom: 60px;
+    .industry-block {
+      margin-bottom: 140px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .industry-img {
+        flex-basis: 50%;
+        @media (max-width: 767px) {
+          flex-basis: 100%;
+        }
+      }
+
+      .industry-content {
+        flex-basis: 38%;
+        @media (max-width: 767px) {
+          flex-basis: 100%;
+        }
+        .industry-title {
+          margin-bottom: 24px;
+        }
+
+        .industry-desc {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}

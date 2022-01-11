@@ -1,5 +1,6 @@
 import React from 'react'
 import QuoteImg from '../../../image/quote.svg'
+import '../../../styles/test.scss'
 
 const TestCard = ({ quote, avatar, name, position }) => {
   return (
