@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../styles/feedback.scss'
 import validator from 'validator'
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const Feedback = () => {
   const [emailError, setEmailError] = useState('')
+  const [value, setValue] = useState('')
+
   const validateEmail = (e) => {
     var email = e.target.value
 
@@ -12,6 +15,15 @@ const Feedback = () => {
       setEmailError('The e-mail address entered is invalid.')
     }
   }
+
+  const router = useLocation()
+  const pathname = router.pathname
+  console.log('pathname', pathname)
+
+  useEffect(() => {
+    setValue('')
+    setEmailError('')
+  }, [pathname])
 
   return (
     <div id="feedback">
@@ -34,7 +46,11 @@ const Feedback = () => {
                   placeholder="Email"
                   required={true}
                   className={emailError ? 'red-line' : ''}
-                  onChange={(e) => validateEmail(e)}
+                  onChange={(e) => {
+                    validateEmail(e)
+                    setValue(e.target.value)
+                  }}
+                  value={value}
                 />
                 <button type="button" onClick={(e) => validateEmail(e)}>
                   Subscribe
