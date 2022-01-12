@@ -18,6 +18,7 @@ import linkedin from '../../image/links/linkedin.svg'
 import twitter from '../../image/links/twitter.svg'
 import behance from '../../image/links/behance.svg'
 import instagram from '../../image/links/instagram.svg'
+import { Link } from 'react-router-dom'
 
 const logoImgTwo = [
   {
@@ -124,24 +125,22 @@ const Footer = () => {
                 </p>
                 <ul className="nav-item-menu">
                   <li>
-                    <a href="https://oril.co/services/ui-ux-design/">
-                      UI/UX Design
-                    </a>
+                    <Link to="/service/ui-ux-design">UI/UX Design</Link>
                   </li>
                   <li>
-                    <a href="https://oril.co/services/product-development/">
+                    <Link to="/service/product-development">
                       Product Development
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://oril.co/services/iot-software-development/">
+                    <Link to="/service/ioT-software-development">
                       IoT Software Development
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://oril.co/services/digital-transformation/">
+                    <Link to="/service/digital-transformation">
                       Digital Transformation
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

@@ -46,19 +46,13 @@ const logoImgThree = [
   },
 ]
 
-const TopBlock = () => {
+const TopBlock = ({ title, desc, path }) => {
   return (
     <div className="top-block e-service">
       <div className="left">
-        <H1 className={'text-uppercase'}>
-          A one-stop shop for your digital product.
-        </H1>
-        <p>
-          We help our clients at each stage of the product life cycle: from
-          ideation and product strategy to architecture and design, to
-          development, QA, release and maintenance.
-        </p>
-        <PrimaryBtn>{'Get in touch'}</PrimaryBtn>
+        <H1 className={'text-uppercase'}>{title}</H1>
+        <p>{desc}</p>
+        <PrimaryBtn>{path}</PrimaryBtn>
       </div>
       <div className="right">
         <Award logoitem={logoImgThree}></Award>

@@ -80,3 +80,19 @@ h3 {
     text-align: center;
   }
 }
+
+.o-btn-white {
+  font-weight: 700;
+  color: #363645;
+  background-color: #fff;
+  border-radius: 24px;
+  border: 2px solid #fff;
+  padding: 8px 22px;
+  transition: 0.3s all;
+
+  &:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+  }
+}

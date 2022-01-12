@@ -53,7 +53,7 @@ const Feedback = () => {
                   value={value}
                 />
                 <button type="button" onClick={(e) => validateEmail(e)}>
-                  Subscribe
+                  <span>Subscribe</span>
                 </button>
               </form>
             </div>

@@ -92,12 +92,6 @@
       align-items: center;
       margin: 0 -24px;
 
-      // @media (max-width: 1199px) {
-      //   display: flex;
-      //   align-items: flex-start;
-      //   flex-direction: column;
-      // }
-
       .header_menu_item {
         position: relative;
         padding: 0 24px;
@@ -107,6 +101,12 @@
           color: #363645;
           opacity: 0.4;
           transition: 0.3s all;
+        }
+
+        &:hover {
+          a {
+            opacity: 1;
+          }
         }
       }
 

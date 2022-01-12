@@ -64,11 +64,16 @@
 }
 
 .top-block {
-  margin-top: 100px;
+  padding: 220px 0 75px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (max-width: 767px) {
+    padding: 100px 0 0;
+    padding: 100px 0 0;
+  }
 
   h1 {
     margin-bottom: 30px;

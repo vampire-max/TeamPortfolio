@@ -41,35 +41,55 @@
   }
 }
 
-.expertiService {
-  .industries-block {
-    margin-bottom: 60px;
-    .industry-block {
-      margin-bottom: 140px;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      align-items: center;
+.industries-block {
+  margin-bottom: 60px;
+  .industry-block {
+    margin-bottom: 140px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 
-      .industry-img {
-        flex-basis: 50%;
-        @media (max-width: 767px) {
-          flex-basis: 100%;
-        }
+    .industry-img {
+      flex-basis: 50%;
+      @media (max-width: 767px) {
+        flex-basis: 100%;
+      }
+    }
+
+    .industry-content {
+      flex-basis: 38%;
+      @media (max-width: 767px) {
+        flex-basis: 100%;
+        text-align: center;
+      }
+      .industry-title {
+        margin-bottom: 24px;
       }
 
-      .industry-content {
-        flex-basis: 38%;
-        @media (max-width: 767px) {
-          flex-basis: 100%;
-        }
-        .industry-title {
-          margin-bottom: 24px;
-        }
-
-        .industry-desc {
-          margin-bottom: 40px;
-        }
+      .industry-desc {
+        margin-bottom: 40px;
       }
+    }
+  }
+}
+
+.o-ads {
+  margin-bottom: 200px;
+
+  .o-ads-banner {
+    padding: 82px 20px;
+    border-radius: 24px;
+    text-align: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: 991px) {
+      padding: 50px 20px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 30px 20px;
     }
   }
 }

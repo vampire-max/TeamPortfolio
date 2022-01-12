@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { Children } from 'react'
 import '../../styles/banner.scss'
 import Award from '../Awards'
 import { Typography, H1 } from '../../UI/Typography'
-import banner from '../../image/oril-banner-updated-1.jpg'
 import logo1 from '../../image/logos/logo1.png'
 import logo1_2 from '../../image/logos/logo1_2.png'
 import logo2 from '../../image/logos/logo2.png'
@@ -39,25 +38,22 @@ const logoImgOne = [
   },
 ]
 
-const Banner = () => {
+const Banner = ({ bannerImg, title, desc, link }) => {
   return (
     <div className="o-banner">
-      <img src={banner} className="banner_img" />
+      <img src={bannerImg} className="banner_img" />
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-8">
             <H1 className="o-banner__title mark-wrapper">
-              Your go-to partner for&nbsp;building incredible digital products
+              {title}
               <mark>.</mark>
             </H1>
           </div>
         </div>
         <div className="row">
           <div className="col-lg-5 col-md-9">
-            <Typography className="o-banner__description">
-              We help businesses win new markets with innovative solutions that
-              disrupt industries.
-            </Typography>
+            <Typography className="o-banner__description">{desc}</Typography>
           </div>
         </div>
         <div className="row">
@@ -67,7 +63,7 @@ const Banner = () => {
               className="o-btn o-btn--action o-banner_button"
               target="blank"
             >
-              View Case Study
+              {link}
             </a>
           </div>
         </div>

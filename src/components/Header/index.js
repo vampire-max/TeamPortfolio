@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import '../../styles/header.scss'
+import '../../styles/dropdown.scss'
 import logo from '../../image/logo.svg'
 import { Dropdown, NavDropdown } from 'react-bootstrap'
 
 const Header = () => {
+  const [opened, setOpened] = useState(false)
   const router = useLocation()
+  const navigate = useNavigate()
   const pathname = router.pathname
   const [show, setShow] = useState(false)
+
   const showDropdown = (e) => {
     setShow(!show)
   }
@@ -29,7 +33,13 @@ const Header = () => {
                 <a href="#" className="header_link_mobile">
                   Contact Us
                 </a>
-                <a href="#" className="header_burger">
+                <a
+                  href="#"
+                  className="header_burger"
+                  onClick={(e) => {
+                    setOpened(true)
+                  }}
+                >
                   <span></span>
                   <span></span>
                   <span></span>
@@ -49,19 +59,33 @@ const Header = () => {
                       pathname === '/service' ? 'current_menu' : ''
                     }`}
                   >
-                    <Link to="/service">
-                      service
-                      {/* <NavDropdown
-                        title="Service"
-                        id="collasible-nav-dropdown"
-                        show={show}
-                        onMouseEnter={showDropdown}
-                        onMouseLeave={hideDropdown}
-                        // onClick={}
-                      >
-                        <Dropdown.Item eventKey="1">UI/UX Design</Dropdown.Item>
-                      </NavDropdown> */}
-                    </Link>
+                    <NavDropdown
+                      title="Service"
+                      id="collasible-nav-dropdown"
+                      show={show}
+                      onMouseEnter={showDropdown}
+                      onMouseLeave={hideDropdown}
+                      onClick={(e) => navigate('/service')}
+                    >
+                      <Dropdown.Item eventKey="1">
+                        <Link to="/service/ui-ux-design">UI/UX Design</Link>
+                      </Dropdown.Item>
+                      <Dropdown.Item eventKey="1">
+                        <Link to="/service/product-development">
+                          Product Development
+                        </Link>
+                      </Dropdown.Item>
+                      <Dropdown.Item eventKey="1">
+                        <Link to="/service/ioT-software-development">
+                          IoT Software Development
+                        </Link>
+                      </Dropdown.Item>
+                      <Dropdown.Item eventKey="1">
+                        <Link to="/service/digital-transformation">
+                          Digital Transformation
+                        </Link>
+                      </Dropdown.Item>
+                    </NavDropdown>
                   </li>
                   <li
                     className={`header_menu_item ${
@@ -79,10 +103,10 @@ const Header = () => {
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname === '/portfolio/#' ? 'current_menu' : ''
+                      pathname === '/portfolio/' ? 'current_menu' : ''
                     }`}
                   >
-                    <Link to="/portfolio/#">Company</Link>
+                    <Link to="/portfolio/">Company</Link>
                   </li>
                   <li
                     className={`header_menu_item ${

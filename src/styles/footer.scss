@@ -13,6 +13,10 @@
     padding-top: 60px;
     .footer-logo {
       margin-bottom: 40px;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
   }
 
