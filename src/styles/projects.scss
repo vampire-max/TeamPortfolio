@@ -13,39 +13,39 @@
     max-width: 670px;
     margin: 0 auto 80px;
   }
+}
 
-  .o_projects_list {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 80px;
+.o_projects_list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
 
-    .o_projects_item {
-      align-items: center;
+  .o_projects_item {
+    align-items: center;
 
-      .o_projects_item-tags {
-        margin: 0 -12px 24px;
+    .o_projects_item-tags {
+      margin: 0 -12px 24px;
+
+      @media (max-width: 991px) {
+        margin-bottom: 8px;
+      }
+
+      .o_projects_item-tag {
+        display: inline-block;
+        font-weight: 600;
+        color: #ffb248;
+        padding: 0 12px;
 
         @media (max-width: 991px) {
-          margin-bottom: 8px;
-        }
-
-        .o_projects_item-tag {
-          display: inline-block;
-          font-weight: 600;
-          color: #ffb248;
-          padding: 0 12px;
-
-          @media (max-width: 991px) {
-            margin-bottom: 16px;
-          }
+          margin-bottom: 16px;
         }
       }
-      img {
-        padding-left: 50px;
-      }
-      &:nth-of-type(odd) img {
-        padding-right: 50px;
-      }
+    }
+    img {
+      padding-left: 50px;
+    }
+    &:nth-of-type(odd) img {
+      padding-right: 50px;
     }
   }
 }
