@@ -41,11 +41,18 @@
         }
       }
     }
+
     img {
       padding-left: 50px;
     }
     &:nth-of-type(odd) img {
       padding-right: 50px;
+    }
+
+    .o-projects-item-image {
+      @media (max-width: 767px) {
+        margin-bottom: 40px;
+      }
     }
   }
 }

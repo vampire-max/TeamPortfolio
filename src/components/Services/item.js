@@ -3,9 +3,11 @@ import { motion } from 'framer-motion'
 import '../../styles/service.scss'
 
 const ServiceItem = ({ item, index }) => {
-  const variants_right = {
+  const isMobile = window.innerWidth < 768
+
+  const variants = {
     offscreen: {
-      x: '-100%',
+      x: isMobile ? '50%' : '90%',
     },
     onscreen: {
       x: 0,
@@ -16,9 +18,9 @@ const ServiceItem = ({ item, index }) => {
     },
   }
 
-  const variants_left = {
+  const variantsTwo = {
     offscreen: {
-      x: '100%',
+      x: isMobile ? '-50%' : '-90%',
     },
     onscreen: {
       x: 0,
@@ -35,7 +37,7 @@ const ServiceItem = ({ item, index }) => {
       whileInView="onscreen"
       initial="offscreen"
       key={index}
-      variants={index % 2 === 0 ? variants_right : variants_left}
+      variants={index % 2 === 0 ? variantsTwo : variants}
       className="col-md-6 service-item"
     >
       <img

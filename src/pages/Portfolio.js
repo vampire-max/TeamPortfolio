@@ -15,7 +15,7 @@ import pr11 from '../image/projects/pr11.png'
 import person1 from '../image/projects/person1.png'
 import person2 from '../image/projects/person2.jpg'
 import person3 from '../image/projects/person3.jpeg'
-import { H1, SectionTitle } from '../UI/Typography'
+import { H1 } from '../UI/Typography'
 
 const portfolioItem = [
   {
@@ -176,10 +176,10 @@ const Portfolio = () => {
   useEffect(() => {
     if (filterOption.length === 0) {
       setFilteredItems(portfolioItem)
-      console.log('length', filterOption.length)
+      // console.log('length', filterOption.length)
     } else {
-      console.log('filtering')
-      console.log('length', filterOption.length)
+      // console.log('filtering')
+      // console.log('length', filterOption.length)
 
       const filtered = portfolioItem.filter((item) => {
         let isIncluded = false
@@ -200,7 +200,6 @@ const Portfolio = () => {
   return (
     <div className="container">
       <div className="portfolio-top">
-        {/* <SectionTitle>Portfolio</SectionTitle> */}
         <H1 className={'o-projects-title mark-wrapper'}>
           Portfolio<mark>.</mark>
         </H1>
@@ -275,7 +274,7 @@ const Portfolio = () => {
       {filteredItems.map((item, index) => (
         <>
           <ProjectsItem item={item} index={index} key={index} />
-          <div className="o-divider"></div>
+          <div className="o-divider p-divider"></div>
         </>
       ))}
     </div>

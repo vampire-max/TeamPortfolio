@@ -4,9 +4,11 @@ import { ProjectsBtn } from '../../UI/Btn'
 import '../../styles/projects.scss'
 
 const ProjectsItem = ({ item, index }) => {
+  const isMobile = window.innerWidth < 768
+
   const variants = {
     offscreen: {
-      x: '100%',
+      x: isMobile ? '50%' : '90%',
     },
     onscreen: {
       x: 0,
@@ -19,7 +21,7 @@ const ProjectsItem = ({ item, index }) => {
 
   const variantsTwo = {
     offscreen: {
-      x: '-100%',
+      x: isMobile ? '-50%' : '-90%',
     },
     onscreen: {
       x: 0,
@@ -44,7 +46,7 @@ const ProjectsItem = ({ item, index }) => {
             initial="offscreen"
             variants={index % 2 === 0 ? variants : variantsTwo}
           >
-            <img src={item.imgSrc} />
+            <img className="o-projects-item-image" src={item.imgSrc} />
           </motion.div>
         </div>
         <div className="col-md-6">

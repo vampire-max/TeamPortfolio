@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../styles/footer.scss'
 import footerLogo from '../../image/footer-logo.svg'
 import Award from '../Awards'
@@ -82,6 +82,23 @@ const linkItem = [
 ]
 
 const Footer = () => {
+  const [opened, setOpened] = useState('')
+  const [isMobile, setIsMobile] = useState(false)
+  const handleClick = (title) => {
+    setOpened(title)
+
+    if (opened === title) setOpened('')
+  }
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768)
+    console.log('width', window.innerWidth < 768)
+  }, [window.innerWidth])
+
+  useEffect(() => {
+    console.log(isMobile, 'isMObile')
+  }, [isMobile])
+
   return (
     <div className="o-footer">
       <div className="container">
@@ -90,40 +107,109 @@ const Footer = () => {
             <a href="#" className="footer-logo">
               <img src={footerLogo} />
             </a>
-            <div className="o-footer-info-wrapper">
-              <div className="o-footer-info">
-                <p className="info-label">
-                  <b>Email</b>
-                </p>
-                <a className="info-link" href="#">
-                  contact@oril.co
-                </a>
+
+            {!isMobile && (
+              <div className="o-footer-info-wrapper">
+                <div className="o-footer-info">
+                  <p className="info-label">
+                    <b>Email</b>
+                  </p>
+                  <a className="info-link" href="#">
+                    contact@oril.co
+                  </a>
+                </div>
+                <div className="o-footer-info">
+                  <p className="info-label">
+                    <b>Address</b>
+                  </p>
+                  <a className="info-link" href="#">
+                    68 Jay Street Brooklyn, NY, 11201
+                  </a>
+                </div>
+                <div className="o-footer-info">
+                  <p className="info-label">
+                    <b>Phone</b>
+                  </p>
+                  <a className="info-link" href="#">
+                    +1-(347)-854-7585
+                  </a>
+                </div>
               </div>
-              <div className="o-footer-info">
-                <p className="info-label">
-                  <b>Address</b>
-                </p>
-                <a className="info-link" href="#">
-                  68 Jay Street Brooklyn, NY, 11201
-                </a>
-              </div>
-              <div className="o-footer-info">
-                <p className="info-label">
-                  <b>Phone</b>
-                </p>
-                <a className="info-link" href="#">
-                  +1-(347)-854-7585
-                </a>
-              </div>
-            </div>
+            )}
           </div>
           <div className="col-lg-8 offset-lg-1">
             <div className="footer-nav">
-              <div className="nav-item">
-                <p>
+              {isMobile && (
+                <div
+                  class="o-footer__info-mobile"
+                  onClick={() => handleClick('Contacts')}
+                >
+                  <p class="o-footer__nav-item-name">
+                    <b>Contacts</b>
+                    <svg
+                      class="mod-mobile"
+                      width="24"
+                      height="23"
+                      viewBox="0 0 24 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.61679 10.71L11.2068 13.3C11.5968 13.69 12.2268 13.69 12.6168 13.3L15.2068 10.71C15.8368 10.08 15.3868 9 14.4968 9H9.31679C8.42679 9 7.98679 10.08 8.61679 10.71Z"
+                        fill="#FFB248"
+                      ></path>
+                    </svg>
+                  </p>
+                  <ul
+                    className={`o-footer__nav-item-menu ${
+                      opened === 'Contacts' && 'opened'
+                    }`}
+                  >
+                    <li>
+                      <a href="mailto:contact@oril.co" target="_blank">
+                        contact@oril.co
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://maps.google.com/?q=68 Jay Street Brooklyn, NY, 11201"
+                        target="_blank"
+                      >
+                        68 Jay Street Brooklyn, NY, 11201
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="tel:+1-(347)-854-7585" target="_blank">
+                        +1-(347)-854-7585
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              )}
+              <div className="nav-item" onClick={() => handleClick('Service')}>
+                <p className="o-footer__nav-item-name">
                   <b>Service</b>
+                  <svg
+                    class="mod-mobile"
+                    width="24"
+                    height="23"
+                    viewBox="0 0 24 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.61679 10.71L11.2068 13.3C11.5968 13.69 12.2268 13.69 12.6168 13.3L15.2068 10.71C15.8368 10.08 15.3868 9 14.4968 9H9.31679C8.42679 9 7.98679 10.08 8.61679 10.71Z"
+                      fill="#FFB248"
+                    ></path>
+                  </svg>
                 </p>
-                <ul className="nav-item-menu">
+                <ul
+                  className={`o-footer__nav-item-menu ${
+                    opened === 'Service' && 'opened'
+                  }`}
+                >
                   <li>
                     <Link to="/service/ui-ux-design">UI/UX Design</Link>
                   </li>
@@ -144,8 +230,11 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="nav-item">
-                <p>
+              <div
+                className="nav-item"
+                onClick={() => handleClick('Industries')}
+              >
+                <p className="o-footer__nav-item-name">
                   <b>Industries</b>
                   <svg
                     className="mod-mobile"
@@ -162,7 +251,11 @@ const Footer = () => {
                   </svg>
                 </p>
 
-                <ul className="nav-item-menu">
+                <ul
+                  className={`o-footer__nav-item-menu ${
+                    opened === 'Industries' && 'opened'
+                  }`}
+                >
                   <li className="">
                     <a className="" href="https://oril.co/industries/fintech/">
                       FinTech
@@ -191,8 +284,8 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="nav-item">
-                <p>
+              <div className="nav-item" onClick={() => handleClick('Company')}>
+                <p className="o-footer__nav-item-name">
                   <b>Company</b>
                   <svg
                     className="mod-mobile"
@@ -209,7 +302,11 @@ const Footer = () => {
                   </svg>
                 </p>
 
-                <ul className="nav-item-menu">
+                <ul
+                  className={`o-footer__nav-item-menu ${
+                    opened === 'Company' && 'opened'
+                  }`}
+                >
                   <li className="">
                     <a className="" href="https://oril.co/about-us/">
                       About Us

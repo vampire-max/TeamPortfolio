@@ -11,6 +11,11 @@
   @media (max-width: 767px) {
     margin-top: 60px;
     overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent; /* Optional: just make scrollbar invisible */
+    }
   }
 
   .o-banner__awards-item {
