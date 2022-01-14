@@ -1,85 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import '../../styles/footer.scss'
 import footerLogo from '../../image/footer-logo.svg'
 import Award from '../Awards'
 
-import logo1 from '../../image/logos/logo1.png'
-import logo1_3 from '../../image/logos/logo1_3.png'
-import logo2 from '../../image/logos/logo2.png'
-import logo2_3 from '../../image/logos/logo2_3.png'
-import logo3 from '../../image/logos/logo3.png'
-import logo3_3 from '../../image/logos/logo3_3.png'
-import logo4 from '../../image/logos/logo4.png'
-import logo4_3 from '../../image/logos/logo4_3.png'
-import logo5 from '../../image/logos/logo5.png'
-import logo5_3 from '../../image/logos/logo5_3.png'
-import facebook from '../../image/links/facebook.svg'
-import linkedin from '../../image/links/linkedin.svg'
-import twitter from '../../image/links/twitter.svg'
-import behance from '../../image/links/behance.svg'
-import instagram from '../../image/links/instagram.svg'
 import { Link } from 'react-router-dom'
-
-const logoImgTwo = [
-  {
-    url: 'https://clutch.co/profile/oril',
-    img: logo1_3,
-    hover: logo1,
-    alt: 'clutch-1',
-  },
-  {
-    url: 'https://www.upwork.com/o/companies/~0165fed1df7da21a1d/',
-    img: logo2_3,
-    hover: logo2,
-    alt: 'upwork-2-1',
-  },
-  {
-    url: 'https://youteam.io/partners/oril-inc',
-    img: logo3_3,
-    hover: logo3,
-    alt: 'You team',
-  },
-  {
-    url: 'https://jobs.dou.ua/companies/oril/',
-    img: logo4_3,
-    hover: logo4,
-    alt: 'DOU',
-  },
-  {
-    url: 'https://jobs.dou.ua/companies/oril/',
-    img: logo5_3,
-    hover: logo5,
-    alt: 'DOU',
-  },
-]
-
-const linkItem = [
-  {
-    url: '#',
-    linkImg: facebook,
-    alt: 'facebook',
-  },
-  {
-    url: '#',
-    linkImg: linkedin,
-    alt: 'linkedin',
-  },
-  {
-    url: '#',
-    linkImg: twitter,
-    alt: 'twitter',
-  },
-  {
-    url: '#',
-    linkImg: behance,
-    alt: 'behance',
-  },
-  {
-    url: '#',
-    linkImg: instagram,
-    alt: 'instagram',
-  },
-]
+import { logoImgTwo } from '../../data/constant'
+import { linkItem } from '../../data/constant'
 
 const Footer = () => {
   const [opened, setOpened] = useState('')
@@ -92,11 +18,24 @@ const Footer = () => {
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 768)
-    console.log('width', window.innerWidth < 768)
+    console.log('empty array')
+  }, [])
+
+  useEffect(() => {
+    const resizeListener = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+
+    window.addEventListener('resize', resizeListener)
+
+    return () => {
+      window.removeEventListener('resize', resizeListener)
+    }
   }, [window.innerWidth])
 
   useEffect(() => {
     console.log(isMobile, 'isMObile')
+    console.log('width', window.innerWidth < 768)
   }, [isMobile])
 
   return (

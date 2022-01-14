@@ -2,41 +2,11 @@ import React, { useState } from 'react'
 import { SectionTitle, Typography } from '../../UI/Typography'
 import '../../styles/special.scss'
 import { AnimatePresence, motion } from 'framer-motion'
-import sp1 from '../../image/special/special1.png'
-import sp2 from '../../image/special/special2.png'
-import sp3 from '../../image/special/special3.png'
-import sp4 from '../../image/special/special4.png'
 import Slider from 'react-slick'
 import SpecialCard from './specialCard'
+import { specializeItem } from '../../data/constant'
 
 const Special = () => {
-  const specializeItem = [
-    {
-      title: 'PropTech',
-      desc:
-        'Given the pace of technology development, innovation in real estate is long overdue. Everything about owning, leasing, property management, and even navigating upfront government hurdles should become easier, both for owners and tenants. We help businesses lead new ways in the Real Estate industry.',
-      image: sp1,
-    },
-    {
-      title: 'FinTech',
-      desc:
-        "Whether it's consumer banking, commercial lending, or trading, startups are taking over every industry imaginable. Having worked on multiple financial services over the years, we are happy to bring our expertise to your team.",
-      image: sp2,
-    },
-    {
-      title: 'Marketplace',
-      desc:
-        'ORIL develops engaging online marketplace platforms that drive traffic, boost conversion, and increase sales. We build high-quality, scalable, and successful platforms that your users will love.',
-      image: sp3,
-    },
-    {
-      title: 'Health & Fitness',
-      desc:
-        "Medical professionals are slowly embracing technology in their practice. The general public is also waking up to the importance of staying healthy. Now is the best time to tap into this niche. ORIL team develops interactive, creative, secure, and HIPAA compliant solutions that fulfill people's needs in healthcare, fitness, and lifestyle.",
-      image: sp4,
-    },
-  ]
-
   const settings = {
     dots: false,
     infinite: true,

@@ -4,21 +4,14 @@ import '../../styles/header.scss'
 import '../../styles/dropdown.scss'
 import logo from '../../image/logo.svg'
 import { Dropdown, NavDropdown } from 'react-bootstrap'
+import { dropdownItems } from '../../data/constant'
 
 const Header = () => {
   const [opened, setOpened] = useState(false)
   const router = useLocation()
   const navigate = useNavigate()
   const pathname = router.pathname
-  const [show, setShow] = useState(false)
-
-  const showDropdown = (e) => {
-    setShow(!show)
-  }
-
-  const hideDropdown = (e) => {
-    setShow(false)
-  }
+  const [show, setShow] = useState('')
 
   return (
     <div className="header">
@@ -35,9 +28,9 @@ const Header = () => {
                 </a>
                 <a
                   href="#"
-                  className="header_burger"
+                  className={`header_burger ${opened && 'opened'}`}
                   onClick={(e) => {
-                    setOpened(true)
+                    setOpened(!opened)
                   }}
                 >
                   <span></span>
@@ -45,75 +38,121 @@ const Header = () => {
                   <span></span>
                 </a>
               </div>
-              <nav className="header_nav">
+              <nav className={`header_nav ${opened && 'opened'}`}>
                 <ul id="header_menu" className="header_menu">
                   <li
                     className={`header_menu_item ${
-                      pathname === '/' ? 'current_menu' : ''
+                      pathname === '/' && 'current_menu'
                     }`}
                   >
-                    <Link to="/">Home</Link>
+                    <Link className="header-menu-tag" to="/">
+                      Home
+                    </Link>
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname === '/service' ? 'current_menu' : ''
+                      pathname === '/service' && 'current_menu'
                     }`}
                   >
                     <NavDropdown
                       title="Service"
                       id="collasible-nav-dropdown"
-                      show={show}
-                      onMouseEnter={showDropdown}
-                      onMouseLeave={hideDropdown}
+                      show={show === 'Service' ? true : false}
+                      onMouseEnter={() => setShow('Service')}
+                      onMouseLeave={() => setShow('')}
                       onClick={(e) => navigate('/service')}
                     >
-                      <Dropdown.Item eventKey="1">
-                        <Link to="/service/ui-ux-design">UI/UX Design</Link>
-                      </Dropdown.Item>
-                      <Dropdown.Item eventKey="1">
-                        <Link to="/service/product-development">
-                          Product Development
-                        </Link>
-                      </Dropdown.Item>
-                      <Dropdown.Item eventKey="1">
-                        <Link to="/service/ioT-software-development">
-                          IoT Software Development
-                        </Link>
-                      </Dropdown.Item>
-                      <Dropdown.Item eventKey="1">
-                        <Link to="/service/digital-transformation">
-                          Digital Transformation
-                        </Link>
-                      </Dropdown.Item>
+                      {dropdownItems.service.map((item, index) => {
+                        return (
+                          <Dropdown.Item eventKey={index}>
+                            <Link
+                              to={item.url}
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              {item.title}
+                            </Link>
+                          </Dropdown.Item>
+                        )
+                      })}
                     </NavDropdown>
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname === '/expertise' ? 'current_menu' : ''
+                      pathname === '/expertise' && 'current_menu'
                     }`}
                   >
-                    <Link to="/expertise">Expertise</Link>
+                    <Link to="/expertise">
+                      <NavDropdown
+                        title="Expertise"
+                        id="collasible-nav-dropdown"
+                        show={show === 'Expertise' ? true : false}
+                        onMouseEnter={() => setShow('Expertise')}
+                        onMouseLeave={() => setShow('')}
+                        onClick={(e) => {
+                          navigate('/expertise')
+                        }}
+                      >
+                        {dropdownItems.expertise.map((item, index) => {
+                          return (
+                            <Dropdown.Item eventKey={index}>
+                              <Link
+                                to={item.url}
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                {item.title}
+                              </Link>
+                            </Dropdown.Item>
+                          )
+                        })}
+                      </NavDropdown>
+                    </Link>
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname === '/portfolio' ? 'current_menu' : ''
+                      pathname === '/portfolio' && 'current_menu'
                     }`}
                   >
-                    <Link to="/portfolio">Portfolio</Link>
+                    <Link className="header-menu-tag" to="/portfolio">
+                      Portfolio
+                    </Link>
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname === '/portfolio/' ? 'current_menu' : ''
+                      pathname === '/portfolio/' && 'current_menu'
                     }`}
                   >
-                    <Link to="/portfolio/">Company</Link>
+                    <Link to="/portfolio/">
+                      <NavDropdown
+                        title="Company"
+                        id="collasible-nav-dropdown"
+                        show={show === 'Company' ? true : false}
+                        onMouseEnter={() => setShow('Company')}
+                        onMouseLeave={() => setShow('')}
+                        onClick={(e) => navigate('/portfolio/')}
+                      >
+                        {dropdownItems.company.map((item, index) => {
+                          return (
+                            <Dropdown.Item eventKey={index}>
+                              <Link
+                                to={item.url}
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                {item.title}
+                              </Link>
+                            </Dropdown.Item>
+                          )
+                        })}
+                      </NavDropdown>
+                    </Link>
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname === '/blog' ? 'current_menu' : ''
+                      pathname === '/blog' && 'current_menu'
                     }`}
                   >
-                    <Link to="/blog">Blog</Link>
+                    <Link className="header-menu-tag" to="/blog">
+                      Blog
+                    </Link>
                   </li>
                 </ul>
                 <div className="header_nav_btn">

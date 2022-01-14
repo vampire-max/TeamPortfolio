@@ -3,40 +3,12 @@ import Articles from '../components/Articles'
 import { WhiteBtn } from '../UI/Btn'
 import { SectionTitle } from '../UI/Typography'
 import '../styles/service.scss'
-import sp1 from '../image/special/special1.png'
-import sp2 from '../image/special/special2.png'
-import sp3 from '../image/special/special3.png'
-import sp4 from '../image/special/special4.png'
+
 import TopBlock from '../components/TopBlock'
 import adsBanner from '../image/ads-banner.png'
 import Industry from '../components/Industry'
-
-const serviceItem = [
-  {
-    img: sp1,
-    title: 'Product Design',
-    desc:
-      'Great ideas attract users, but thoughtful designs make them stay. We create products your customers will love.',
-  },
-  {
-    img: sp2,
-    title: 'Product Development.',
-    desc:
-      'Transform your vision into a strong, efficient product. With the right product development services, your software can become your competitive advantage.',
-  },
-  {
-    img: sp3,
-    title: 'IoT Software Development.',
-    desc:
-      'We build smart IoT solutions that live up to the market standards and stay relevant over time.',
-  },
-  {
-    img: sp4,
-    title: 'Digital Transformation',
-    desc:
-      'Technology is evolving, so should your business. Transform your non-digital processes and services to stay competitive and meet ever-changing customer expectations.',
-  },
-]
+import { serviceItem } from '../data/constant'
+import Dropdown from '../components/Dropdown'
 
 const ServicePage = () => (
   <div className="expertiService">
@@ -69,6 +41,7 @@ const ServicePage = () => (
       </section>
     </div>
     <Articles title={'Recent articles'} />
+    <Dropdown title={'title'} />
   </div>
 )
 

@@ -1,7 +1,28 @@
 .dropdown-menu {
-  inset: 20px auto auto 0px !important;
+  inset: 25px auto auto 0px !important;
 }
 
 .nav-link {
   padding: 0;
+}
+
+#collasible-nav-dropdown::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.dropdown-item:hover,
+:active {
+  opacity: 1 !important;
+  background-color: white;
+}
+
+.dropdown-toggle::after {
+  @media (min-width: 767px) {
+    display: none;
+  }
 }

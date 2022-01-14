@@ -31,8 +31,9 @@ const Feedback = () => {
         <div className="row">
           <div className="col-lg-6 offset-lg-3 col-md-10 offset-md-1">
             <p className="o-feedback-desc">
-              Subscribe to our blog to learn about tech trends and innovative
-              solutions.
+              {
+                'Subscribe to our blog to learn about tech trends and innovative solutions.'
+              }
             </p>
             <div className="footer-form-wrapper">
               <form
