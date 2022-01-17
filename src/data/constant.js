@@ -47,9 +47,19 @@ import person3 from '../image/projects/person3.jpeg'
 
 import avatar1 from '../image/test/avatar1.jpeg'
 
-import about1 from '../image/uxdesign/about1.png'
-import about2 from '../image/uxdesign/about2.png'
-import about3 from '../image/uxdesign/about3.png'
+import designabout1 from '../image/uxdesign/about1.png'
+import designabout2 from '../image/uxdesign/about2.png'
+import designabout3 from '../image/uxdesign/about3.png'
+
+import webabout1 from '../image/web/webabout1.png'
+
+import deliver1 from '../image/web/deliver1.png'
+
+import approach1 from '../image/uxdesign/approach1.png'
+import approach2 from '../image/uxdesign/approach2.png'
+import approach3 from '../image/uxdesign/approach3.png'
+import approach4 from '../image/uxdesign/approach4.png'
+import approach5 from '../image/uxdesign/approach5.png'
 
 export const logoImgOne = [
   {
@@ -525,23 +535,221 @@ export const serviceItem = [
   },
 ]
 
-export const aboutItem = [
+export const designaboutItem = [
   {
-    img: about1,
+    img: designabout1,
     title: 'Integrated team',
     desc:
       'We approach every project holistically. In addition to the designers, business analysts, and project managers, we have our software engineers validate concepts early in the process.',
   },
   {
-    img: about2,
+    img: designabout2,
     title: 'Integrated team',
     desc:
       'We approach every project holistically. In addition to the designers, business analysts, and project managers, we have our software engineers validate concepts early in the process.',
   },
   {
-    img: about3,
+    img: designabout3,
     title: 'Integrated team',
     desc:
       'We approach every project holistically. In addition to the designers, business analysts, and project managers, we have our software engineers validate concepts early in the process.',
+  },
+]
+
+export const approachItem = [
+  {
+    id: '01',
+    image: approach1,
+    title: 'Value Proposition Canvas (VPC)',
+    desc:
+      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+    list: [
+      'Ability to test out the system.',
+      'Ability to test out the system.',
+    ],
+  },
+  {
+    id: '02',
+    image: approach2,
+    title: 'Prototype',
+    desc:
+      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+    list: [
+      'Ability to test out the system.',
+      'Ability to test out the system.',
+      'Ability to test out the system.',
+    ],
+  },
+  {
+    id: '03',
+    image: approach1,
+    title: 'Prototype',
+    desc:
+      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+    list: ['Ability to test out the system.'],
+  },
+  {
+    id: '04',
+    image: approach1,
+    title: 'Prototype',
+    desc:
+      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+    list: [
+      'Ability to test out the system.',
+      'Ability to test out the system.',
+      'Ability to test out the system.',
+    ],
+  },
+  {
+    id: '05',
+    image: approach3,
+    title: 'Prototype',
+    desc:
+      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+    list: [
+      'Ability to test out the system.',
+      'Ability to test out the system.',
+    ],
+  },
+  {
+    id: '06',
+    image: approach4,
+    title: 'Prototype',
+    desc:
+      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+    list: [
+      'Ability to test out the system.',
+      'Ability to test out the system.',
+    ],
+  },
+  {
+    id: '07',
+    image: approach5,
+    title: 'Prototype',
+    desc:
+      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+    list: [
+      'Ability to test out the system.',
+      'Ability to test out the system.',
+    ],
+  },
+  {
+    id: '08',
+    image: approach1,
+    title: 'Prototype',
+    desc:
+      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+    list: [
+      'Ability to test out the system.',
+      'Ability to test out the system.',
+    ],
+  },
+]
+
+export const planningItem = [
+  {
+    title: 'Technology',
+    desc:
+      'We provide recommendations for the most suitable programming languages, frameworks, and testing tools for the development process, determine the product infrastructure, and make sure that our design allows for third-party services and integrations.',
+    list: [
+      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+    ],
+  },
+  {
+    title: 'Risks & assumptions registry',
+    desc:
+      'Your product is an innovation. As it happens when you create something new, it is hard to predict every single scenario. We don’t hide the risks from you. Rather, we want you to always be informed and therefore prepared for any situation.',
+
+    list: [],
+  },
+  {
+    title: 'Security',
+    desc:
+      'Your product is an innovation. As it happens when you create something new, it is hard to predict every single scenario. We don’t hide the risks from you. Rather, we want you to always be informed and therefore prepared for any situation.',
+    list: [],
+  },
+  {
+    title: 'Security',
+    desc:
+      'Your product is an innovation. As it happens when you create something new, it is hard to predict every single scenario. We don’t hide the risks from you. Rather, we want you to always be informed and therefore prepared for any situation.',
+    list: [
+      'Recommended team composition.',
+      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+    ],
+  },
+  {
+    title: 'QA approach',
+    desc:
+      'Your product is an innovation. As it happens when you create something new, it is hard to predict every single scenario. We don’t hide the risks from you. Rather, we want you to always be informed and therefore prepared for any situation.',
+    list: [
+      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+      'QA approach.',
+    ],
+  },
+]
+
+export const webaboutItem = [
+  {
+    img: webabout1,
+    title: 'Innovation',
+    desc:
+      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+  },
+  {
+    img: webabout1,
+    title: 'Project Leadership',
+    desc:
+      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+  },
+  {
+    img: webabout1,
+    title: 'Professional Team',
+    desc:
+      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+  },
+]
+
+export const deliverItem = [
+  {
+    img: deliver1,
+    title: 'Web app',
+    desc:
+      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+  },
+  {
+    img: deliver1,
+    title: 'Mobile app',
+    desc:
+      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+  },
+  {
+    img: deliver1,
+    title: 'Innovation',
+    desc:
+      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+  },
+  {
+    img: deliver1,
+    title: 'Dasjhboard',
+    desc:
+      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+  },
+  {
+    img: deliver1,
+    title: 'Innovation',
+    desc:
+      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+  },
+  {
+    img: deliver1,
+    title: 'Innovation',
+    desc:
+      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
   },
 ]

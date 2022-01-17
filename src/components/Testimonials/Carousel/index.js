@@ -10,7 +10,7 @@ import { sliderItem } from '../../../data/constant'
 const CardCarousel = () => {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

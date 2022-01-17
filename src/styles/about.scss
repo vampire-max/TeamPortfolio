@@ -1,0 +1,23 @@
+.about {
+  .about-desc {
+    margin-bottom: 38px;
+  }
+  .about-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    img {
+      max-width: 200px;
+      margin-right: 24px;
+    }
+    .item-info {
+      margin-bottom: 18px;
+    }
+  }
+  .about-title {
+    margin-bottom: 48px;
+  }
+  .about-desc {
+    margin-bottom: 88px;
+  }
+}

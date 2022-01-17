@@ -1,20 +1,20 @@
 import React from 'react'
-import adsBanner from '../../image/ads-banner.png'
 import { WhiteBtn } from '../../UI/Btn'
 
-const Ads = ({ title }) => {
+const Ads = ({ title, bgImage }) => {
+  console.log('bg', bgImage)
   return (
-    <section class="o-ads">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
+    <section className="o-ads">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
             <div
-              class="o-ads-banner s-back-switch"
+              className="o-ads-banner s-back-switch"
               style={{
-                backgroundImage: `url(${adsBanner})`,
+                backgroundImage: bgImage,
               }}
             >
-              <h2 class="text-white mb-24">{title}</h2>
+              <h2 className="text-white mb-24">{title}</h2>
               <WhiteBtn path={'/contact-us'}>{'Get started'}</WhiteBtn>
             </div>
           </div>

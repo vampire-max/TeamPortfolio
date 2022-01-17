@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import '../../styles/banner.scss'
 import { Typography, H1 } from '../../UI/Typography'

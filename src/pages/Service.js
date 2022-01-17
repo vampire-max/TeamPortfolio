@@ -7,6 +7,7 @@ import Industry from '../components/Industry'
 import { serviceItem } from '../data/constant'
 import Dropdown from '../components/Dropdown'
 import Ads from '../components/Ads'
+import adsBanner from '../image/ads-banner.png'
 
 const ServicePage = () => (
   <div className="expertiService">
@@ -21,7 +22,7 @@ const ServicePage = () => (
       <SectionTitle>Services we offer</SectionTitle>
       <Industry industryItem={serviceItem} />
     </div>
-    <Ads title={'Bring your vision to life!'} />
+    <Ads bgImage={adsBanner} title={'Bring your vision to life!'} />
     <Articles title={'Recent articles'} />
     <Dropdown title={'title'} />
   </div>

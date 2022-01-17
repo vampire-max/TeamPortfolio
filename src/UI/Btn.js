@@ -16,7 +16,7 @@ export function PrimaryBtn({ className, children }) {
 
 export function WhiteBtn({ path, children }) {
   return (
-    <Link to={path} class="o-btn o-btn-white o-cta__button">
+    <Link to={path} className="o-btn o-btn-white o-cta__button">
       {children}
     </Link>
   )

@@ -80,13 +80,13 @@ const Footer = () => {
             <div className="footer-nav">
               {isMobile && (
                 <div
-                  class="o-footer__info-mobile"
+                  className="o-footer__info-mobile"
                   onClick={() => handleClick('Contacts')}
                 >
-                  <p class="o-footer__nav-item-name">
+                  <p className="o-footer__nav-item-name">
                     <b>Contacts</b>
                     <svg
-                      class="mod-mobile"
+                      className="mod-mobile"
                       width="24"
                       height="23"
                       viewBox="0 0 24 23"
@@ -131,7 +131,7 @@ const Footer = () => {
                 <p className="o-footer__nav-item-name">
                   <b>Service</b>
                   <svg
-                    class="mod-mobile"
+                    className="mod-mobile"
                     width="24"
                     height="23"
                     viewBox="0 0 24 23"

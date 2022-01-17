@@ -64,7 +64,7 @@ const Header = () => {
                     >
                       {dropdownItems.service.map((item, index) => {
                         return (
-                          <Dropdown.Item eventKey={index}>
+                          <Dropdown.Item key={index} eventKey={index}>
                             <Link
                               to={item.url}
                               onClick={(e) => e.stopPropagation()}
@@ -94,7 +94,7 @@ const Header = () => {
                       >
                         {dropdownItems.expertise.map((item, index) => {
                           return (
-                            <Dropdown.Item eventKey={index}>
+                            <Dropdown.Item key={index} eventKey={index}>
                               <Link
                                 to={item.url}
                                 onClick={(e) => e.stopPropagation()}
@@ -133,6 +133,7 @@ const Header = () => {
                         {dropdownItems.company.map((item, index) => {
                           return (
                             <Dropdown.Item
+                              key={index}
                               eventKey={index}
                               className="h-dropdown"
                             >
