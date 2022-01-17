@@ -51,7 +51,7 @@ const Header = () => {
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname === '/service' && 'current_menu'
+                      pathname == '/service' && 'current_menu'
                     }`}
                   >
                     <NavDropdown
@@ -132,7 +132,10 @@ const Header = () => {
                       >
                         {dropdownItems.company.map((item, index) => {
                           return (
-                            <Dropdown.Item eventKey={index}>
+                            <Dropdown.Item
+                              eventKey={index}
+                              className="h-dropdown"
+                            >
                               <Link
                                 to={item.url}
                                 onClick={(e) => e.stopPropagation()}

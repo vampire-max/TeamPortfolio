@@ -47,6 +47,10 @@ import person3 from '../image/projects/person3.jpeg'
 
 import avatar1 from '../image/test/avatar1.jpeg'
 
+import about1 from '../image/uxdesign/about1.png'
+import about2 from '../image/uxdesign/about2.png'
+import about3 from '../image/uxdesign/about3.png'
+
 export const logoImgOne = [
   {
     url: 'https://clutch.co/profile/oril',
@@ -184,19 +188,11 @@ export const dropdownItems = {
   company: [
     {
       url: '/service/ui-ux-design',
-      title: 'UI/UX Design',
+      title: 'About Us',
     },
     {
       url: '/service/product-development',
-      title: 'Product Development',
-    },
-    {
-      url: '/service/ioT-software-development',
-      title: 'IoT Software Development',
-    },
-    {
-      url: '/service/digital-transformation',
-      title: 'Digital Transformation',
+      title: 'Careers',
     },
   ],
 }
@@ -526,5 +522,26 @@ export const serviceItem = [
     title: 'Digital Transformation',
     desc:
       'Technology is evolving, so should your business. Transform your non-digital processes and services to stay competitive and meet ever-changing customer expectations.',
+  },
+]
+
+export const aboutItem = [
+  {
+    img: about1,
+    title: 'Integrated team',
+    desc:
+      'We approach every project holistically. In addition to the designers, business analysts, and project managers, we have our software engineers validate concepts early in the process.',
+  },
+  {
+    img: about2,
+    title: 'Integrated team',
+    desc:
+      'We approach every project holistically. In addition to the designers, business analysts, and project managers, we have our software engineers validate concepts early in the process.',
+  },
+  {
+    img: about3,
+    title: 'Integrated team',
+    desc:
+      'We approach every project holistically. In addition to the designers, business analysts, and project managers, we have our software engineers validate concepts early in the process.',
   },
 ]

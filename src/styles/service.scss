@@ -93,3 +93,24 @@
     }
   }
 }
+
+.design {
+  .o-banner {
+    margin-bottom: 5.2vw;
+    padding: 220px 0 210px;
+
+    @media (max-width: 1199px) {
+      margin-bottom: 0;
+      padding: 150px 0;
+    }
+  }
+
+  .d-about {
+    .title {
+      margin-bottom: 48px;
+    }
+    .desc {
+      margin-bottom: 88px;
+    }
+  }
+}

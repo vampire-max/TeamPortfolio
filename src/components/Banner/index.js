@@ -1,8 +1,7 @@
 import React, { Children } from 'react'
+import { Link } from 'react-router-dom'
 import '../../styles/banner.scss'
-import Award from '../Awards'
 import { Typography, H1 } from '../../UI/Typography'
-import { logoImgOne } from '../../data/constant'
 
 const Banner = ({ bannerImg, title, desc, link }) => {
   return (
@@ -24,18 +23,12 @@ const Banner = ({ bannerImg, title, desc, link }) => {
         </div>
         <div className="row">
           <div className="col-12">
-            <a
-              href="https://oril.co/portfolio"
+            <Link
+              to="/portfolio"
               className="o-btn o-btn--action o-banner_button"
-              target="blank"
             >
               {link}
-            </a>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-7">
-            <Award logoitem={logoImgOne} />
+            </Link>
           </div>
         </div>
       </div>
