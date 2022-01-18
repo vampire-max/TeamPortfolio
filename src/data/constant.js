@@ -61,6 +61,9 @@ import approach3 from '../image/uxdesign/approach3.png'
 import approach4 from '../image/uxdesign/approach4.png'
 import approach5 from '../image/uxdesign/approach5.png'
 
+import webBannerImg from '../image/web/webbanner.png'
+import webAdsImg from '../image/web/webads.png'
+
 export const logoImgOne = [
   {
     url: 'https://clutch.co/profile/oril',
@@ -694,7 +697,7 @@ export const planningItem = [
   },
 ]
 
-export const webaboutItem = [
+export const webAboutItem = [
   {
     img: webabout1,
     title: 'Innovation',
@@ -715,7 +718,7 @@ export const webaboutItem = [
   },
 ]
 
-export const deliverItem = [
+export const webDeliverItem = [
   {
     img: deliver1,
     title: 'Web app',
@@ -753,3 +756,123 @@ export const deliverItem = [
       "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
   },
 ]
+
+export const webBanner = {
+  bannerImg: webBannerImg,
+  link: 'Get started',
+}
+
+export const webSectionTitle = [
+  {
+    title: 'Logical Roadmap & Reliable Programming',
+  },
+  { title: 'Deliverables' },
+]
+
+export const webAbout = [
+  {
+    desc:
+      'Our software engineers, business analysts, DevOps, and product managers all work together to help our clients achieve their business goals. From the design concept to product support and maintenance, we’ll take care of the entire process every step of the way. ',
+    data: webAboutItem,
+  },
+  {
+    desc:
+      "Here at ORIL, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+    data: webDeliverItem,
+  },
+]
+
+export const webAds = {
+  bgImage: `url(${webAdsImg})`,
+  title: 'Ready to Grow Together?',
+}
+
+export const gameBanner = {
+  bannerImg: webBannerImg,
+  link: 'Get started',
+}
+
+export const gameSectionTitle = [
+  {
+    title: 'Logical Roadmap & Reliable Programming',
+  },
+  { title: 'Deliverables' },
+]
+
+export const gameAbout = [
+  {
+    desc:
+      'Our software engineers, business analysts, DevOps, and product managers all work together to help our clients achieve their business goals. From the design concept to product support and maintenance, we’ll take care of the entire process every step of the way. ',
+    data: webAboutItem,
+  },
+  {
+    desc:
+      "Here at ORIL, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+    data: webDeliverItem,
+  },
+]
+
+export const gameAds = {
+  bgImage: `url(${webAdsImg})`,
+  title: 'Ready to Grow Together?',
+}
+
+export const mobileBanner = {
+  bannerImg: webBannerImg,
+  link: 'Get started',
+}
+
+export const mobileSectionTitle = [
+  {
+    title: 'Logical Roadmap & Reliable Programming',
+  },
+  { title: 'Deliverables' },
+]
+
+export const mobileAbout = [
+  {
+    desc:
+      'Our software engineers, business analysts, DevOps, and product managers all work together to help our clients achieve their business goals. From the design concept to product support and maintenance, we’ll take care of the entire process every step of the way. ',
+    data: webAboutItem,
+  },
+  {
+    desc:
+      "Here at ORIL, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+    data: webDeliverItem,
+  },
+]
+
+export const mobileAds = {
+  bgImage: `url(${webAdsImg})`,
+  title: 'Ready to Grow Together?',
+}
+
+export const blockChainBanner = {
+  bannerImg: webBannerImg,
+  link: 'Get started',
+}
+
+export const blockChainSectionTitle = [
+  {
+    title: 'Logical Roadmap & Reliable Programming',
+  },
+  { title: 'Deliverables' },
+]
+
+export const blockChainAbout = [
+  {
+    desc:
+      'Our software engineers, business analysts, DevOps, and product managers all work together to help our clients achieve their business goals. From the design concept to product support and maintenance, we’ll take care of the entire process every step of the way. ',
+    data: webAboutItem,
+  },
+  {
+    desc:
+      "Here at ORIL, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+    data: webDeliverItem,
+  },
+]
+
+export const blockChainAds = {
+  bgImage: `url(${webAdsImg})`,
+  title: 'Ready to Grow Together?',
+}

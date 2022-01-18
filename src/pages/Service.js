@@ -22,7 +22,7 @@ const ServicePage = () => (
       <SectionTitle>Services we offer</SectionTitle>
       <Industry industryItem={serviceItem} />
     </div>
-    <Ads bgImage={adsBanner} title={'Bring your vision to life!'} />
+    <Ads bgImage={`url(${adsBanner})`} title={'Bring your vision to life!'} />
     <Articles title={'Recent articles'} />
     <Dropdown title={'title'} />
   </div>

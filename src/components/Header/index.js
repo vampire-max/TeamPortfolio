@@ -51,7 +51,7 @@ const Header = () => {
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname == '/service' && 'current_menu'
+                      pathname.includes('/service') && 'current_menu'
                     }`}
                   >
                     <NavDropdown
@@ -78,7 +78,7 @@ const Header = () => {
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname === '/expertise' && 'current_menu'
+                      pathname.includes('/expertise') && 'current_menu'
                     }`}
                   >
                     <Link to="/expertise">
@@ -118,7 +118,7 @@ const Header = () => {
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname === '/portfolio/' && 'current_menu'
+                      pathname.includes('/portfolio/') && 'current_menu'
                     }`}
                   >
                     <Link to="/portfolio/">
@@ -151,7 +151,7 @@ const Header = () => {
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname === '/blog' && 'current_menu'
+                      pathname.includes('/blog') && 'current_menu'
                     }`}
                   >
                     <Link className="header-menu-tag" to="/blog">

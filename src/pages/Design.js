@@ -118,7 +118,7 @@ const Design = () => {
           </div>
         </div>
       </div>
-      <Ads bgImage={adsBanner} title={'Got an Idea?'} />
+      <Ads bgImage={`url(${adsBanner})`} title={'Got an Idea?'} />
       <Projects />
     </div>
   )

@@ -8,10 +8,25 @@ import Portfolio from './pages/Portfolio'
 import ServicePage from './pages/Service'
 import Expertise from './pages/Expertise'
 import Design from './pages/Design'
-import WebDev from './pages/WebDev'
-import MobileDev from './pages/MobileDev'
-import GameDev from './pages/GameDev'
-import Blockchain from './pages/Blockchain'
+import SingleService from './pages/SingleService'
+import {
+  webBanner,
+  webSectionTitle,
+  webAbout,
+  webAds,
+  gameBanner,
+  gameSectionTitle,
+  gameAbout,
+  gameAds,
+  mobileBanner,
+  mobileSectionTitle,
+  mobileAbout,
+  mobileAds,
+  blockChainBanner,
+  blockChainSectionTitle,
+  blockChainAbout,
+  blockChainAds,
+} from './data/constant'
 
 function App() {
   return (
@@ -24,15 +39,50 @@ function App() {
           <Route path="/expertise" element={<Expertise />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/service/ux-design" element={<Design />} />
-          <Route path="/service/website-development" element={<WebDev />} />
+          <Route
+            path="/service/website-development"
+            element={
+              <SingleService
+                bannerProps={webBanner}
+                sectionTitleProps={webSectionTitle}
+                aboutProps={webAbout}
+                adsProps={webAds}
+              />
+            }
+          />
+
+          <Route
+            path="/service/game-development"
+            element={
+              <SingleService
+                bannerProps={gameBanner}
+                sectionTitleProps={gameSectionTitle}
+                aboutProps={gameAbout}
+                adsProps={gameAds}
+              />
+            }
+          />
           <Route
             path="/service/mobile-app-development"
-            element={<MobileDev />}
+            element={
+              <SingleService
+                bannerProps={mobileBanner}
+                sectionTitleProps={mobileSectionTitle}
+                aboutProps={mobileAbout}
+                adsProps={mobileAds}
+              />
+            }
           />
-          <Route path="/service/game-development" element={<GameDev />} />
           <Route
             path="/service/blockchain-development"
-            element={<Blockchain />}
+            element={
+              <SingleService
+                bannerProps={blockChainBanner}
+                sectionTitleProps={blockChainSectionTitle}
+                aboutProps={blockChainAbout}
+                adsProps={blockChainAds}
+              />
+            }
           />
           <Route path="/blog" element={<Expertise />} />
         </Routes>
