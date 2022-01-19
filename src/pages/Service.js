@@ -5,7 +5,6 @@ import '../styles/service.scss'
 import TopBlock from '../components/TopBlock'
 import Industry from '../components/Industry'
 import { serviceItem } from '../data/constant'
-import Dropdown from '../components/Dropdown'
 import Ads from '../components/Ads'
 import adsBanner from '../image/ads-banner.png'
 
@@ -24,7 +23,6 @@ const ServicePage = () => (
     </div>
     <Ads bgImage={`url(${adsBanner})`} title={'Bring your vision to life!'} />
     <Articles title={'Recent articles'} />
-    <Dropdown title={'title'} />
   </div>
 )
 

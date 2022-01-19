@@ -14,6 +14,7 @@ import {
   webSectionTitle,
   webAbout,
   webAds,
+  webProgressData,
   gameBanner,
   gameSectionTitle,
   gameAbout,
@@ -47,6 +48,7 @@ function App() {
                 sectionTitleProps={webSectionTitle}
                 aboutProps={webAbout}
                 adsProps={webAds}
+                progressData={webProgressData}
               />
             }
           />
@@ -62,6 +64,7 @@ function App() {
               />
             }
           />
+
           <Route
             path="/service/mobile-app-development"
             element={
@@ -73,6 +76,7 @@ function App() {
               />
             }
           />
+
           <Route
             path="/service/blockchain-development"
             element={
@@ -84,6 +88,7 @@ function App() {
               />
             }
           />
+
           <Route path="/blog" element={<Expertise />} />
         </Routes>
         <Feedback />

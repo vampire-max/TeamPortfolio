@@ -75,7 +75,9 @@
 
 .o-ads {
   margin-bottom: 200px;
-
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+  }
   .o-ads-banner {
     padding: 82px 20px;
     border-radius: 24px;
@@ -109,12 +111,18 @@
     margin-bottom: 200px;
     .desc {
       text-align: center;
-      margin-bottom: 150px;
+      margin-bottom: 100px;
+      @media (max-width: 767px) {
+        margin-bottom: 38px;
+      }
     }
     .d-approach-item {
       align-items: center;
       &:not(:last-child) {
-        margin-bottom: 200px;
+        margin-bottom: 150px;
+        @media (max-width: 767px) {
+          margin-bottom: 38px;
+        }
       }
       .item-title {
         display: flex;
@@ -143,6 +151,9 @@
 
   .o-how {
     margin-bottom: 200px;
+    @media (max-width: 767px) {
+      margin-bottom: 50px;
+    }
   }
 
   .o-planning {

@@ -5,12 +5,14 @@ import Projects from '../components/Projects'
 import Special from '../components/Special'
 import Ads from '../components/Ads'
 import { SectionTitle } from '../UI/Typography'
+import ServiceSlider from '../components/Slider'
 
 const SingleService = ({
   bannerProps,
   sectionTitleProps,
   aboutProps,
   adsProps,
+  progressData,
 }) => {
   console.log('ser')
   return (
@@ -31,6 +33,7 @@ const SingleService = ({
         data={aboutProps[0].data}
         itemClass={'col-lg-10'}
       />
+      <ServiceSlider progressData={progressData} />
       <Ads bgImage={adsProps.bgImage} title={adsProps.title} />
       <Projects />
       <SectionTitle className={'text-start'}>

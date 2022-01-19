@@ -1,5 +1,11 @@
 .dropdown-menu {
   inset: 25px auto auto 0px !important;
+
+  @media (max-width: 1199px) {
+    border: none;
+    transform: translate3d(0px, 20px, 0px) !important;
+    position: static !important;
+  }
 }
 
 .nav-link {
@@ -16,10 +22,18 @@
 }
 
 .dropdown-item {
-  &:hover,
-  :active {
-    opacity: 1 !important;
-    background-color: white;
+  @media (max-width: 1199px) {
+    color: #676875 !important;
+    font-weight: 400 !important;
+    opacity: 1;
+    font-size: 16px !important;
+  }
+  @media (min-width: 1199px) {
+    &:hover,
+    :active {
+      opacity: 1 !important;
+      background-color: white;
+    }
   }
 
   &::before {
@@ -37,8 +51,17 @@
   }
 }
 
+.dropdown-toggle {
+  position: relative;
+}
+
 .dropdown-toggle::after {
-  @media (min-width: 767px) {
+  color: #ffb248;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  @media (min-width: 1199px) {
     display: none;
   }
 }

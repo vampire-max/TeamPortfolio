@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../../styles/banner.scss'
 import { Typography, H1 } from '../../UI/Typography'
+import Award from '../../components/Awards'
+import { logoImgOne } from '../../data/constant'
 
 const Banner = ({ bannerImg, title, desc, link }) => {
   return (
@@ -10,7 +12,7 @@ const Banner = ({ bannerImg, title, desc, link }) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-8">
-            <H1 className="o-banner__title mark-wrapper">
+            <H1>
               {title}
               <mark>.</mark>
             </H1>
@@ -29,6 +31,11 @@ const Banner = ({ bannerImg, title, desc, link }) => {
             >
               {link}
             </Link>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-7">
+            <Award logoitem={logoImgOne} />
           </div>
         </div>
       </div>

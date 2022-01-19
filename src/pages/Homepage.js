@@ -6,8 +6,6 @@ import Projects from '../components/Projects'
 import CardCarousel from '../components/Testimonials/Carousel'
 import Articles from '../components/Articles'
 import banner from '../image/oril-banner-updated-1.jpg'
-import { logoImgOne } from '../data/constant'
-import Award from '../components/Awards'
 
 const HomePage = () => {
   return (
@@ -20,11 +18,6 @@ const HomePage = () => {
         }
         link={'View Case Study'}
       />
-      <div className="row">
-        <div className="col-lg-7">
-          <Award logoitem={logoImgOne} />
-        </div>
-      </div>
       <Services />
       <Special />
       <Projects />

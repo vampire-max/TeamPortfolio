@@ -6,17 +6,24 @@
     display: flex;
     align-items: center;
     margin-bottom: 80px;
+    @media (max-width: 776px) {
+      flex-direction: column;
+    }
     img {
       max-width: 200px;
       margin-right: 24px;
     }
     .item-info {
       margin-bottom: 18px;
+
+      .title {
+        @media (max-width: 776px) {
+          text-align: center;
+        }
+      }
     }
   }
-  .about-title {
-    margin-bottom: 48px;
-  }
+
   .about-desc {
     margin-bottom: 88px;
   }

@@ -182,29 +182,29 @@ export const dropdownItems = {
   ],
   expertise: [
     {
-      url: '/service/ui-ux-design',
+      url: '/expertise/ui-ux-design',
       title: 'UI/UX Design',
     },
     {
-      url: '/service/product-development',
+      url: '/expertise/product-development',
       title: 'Product Development',
     },
     {
-      url: '/service/ioT-software-development',
+      url: '/expertise/ioT-software-development',
       title: 'IoT Software Development',
     },
     {
-      url: '/service/digital-transformation',
+      url: '/expertise/digital-transformation',
       title: 'Digital Transformation',
     },
   ],
   company: [
     {
-      url: '/service/ui-ux-design',
+      url: '/portfolio/about-us',
       title: 'About Us',
     },
     {
-      url: '/service/product-development',
+      url: '/portfolio/careers',
       title: 'Careers',
     },
   ],
@@ -785,6 +785,18 @@ export const webAbout = [
 export const webAds = {
   bgImage: `url(${webAdsImg})`,
   title: 'Ready to Grow Together?',
+}
+
+export const webProgressData = {
+  title: 'Cross-functional approach',
+  desc:
+    "Our experts have overlapping and complementary skill sets that allow for a broad range of functionality. By approaching every project holistically, we avoid silos in the development process and get to see the progress faster. Whether it's a new client idea or user feedback, changes and iterations are always a part of our workflow.",
+  progress: [
+    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
+    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
+    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
+    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
+  ],
 }
 
 export const gameBanner = {

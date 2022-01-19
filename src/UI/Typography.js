@@ -1,11 +1,13 @@
 import '../styles/UI.scss'
 
-export function Typography({ className, children, ...rest }) {
+export function Typography({ className, children }) {
   return <p className={`${className}`}>{children}</p>
 }
 
-export function H1({ className, children, ...rest }) {
-  return <h1 className={`mb-24 ${className}`}>{children}</h1>
+export function H1({ className, children }) {
+  return (
+    <h1 className={`o-banner__title mark-wrapper ${className}`}>{children}</h1>
+  )
 }
 
 export function SectionTitle({ className, children }) {

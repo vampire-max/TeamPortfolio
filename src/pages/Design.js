@@ -11,6 +11,8 @@ import Ads from '../components/Ads'
 import adsBanner from '../image/ads-banner.png'
 
 const Design = () => {
+  const isMobile = window.innerWidth < 768
+
   return (
     <div className="s-service container">
       <Banner
@@ -21,12 +23,10 @@ const Design = () => {
         }
         link={'Get started'}
       />
-      <div className="d-about">
+      <div className="about">
         <div className="row">
           <div className="col-12">
-            <SectionTitle className={'text-start about-title'}>
-              Why Us?
-            </SectionTitle>
+            <SectionTitle className={'text-start'}>Why Us?</SectionTitle>
             <About
               desc={
                 ' The user is the superstar of every product we work on. They are always at the center of our efforts. We create super-functional, refined, and engaging products that meet and exceed expectations.'
@@ -39,7 +39,7 @@ const Design = () => {
       </div>
       <div className="d-approach">
         <SectionTitle>Design-thinking approach</SectionTitle>
-        <p className="desc">
+        <p className="desc text-start">
           Design thinking brings together what’s in the best interest of users
           and what’s technically and economically feasible. It can change the
           way companies operate at every level, from developing strategies to
@@ -73,7 +73,12 @@ const Design = () => {
           }
 
           return (
-            <div className="row d-approach-item" key={index}>
+            <div
+              className={`row d-approach-item ${
+                isMobile && 'flex-column-reverse'
+              }`}
+              key={index}
+            >
               <div className="col-lg-5 col-md-6">
                 <h3 className="item-title">
                   <span>{item.id}</span>
