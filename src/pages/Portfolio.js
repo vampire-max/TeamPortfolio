@@ -10,17 +10,13 @@ const Portfolio = () => {
   // const [items, setItems] = useState(portfolioItem)
 
   const handleClick = (tagname) => (e) => {
-    // console.log('....')
     setFilterOption(tagname)
   }
 
   useEffect(() => {
     if (filterOption.length === 0) {
       setFilteredItems(portfolioItem)
-      // console.log('length', filterOption.length)
     } else {
-      // console.log('filtering')
-      // console.log('length', filterOption.length)
 
       const filtered = portfolioItem.filter((item) => {
         let isIncluded = false
