@@ -7,7 +7,6 @@ import { portfolioItem } from '../data/constant'
 const Portfolio = () => {
   const [filterOption, setFilterOption] = useState([])
   const [filteredItems, setFilteredItems] = useState(portfolioItem)
-  // const [items, setItems] = useState(portfolioItem)
 
   const handleClick = (tagname) => (e) => {
     setFilterOption(tagname)
@@ -17,7 +16,6 @@ const Portfolio = () => {
     if (filterOption.length === 0) {
       setFilteredItems(portfolioItem)
     } else {
-
       const filtered = portfolioItem.filter((item) => {
         let isIncluded = false
         filterOption.forEach((tag) => {
@@ -26,7 +24,6 @@ const Portfolio = () => {
           }
         })
 
-        console.log('isIncluded: ', isIncluded)
         return isIncluded
       })
 
@@ -109,10 +106,10 @@ const Portfolio = () => {
         </ul>
       </div>
       {filteredItems.map((item, index) => (
-        <>
-          <ProjectsItem item={item} index={index} key={index} />
+        <div key={index}>
+          <ProjectsItem item={item} index={index} />
           <div className="o-divider p-divider"></div>
-        </>
+        </div>
       ))}
     </div>
   )

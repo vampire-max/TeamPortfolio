@@ -18,7 +18,6 @@ const Feedback = () => {
 
   const router = useLocation()
   const pathname = router.pathname
-  console.log('pathname', pathname)
 
   useEffect(() => {
     setValue('')

@@ -1,0 +1,35 @@
+.o-blog {
+  padding-top: 152px;
+  margin-bottom: 110px;
+
+  .o-article-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .o-single-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid #dfdfdf;
+      margin-right: 24px;
+    }
+    .author-name {
+      color: #363645;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .date {
+      line-height: 1;
+    }
+  }
+}

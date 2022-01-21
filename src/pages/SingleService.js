@@ -14,7 +14,6 @@ const SingleService = ({
   adsProps,
   progressData,
 }) => {
-  console.log('ser')
   return (
     <div className="s-service container">
       <Banner

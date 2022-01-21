@@ -18,7 +18,6 @@ const Footer = () => {
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 768)
-    console.log('empty array')
   }, [])
 
   useEffect(() => {
@@ -32,11 +31,6 @@ const Footer = () => {
       window.removeEventListener('resize', resizeListener)
     }
   }, [window.innerWidth])
-
-  useEffect(() => {
-    console.log(isMobile, 'isMObile')
-    console.log('width', window.innerWidth < 768)
-  }, [isMobile])
 
   return (
     <div className="o-footer">

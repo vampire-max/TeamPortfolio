@@ -28,6 +28,7 @@ import {
   blockChainAbout,
   blockChainAds,
 } from './data/constant'
+import Blog from './pages/Blog'
 
 function App() {
   return (
@@ -89,7 +90,7 @@ function App() {
             }
           />
 
-          <Route path="/blog" element={<Expertise />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
         <Feedback />
         <Footer />

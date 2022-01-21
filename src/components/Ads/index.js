@@ -2,7 +2,6 @@ import React from 'react'
 import { WhiteBtn } from '../../UI/Btn'
 
 const Ads = ({ title, bgImage }) => {
-  console.log('bg', bgImage)
   return (
     <section className="o-ads">
       <div className="container">

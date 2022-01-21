@@ -12,6 +12,7 @@ const ArticleItem = ({ item }) => {
         <h3 className="o-article-title">
           <a className="">{item.title}</a>
         </h3>
+        <p className='o-article-desc'>{item.desc}</p>
         <div className="o-post-info">
           <img src={item.avatar} className="avatar" />
           <div className="o-post-right-info">
