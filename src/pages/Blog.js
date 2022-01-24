@@ -5,8 +5,10 @@ import '../styles/blog.scss'
 import { Link } from 'react-router-dom'
 import blogBannerImg from '../image/blog/blog-banner.png'
 import avatar from '../image/post/avatar.png'
-import { popularData } from '../data/constant'
+import { popularData, technologyData, newsData } from '../data/constant'
 import ArticleItem from '../components/Articles/item'
+import FeedbackForm from '../components/FeedbackForm'
+import feedbackImg from '../image/feedback.svg'
 
 const Blog = () => {
   return (
@@ -61,7 +63,36 @@ const Blog = () => {
           ))}
           <div className="o-divider"></div>
         </div>
+        <div id="o-subscribe">
+          <img src={feedbackImg} />
+          <div className="row">
+            <div className="col-xl-7 col-lg-8 offset-lg-3 col-md-10 offset-md-2">
+              <FeedbackForm />
+            </div>
+          </div>
+        </div>
         <Articles title={'Real Estate | PropTech | CREtech'} />
+
+        <div className="row o-popular">
+          <SectionTitle className={'text-start'}>
+            Technology
+            <mark>:</mark>{' '}
+          </SectionTitle>
+          {technologyData.map((item, index) => (
+            <ArticleItem item={item} key={index} />
+          ))}
+          <div className="o-divider"></div>
+        </div>
+        <div className="row o-popular">
+          <SectionTitle className={'text-start'}>
+            News
+            <mark>:</mark>{' '}
+          </SectionTitle>
+          {newsData.map((item, index) => (
+            <ArticleItem item={item} key={index} />
+          ))}
+          <div className="o-divider"></div>
+        </div>
       </div>
     </div>
   )

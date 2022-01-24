@@ -64,7 +64,9 @@ import approach5 from '../image/uxdesign/approach5.png'
 import webBannerImg from '../image/web/webbanner.png'
 import webAdsImg from '../image/web/webads.png'
 
-import blog1 from '../image/blog/blog1.jpg'
+import blogImg1 from '../image/blog/blog1.jpg'
+import newsImg1 from '../image/blog/news1.jpeg'
+import newsAvatar from '../image/avatar1.png'
 
 export const logoImgOne = [
   {
@@ -893,7 +895,7 @@ export const blockChainAds = {
 
 export const popularData = [
   {
-    img: blog1,
+    img: blogImg1,
     title: '10 Tips To Keep Your Code Clean',
     desc:
       'The primary focus is often on the product itself, and the development process comes second when it comes to innovation and digital product development. Product managers must strike a careful balance between quality and how long it takes to develop. Moving too slowly and the consumer demand could wane. With relentless competition, time criticality, and […]',
@@ -903,7 +905,7 @@ export const popularData = [
     time: '7 min read',
   },
   {
-    img: blog1,
+    img: blogImg1,
     title: '10 Tips To Keep Your Code Clean',
     desc:
       'The primary focus is often on the product itself, and the development process comes second when it comes to innovation and digital product development. Product managers must strike a careful balance between quality and how long it takes to develop. Moving too slowly and the consumer demand could wane. With relentless competition, time criticality, and […]',
@@ -913,12 +915,68 @@ export const popularData = [
     time: '7 min read',
   },
   {
-    img: blog1,
+    img: blogImg1,
     title: '10 Tips To Keep Your Code Clean',
     desc:
       'The primary focus is often on the product itself, and the development process comes second when it comes to innovation and digital product development. Product managers must strike a careful balance between quality and how long it takes to develop. Moving too slowly and the consumer demand could wane. With relentless competition, time criticality, and […]',
     avatar: avatar,
     name: 'Roman Havrylyuk',
+    date: '20 Dec, 2021 -',
+    time: '7 min read',
+  },
+]
+
+export const technologyData = [
+  {
+    img: blogImg1,
+    title: '10 Tips To Keep Your Code Clean',
+    desc:
+      'The primary focus is often on the product itself, and the development process comes second when it comes to innovation and digital product development. Product managers must strike a careful balance between quality and how long it takes to develop. Moving too slowly and the consumer demand could wane. With relentless competition, time criticality, and […]',
+    avatar: avatar,
+    name: 'Roman Havrylyuk',
+    date: '20 Dec, 2021 -',
+    time: '7 min read',
+  },
+  {
+    img: blogImg1,
+    title: '10 Tips To Keep Your Code Clean',
+    desc:
+      'The primary focus is often on the product itself, and the development process comes second when it comes to innovation and digital product development. Product managers must strike a careful balance between quality and how long it takes to develop. Moving too slowly and the consumer demand could wane. With relentless competition, time criticality, and […]',
+    avatar: avatar,
+    name: 'Roman Havrylyuk',
+    date: '20 Dec, 2021 -',
+    time: '7 min read',
+  },
+  {
+    img: blogImg1,
+    title: '10 Tips To Keep Your Code Clean',
+    desc:
+      'The primary focus is often on the product itself, and the development process comes second when it comes to innovation and digital product development. Product managers must strike a careful balance between quality and how long it takes to develop. Moving too slowly and the consumer demand could wane. With relentless competition, time criticality, and […]',
+    avatar: avatar,
+    name: 'Roman Havrylyuk',
+    date: '20 Dec, 2021 -',
+    time: '7 min read',
+  },
+]
+
+export const newsData = [
+  {
+    img: newsImg1,
+    title: 'ORIL Front-end Digest (July 2020)',
+    desc:
+      'The primary focus is often on the product itself, and the development process comes second when it comes to innovation and digital product development. Product managers must strike a careful balance between quality and how long it takes to develop. Moving too slowly and the consumer demand could wane. With relentless competition, time criticality, and […]',
+    avatar: newsAvatar,
+    name: 'Volodymyr Padovskiy',
+    date: '20 Dec, 2021 -',
+    time: '7 min read',
+  },
+  {
+    img: newsImg1,
+    title: 'ORIL Front-end Digest (July 2020)',
+    desc:
+      'The primary focus is often on the product itself, and the development process comes second when it comes to innovation and digital product development. Product managers must strike a careful balance between quality and how long it takes to develop. Moving too slowly and the consumer demand could wane. With relentless competition, time criticality, and […]',
+    avatar: newsAvatar,
+    name: 'Volodymyr Padovskiy',
     date: '20 Dec, 2021 -',
     time: '7 min read',
   },
