@@ -1,0 +1,136 @@
+.about-us {
+  .about-us-banner {
+    padding: 260px 0 100px;
+    position: relative;
+
+    @media (min-width: 1200px) {
+      padding: 200px 0 50px;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .banner-up {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 32%;
+    }
+
+    .banner-img {
+      z-index: 99;
+      position: relative;
+    }
+  }
+
+  .o-about-us-team {
+    .desc {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .team-sub-title {
+      margin-bottom: 12px;
+    }
+
+    .sub-desc {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 50px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #ffb248;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .team-management {
+    width: 25%;
+    .team-item {
+      position: relative;
+      width: 170px;
+      height: 170px;
+      margin: 14px 0;
+      box-shadow: 0 1.61887px 5.66606px rgba(247, 162, 162, 0.12);
+      border-radius: 100%;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        .team-info {
+          p,
+          small {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+          }
+        }
+
+        .img-overlay {
+          opacity: 0;
+        }
+      }
+      .team-info {
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+        color: #fff;
+        padding: 14px 30px 20px;
+        width: 100%;
+        display: flex;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 30%;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: linear-gradient(
+            180deg,
+            rgba(54, 54, 70, 0.0001) 0%,
+            rgba(54, 54, 70, 0.693948) 100%
+          );
+        }
+
+        p,
+        small {
+          display: block;
+          color: white;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(100%);
+          transition: 0.4s all ease-in-out;
+          font-weight: 700;
+        }
+      }
+
+      .img-overlay {
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 100%;
+        overflow: hidden;
+        transform: translate(-50%, -50%);
+        transition: 0.3s ease-in-out;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

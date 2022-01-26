@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import '../../styles/header.scss'
 import '../../styles/dropdown.scss'
 import logo from '../../image/logo.svg'
 import { Dropdown, NavDropdown } from 'react-bootstrap'
 import { dropdownItems } from '../../data/constant'
-import NavMenu from '../NavMenu'
 
 const Header = () => {
   const [opened, setOpened] = useState(false)
@@ -13,7 +12,10 @@ const Header = () => {
   const navigate = useNavigate()
   const pathname = router.pathname
   const [show, setShow] = useState('')
-  const Responsive = window.innerWidth < 1200
+
+  useEffect(() => {
+    setOpened(false)
+  }, [pathname])
 
   return (
     <div className={`header ${opened && 'opened'}`}>
@@ -29,7 +31,6 @@ const Header = () => {
                   Contact Us
                 </a>
                 <a
-                  href="#"
                   className={`header_burger ${opened && 'opened'}`}
                   onClick={(e) => {
                     setOpened(!opened)
@@ -40,7 +41,6 @@ const Header = () => {
                   <span></span>
                 </a>
               </div>
-              {/* {!Responsive && ( */}
               <nav className={`header_nav ${opened && 'opened'}`}>
                 <ul id="header_menu" className="header_menu">
                   <li
@@ -123,7 +123,7 @@ const Header = () => {
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname.includes('/portfolio/') && 'current_menu'
+                      pathname.includes('/blog/') && 'current_menu'
                     }`}
                   >
                     <NavDropdown
@@ -132,7 +132,7 @@ const Header = () => {
                       show={show === 'Company' ? true : false}
                       onMouseEnter={() => setShow('Company')}
                       onMouseLeave={() => setShow('')}
-                      onClick={(e) => navigate('/portfolio/')}
+                      onClick={(e) => navigate('/blog/')}
                     >
                       {dropdownItems.company.map((item, index) => {
                         return (
@@ -153,7 +153,7 @@ const Header = () => {
                   </li>
                   <li
                     className={`header_menu_item ${
-                      pathname.includes('/blog') && 'current_menu'
+                      pathname === '/blog' && 'current_menu'
                     }`}
                   >
                     <Link className="header-menu-tag" to="/blog">
@@ -167,9 +167,6 @@ const Header = () => {
                   </a>
                 </div>
               </nav>
-              {/* )} */}
-
-              {/* {Responsive && opened && <NavMenu />} */}
             </div>
           </div>
         </div>

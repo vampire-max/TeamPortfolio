@@ -68,6 +68,12 @@ import blogImg1 from '../image/blog/blog1.jpg'
 import newsImg1 from '../image/blog/news1.jpeg'
 import newsAvatar from '../image/avatar1.png'
 
+import teamImg1 from '../image/team/team1.png'
+import teamImg1_1 from '../image/team/team1_1.jpeg'
+
+import careerAboutImg1 from '../image/careers/careers-about1.png'
+import benefitImg1 from '../image/careers/benefit1.png'
+
 export const logoImgOne = [
   {
     url: 'https://clutch.co/profile/oril',
@@ -204,11 +210,11 @@ export const dropdownItems = {
   ],
   company: [
     {
-      url: '/portfolio/about-us',
+      url: '/blog/about-us',
       title: 'About Us',
     },
     {
-      url: '/portfolio/careers',
+      url: '/blog/careers',
       title: 'Careers',
     },
   ],
@@ -979,5 +985,172 @@ export const newsData = [
     name: 'Volodymyr Padovskiy',
     date: '20 Dec, 2021 -',
     time: '7 min read',
+  },
+]
+
+export const teamData = [
+  {
+    img: teamImg1,
+    hoverImg: teamImg1_1,
+    name: 'Roman Havriluk',
+    position: 'CEO, Founder',
+    group: ['management', 'development'],
+  },
+  {
+    img: teamImg1,
+    hoverImg: teamImg1_1,
+    name: 'Roman Havriluk',
+    position: 'CEO, Founder',
+    group: ['management', 'HR'],
+  },
+  {
+    img: teamImg1,
+    hoverImg: teamImg1_1,
+    name: 'Roman Havriluk',
+    position: 'CEO, Founder',
+    group: ['management', 'development'],
+  },
+  {
+    img: teamImg1,
+    hoverImg: teamImg1_1,
+    name: 'Roman Havriluk',
+    position: 'CEO, Founder',
+    group: ['design', 'development'],
+  },
+  {
+    img: teamImg1,
+    hoverImg: teamImg1_1,
+    name: 'Roman Havriluk',
+    position: 'CEO, Founder',
+    group: ['HR', 'QA'],
+  },
+  {
+    img: teamImg1,
+    hoverImg: teamImg1_1,
+    name: 'Roman Havriluk',
+    position: 'CEO, Founder',
+    group: ['sales and marketing', 'design'],
+  },
+  {
+    img: teamImg1,
+    hoverImg: teamImg1_1,
+    name: 'Roman Havriluk',
+    position: 'CEO, Founder',
+    group: ['management', 'development'],
+  },
+  {
+    img: teamImg1,
+    hoverImg: teamImg1_1,
+    name: 'Roman Havriluk',
+    position: 'CEO, Founder',
+    group: ['sales and marketing', 'design'],
+  },
+]
+
+export const positionData = [
+  {
+    title: 'Trainee BE Java Engineer',
+    tags: ['Full Time', 'Lviv, Ukraine'],
+  },
+  {
+    title: 'Trainee BE Java Engineer',
+    tags: ['Full Time', 'Lviv, Ukraine'],
+  },
+  {
+    title: 'Trainee BE Java Engineer',
+    tags: ['Full Time', 'remote', 'Lviv, Ukraine'],
+  },
+  {
+    title: 'Trainee BE Java Engineer',
+    tags: ['Full Time', 'Lviv, Ukraine'],
+  },
+  {
+    title: 'Trainee BE Java Engineer',
+    tags: ['Full Time', 'Lviv, Ukraine'],
+  },
+  {
+    title: 'Trainee BE Java Engineer',
+    tags: ['Full Time', 'remote', 'Lviv, Ukraine'],
+  },
+  {
+    title: 'Trainee BE Java Engineer',
+    tags: ['Full Time', 'Lviv, Ukraine'],
+  },
+]
+
+export const careersData = [
+  {
+    img: careerAboutImg1,
+    title: 'Our Approaches',
+    desc:
+      'People-first - it’s our motto that pilots us towards the continuous enhancement of our internal relationships. We know how important it is to hear and understand each need of our team, that’s why transparency and communication became an integral part of our culture.',
+  },
+  {
+    img: careerAboutImg1,
+    title: 'Our Approaches',
+    desc:
+      'People-first - it’s our motto that pilots us towards the continuous enhancement of our internal relationships. We know how important it is to hear and understand each need of our team, that’s why transparency and communication became an integral part of our culture.',
+  },
+]
+
+export const benefitData = [
+  {
+    img: benefitImg1,
+    title: 'Global clients',
+    desc:
+      'Lavage your opportunity to plunge into technological advancement with the clients represented across the world.',
+  },
+  {
+    img: benefitImg1,
+    title: 'Global clients',
+    desc:
+      'Lavage your opportunity to plunge into technological advancement with the clients represented across the world.',
+  },
+  {
+    img: benefitImg1,
+    title: 'Global clients',
+    desc:
+      'Lavage your opportunity to plunge into technological advancement with the clients represented across the world.',
+  },
+  {
+    img: benefitImg1,
+    title: 'Global clients',
+    desc:
+      'Lavage your opportunity to plunge into technological advancement with the clients represented across the world.',
+  },
+  {
+    img: benefitImg1,
+    title: 'Global clients',
+    desc:
+      'Lavage your opportunity to plunge into technological advancement with the clients represented across the world.',
+  },
+  {
+    img: benefitImg1,
+    title: 'Global clients',
+    desc:
+      'Lavage your opportunity to plunge into technological advancement with the clients represented across the world.',
+  },
+]
+
+export const projectFilterMenu = [
+  {
+    label: 'All',
+    tag: [],
+  },
+  {
+    label: 'PropTech',
+    tag: ['#proptech', '#WebApp'],
+  },
+  {
+    label: 'FineTech',
+    tag: ['#FineTech', '#BlockChain'],
+  },
+  {
+    label: 'Health&Fitness',
+    tag: ['#HealthTech', '#Healthcare', '#Fitness'],
+  },
+  {
+    label: 'Marketplace',
+    tag: ['#Auction', '#RealEstate', '#Social'],
   },
 ]

@@ -9,20 +9,14 @@ import { popularData, technologyData, newsData } from '../data/constant'
 import ArticleItem from '../components/Articles/item'
 import FeedbackForm from '../components/FeedbackForm'
 import feedbackImg from '../image/feedback.svg'
+import Banner from '../components/Banner'
 
 const Blog = () => {
   return (
     <div className="o-blog">
       <div className="container">
-        <div className="d-lg-flex justify-content-lg-between">
-          <H1>
-            OUR Blog
-            <mark>.</mark>
-          </H1>
-          <Typography className="o-banner__description">
-            Subscribe to our blog
-          </Typography>
-        </div>
+        <Banner title={'OUR Blog'} link={' Subscribe to our blog'} />
+
         <div className="row o-blog-main">
           <div className="col-lg-7">
             <Link to="/blog">
@@ -51,7 +45,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className="o-divider"></div>
+          <div className="o-divider o-post-divider"></div>
         </div>
         <div className="row o-popular">
           <SectionTitle className={'text-start'}>
@@ -63,15 +57,20 @@ const Blog = () => {
           ))}
           <div className="o-divider"></div>
         </div>
-        <div id="o-subscribe">
+        <div className="o-subscribe">
           <img src={feedbackImg} />
           <div className="row">
             <div className="col-xl-7 col-lg-8 offset-lg-3 col-md-10 offset-md-2">
-              <FeedbackForm />
+              <div className="o-subscribe-inner">
+                <h3 className="title">
+                  Let's learn together technology trends, tips, and tricks.
+                </h3>
+                <FeedbackForm />
+              </div>
             </div>
           </div>
         </div>
-        <Articles title={'Real Estate | PropTech | CREtech'} />
+        <Articles title={'Recent articles'} />
 
         <div className="row o-popular">
           <SectionTitle className={'text-start'}>
@@ -81,7 +80,7 @@ const Blog = () => {
           {technologyData.map((item, index) => (
             <ArticleItem item={item} key={index} />
           ))}
-          <div className="o-divider"></div>
+          <div className="o-divider o-article-divider"></div>
         </div>
         <div className="row o-popular">
           <SectionTitle className={'text-start'}>
@@ -91,7 +90,8 @@ const Blog = () => {
           {newsData.map((item, index) => (
             <ArticleItem item={item} key={index} />
           ))}
-          <div className="o-divider"></div>
+          <div className="o-divider o-article-divider"></div>
+          <Articles title={'Real Estate | PropTech | CREtech'} />
         </div>
       </div>
     </div>

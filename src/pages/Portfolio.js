@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import ProjectsItem from '../components/Projects/item'
 import '../styles/portfolio.scss'
 import { H1 } from '../UI/Typography'
-import { portfolioItem } from '../data/constant'
+import { portfolioItem, projectFilterMenu } from '../data/constant'
+import FilterNav from '../components/FilterNav'
 
 const Portfolio = () => {
   const [filterOption, setFilterOption] = useState([])
@@ -44,7 +45,19 @@ const Portfolio = () => {
         </p>
       </div>
       <div className="col-12 p-nav">
-        <ul className="p-filter">
+        <FilterNav
+          initData={portfolioItem}
+          filterOptions={projectFilterMenu}
+          renderItem={(item, index) => {
+            return (
+              <div>
+                <ProjectsItem item={item} index={index} />
+                <div className="o-divider p-divider"></div> )
+              </div>
+            )
+          }}
+        />
+        {/* <ul className="p-filter">
           <li>
             <button className="filter-btn" onClick={handleClick('')}>
               All
@@ -103,14 +116,8 @@ const Portfolio = () => {
               IoT
             </button>
           </li>
-        </ul>
+        </ul> */}
       </div>
-      {filteredItems.map((item, index) => (
-        <div key={index}>
-          <ProjectsItem item={item} index={index} />
-          <div className="o-divider p-divider"></div>
-        </div>
-      ))}
     </div>
   )
 }

@@ -1,0 +1,104 @@
+.o-careers {
+  .o-banner {
+    // padding: 170px 0 210px;
+    img {
+      margin-bottom: 40px;
+    }
+  }
+
+  .o-banner_button {
+    display: none;
+  }
+
+  .o-banner__awards {
+    display: none;
+  }
+
+  .about-item {
+    align-items: center;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  .o-careers-about {
+    margin-bottom: 120px;
+    .left-img {
+      @media (min-width: 1366px) {
+        transform: scale(1.05) translateX(-10%);
+      }
+    }
+    .right-img {
+      @media (min-width: 1366px) {
+        transform: scale(1.05) translateX(10%);
+      }
+    }
+
+    .item-desc {
+      @media (max-width: 767px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.o-position {
+  margin-bottom: 100px;
+
+  .position-item {
+    margin-bottom: 30px;
+
+    .item-inner {
+      height: 100%;
+      padding: 32px 48px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    .item-title {
+      margin-bottom: 24px;
+    }
+
+    .item-tags {
+      margin-bottom: 24px;
+      padding-left: 6px;
+
+      li {
+        position: relative;
+        &::before {
+          position: absolute;
+          top: 10px;
+          left: -6px;
+          background-color: #676875;
+          content: '';
+          width: 2px;
+          height: 2px;
+        }
+      }
+    }
+
+    .item-link {
+      color: #ffb248;
+      transition: 0.3s all;
+      text-decoration: underline;
+    }
+  }
+}
+
+.o-benefit {
+  margin-bottom: 70px;
+  .benefit-item {
+    margin-bottom: 120px;
+    text-align: center;
+  }
+
+  img {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .item-title {
+    margin-bottom: 16px;
+  }
+}

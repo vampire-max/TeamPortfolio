@@ -29,6 +29,8 @@ import {
   blockChainAds,
 } from './data/constant'
 import Blog from './pages/Blog'
+import AboutUs from './pages/AboutUs'
+import Careers from './pages/Careers'
 
 function App() {
   return (
@@ -91,6 +93,8 @@ function App() {
           />
 
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/about-us" element={<AboutUs />} />
+          <Route path="/blog/careers" element={<Careers />} />
         </Routes>
         <Feedback />
         <Footer />
