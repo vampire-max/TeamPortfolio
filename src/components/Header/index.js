@@ -48,7 +48,11 @@ const Header = () => {
                       pathname === '/' && 'current_menu'
                     }`}
                   >
-                    <Link className="header-menu-tag" to="/">
+                    <Link
+                      className="header-menu-tag"
+                      to="/"
+                      onClick={(e) => setOpened(false)}
+                    >
                       Home
                     </Link>
                   </li>
@@ -63,7 +67,10 @@ const Header = () => {
                       show={show === 'Service' ? true : false}
                       onMouseEnter={() => setShow('Service')}
                       onMouseLeave={() => setShow('')}
-                      onClick={(e) => navigate('/service')}
+                      onClick={(e) => {
+                        navigate('/service')
+                        setOpened(false)
+                      }}
                     >
                       {dropdownItems.service.map((item, index) => {
                         return (
@@ -73,6 +80,7 @@ const Header = () => {
                             onClick={(e) => {
                               e.stopPropagation()
                               navigate(item.url)
+                              setOpened(false)
                             }}
                           >
                             {item.title}
@@ -94,6 +102,7 @@ const Header = () => {
                       onMouseLeave={() => setShow('')}
                       onClick={(e) => {
                         navigate('/expertise')
+                        setOpened(false)
                       }}
                     >
                       {dropdownItems.expertise.map((item, index) => {
@@ -104,6 +113,7 @@ const Header = () => {
                             onClick={(e) => {
                               e.stopPropagation()
                               navigate(item.url)
+                              setOpened(false)
                             }}
                           >
                             {item.title}
@@ -117,7 +127,11 @@ const Header = () => {
                       pathname === '/portfolio' && 'current_menu'
                     }`}
                   >
-                    <Link className="header-menu-tag" to="/portfolio">
+                    <Link
+                      className="header-menu-tag"
+                      to="/portfolio"
+                      onClick={(e) => setOpened(false)}
+                    >
                       Portfolio
                     </Link>
                   </li>
@@ -132,7 +146,10 @@ const Header = () => {
                       show={show === 'Company' ? true : false}
                       onMouseEnter={() => setShow('Company')}
                       onMouseLeave={() => setShow('')}
-                      onClick={(e) => navigate('/blog/')}
+                      onClick={(e) => {
+                        navigate('/blog/')
+                        setOpened(false)
+                      }}
                     >
                       {dropdownItems.company.map((item, index) => {
                         return (
@@ -143,6 +160,7 @@ const Header = () => {
                             onClick={(e) => {
                               e.stopPropagation()
                               navigate(item.url)
+                              setOpened(false)
                             }}
                           >
                             {item.title}
@@ -156,7 +174,11 @@ const Header = () => {
                       pathname === '/blog' && 'current_menu'
                     }`}
                   >
-                    <Link className="header-menu-tag" to="/blog">
+                    <Link
+                      className="header-menu-tag"
+                      to="/blog"
+                      onClick={(e) => setOpened(false)}
+                    >
                       Blog
                     </Link>
                   </li>

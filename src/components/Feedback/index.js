@@ -15,8 +15,6 @@ const Feedback = () => {
     } else {
       setIsBlog(false)
     }
-    console.log('isblog', isBlog)
-    console.log('paTH', path)
   }, [path])
 
   return (
