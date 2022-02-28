@@ -40,8 +40,8 @@ const Portfolio = () => {
         </H1>
 
         <p className="o_projects_desc">
-          See how ORIL has helped its clients achieve their vision of digital
-          innovation.
+          See how DreamHighTech has helped its clients achieve their vision of
+          digital innovation.
         </p>
       </div>
       <div className="col-12 p-nav">
@@ -57,66 +57,6 @@ const Portfolio = () => {
             )
           }}
         />
-        {/* <ul className="p-filter">
-          <li>
-            <button className="filter-btn" onClick={handleClick('')}>
-              All
-            </button>
-          </li>
-          <li>
-            <button
-              className="filter-btn"
-              onClick={handleClick(['#proptech', '#WebApp'])}
-            >
-              PropTech
-            </button>
-          </li>
-          <li>
-            <button
-              className="filter-btn"
-              onClick={handleClick(['#FineTech', '#BlockChain'])}
-            >
-              FineTech
-            </button>
-          </li>
-          <li>
-            <button
-              className="filter-btn"
-              onClick={handleClick(['#HealthTech', '#Healthcare', '#Fitness'])}
-            >
-              Health&Fitness
-            </button>
-          </li>
-          <li>
-            <button
-              className="filter-btn"
-              onClick={handleClick(['#Auction', '#RealEstate', '#Social'])}
-            >
-              Marketplace
-            </button>
-          </li>
-          <li>
-            <button
-              className="filter-btn"
-              onClick={handleClick(['#Web', '#WebApp'])}
-            >
-              Web
-            </button>
-          </li>
-          <li>
-            <button
-              className="filter-btn"
-              onClick={handleClick(['#MobileApp', '#WebApp'])}
-            >
-              Mobile
-            </button>
-          </li>
-          <li>
-            <button className="filter-btn" onClick={handleClick(['#IoT'])}>
-              IoT
-            </button>
-          </li>
-        </ul> */}
       </div>
     </div>
   )

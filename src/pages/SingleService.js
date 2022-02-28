@@ -15,7 +15,7 @@ const SingleService = ({
   progressData,
 }) => {
   return (
-    <div className="s-service container">
+    <div className="s-service">
       <Banner
         bannerImg={bannerProps.bannerImg}
         title={'Website Development'}

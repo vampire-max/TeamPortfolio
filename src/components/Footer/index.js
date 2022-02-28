@@ -48,7 +48,7 @@ const Footer = () => {
                     <b>Email</b>
                   </p>
                   <a className="info-link" href="#">
-                    contact@oril.co
+                    miyashitakoki719@gmail.com
                   </a>
                 </div>
                 <div className="o-footer-info">
@@ -56,16 +56,20 @@ const Footer = () => {
                     <b>Address</b>
                   </p>
                   <a className="info-link" href="#">
-                    68 Jay Street Brooklyn, NY, 11201
+                    298 Shomen-cho, Higashiyama Ward, Kyoto, Japan
                   </a>
                 </div>
                 <div className="o-footer-info">
                   <p className="info-label">
-                    <b>Phone</b>
+                    <b>Skype</b>
                   </p>
-                  <a className="info-link" href="#">
-                    +1-(347)-854-7585
-                  </a>
+                  <a className="info-link" href="#"></a>
+                </div>
+                <div className="o-footer-info">
+                  <p className="info-label">
+                    <b>Discord</b>
+                  </p>
+                  <a className="info-link" href="#"></a>
                 </div>
               </div>
             )}
@@ -99,24 +103,26 @@ const Footer = () => {
                     }`}
                   >
                     <li>
-                      <a href="mailto:contact@oril.co" target="_blank">
-                        contact@oril.co
-                      </a>
-                    </li>
-
-                    <li>
                       <a
-                        href="https://maps.google.com/?q=68 Jay Street Brooklyn, NY, 11201"
+                        href="mailto:miyashitakoki719@gmail.com"
                         target="_blank"
                       >
-                        68 Jay Street Brooklyn, NY, 11201
+                        miyashitakoki719@gmail.com
                       </a>
                     </li>
-
                     <li>
-                      <a href="tel:+1-(347)-854-7585" target="_blank">
-                        +1-(347)-854-7585
+                      <a
+                        href="https://maps.google.com/?q=298 Shomen-cho, Higashiyama Ward, Kyoto, Japan"
+                        target="_blank"
+                      >
+                        298 Shomen-cho, Higashiyama Ward, Kyoto, Japan
                       </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"></a>
                     </li>
                   </ul>
                 </div>
@@ -159,6 +165,26 @@ const Footer = () => {
                   <li>
                     <Link to="/service/digital-transformation">
                       Digital Transformation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/service/digital-transformation">
+                      Game Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/service/digital-transformation">
+                      Blockchain Technology
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/service/digital-transformation">
+                      SASS Web Application
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/service/digital-transformation">
+                      Native Desktop - Mobile Application Development
                     </Link>
                   </li>
                 </ul>
@@ -245,16 +271,6 @@ const Footer = () => {
                       About Us
                     </a>
                   </li>
-                  <li className="">
-                    <a className="" href="https://oril.co/careers/">
-                      Careers
-                    </a>
-                  </li>
-                  <li className="">
-                    <a className="" href="https://oril.co/blog/">
-                      Blog
-                    </a>
-                  </li>
                   <li className="hide_on_mobile">
                     <a
                       className="highlighted"
@@ -267,13 +283,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
-            <Award logoitem={logoImgTwo} />
-          </div>
           <div className="o-divider o-footer-divider"></div>
           <div className="o-footer__bottom">
             <p className="o-footer__copyright">
-              ©All rights reserved. ORIL Inc 2021.
+              ©All rights reserved. DreamHighTech Inc 2021.
             </p>
 
             <ul className="o-footer__additional-nav">
@@ -283,16 +296,6 @@ const Footer = () => {
               <li>
                 <a href="https://oril.co/cookie-policy/">Cookie Policy</a>
               </li>
-            </ul>
-
-            <ul className="o-footer__socials">
-              {linkItem.map((item, index) => (
-                <li key={index}>
-                  <a href={item.url} target="_blank">
-                    <img src={item.linkImg} alt={item.alt} />
-                  </a>
-                </li>
-              ))}
             </ul>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import '../../styles/service.scss'
+import { Link } from 'react-router-dom'
 
 const ServiceItem = ({ item, index }) => {
   const isMobile = window.innerWidth < 768
@@ -49,9 +50,9 @@ const ServiceItem = ({ item, index }) => {
 
       <p className="item-desc">{item.desc}</p>
 
-      <a className="learnMore" href="/">
+      <Link className="learnMore" to={item.path}>
         Learn more
-      </a>
+      </Link>
     </motion.div>
   )
 }

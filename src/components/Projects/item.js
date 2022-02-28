@@ -36,7 +36,7 @@ const ProjectsItem = ({ item, index }) => {
     <div className="o_projects_list">
       <div
         className={`o_projects_item row ${
-          index % 2 === 1 ? 'flex-row-reverse' : ''
+          index % 2 === 0 ? 'flex-row-reverse' : ''
         }`}
       >
         <div className="col-md-6">
@@ -54,7 +54,7 @@ const ProjectsItem = ({ item, index }) => {
             viewport={{ once: true, amount: 0.2 }}
             whileInView="onscreen"
             initial="offscreen"
-            variants={index % 2 === 0 ? variantsTwo : variants}
+            variants={index % 2 === 1 ? variantsTwo : variants}
           >
             <h2 className="o_projects_item-title mb-24">{item.title}</h2>
             <div className="o_projects_item-tags">

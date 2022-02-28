@@ -22,7 +22,7 @@ const Feedback = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6 offset-lg-3 col-md-10 offset-md-1">
-            <h2 className="o-feedback-title">ORIL Blog</h2>
+            <h2 className="o-feedback-title">DreamHighTech Blog</h2>
             <p className="o-feedback-desc">
               {
                 'Subscribe to our blog to learn about tech trends and innovative solutions.'

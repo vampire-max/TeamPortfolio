@@ -19,6 +19,11 @@ import post2 from '../image/post/post2.png'
 import post3 from '../image/post/post3.png'
 import avatar from '../image/post/avatar.png'
 
+import service1 from '../image/service/service1.png'
+import service2 from '../image/service/service2.png'
+import service3 from '../image/service/service3.png'
+import service4 from '../image/service/service4.png'
+
 import facebook from '../image/links/facebook.svg'
 import linkedin from '../image/links/linkedin.svg'
 import twitter from '../image/links/twitter.svg'
@@ -60,6 +65,9 @@ import approach2 from '../image/uxdesign/approach2.png'
 import approach3 from '../image/uxdesign/approach3.png'
 import approach4 from '../image/uxdesign/approach4.png'
 import approach5 from '../image/uxdesign/approach5.png'
+import approach6 from '../image/uxdesign/approach6.png'
+import approach7 from '../image/uxdesign/approach7.png'
+import approach8 from '../image/uxdesign/approach8.png'
 
 import webBannerImg from '../image/web/webbanner.png'
 import webAdsImg from '../image/web/webads.png'
@@ -171,7 +179,7 @@ export const dropdownItems = {
   service: [
     {
       url: '/service/ux-design',
-      title: 'UX Design',
+      title: 'UI/UX Design',
     },
     {
       url: '/service/website-development',
@@ -276,30 +284,93 @@ export const linkItem = [
   },
 ]
 
+export const ourServices = [
+  {
+    name: 'UI/UX Design',
+    img: service1,
+    desc:
+      'Intuitive design is vital for the success of any digital product. You can improve conversions with the help of our UI/UX design and development services ‒ by turning complex interactions into simple flows.',
+    path: '/service/ux-design',
+  },
+  {
+    name: 'Product Development',
+    img: service2,
+    desc:
+      'DreamHighTech develops secure, robust, and scalable solutions across multiple industries. From market research and design to development, launch, and support, we provide full-cycle product development services.',
+    path: '/service/product-development',
+  },
+  {
+    name: 'IoT Development',
+    img: service3,
+    desc:
+      'We provide a full spectrum of services: design, development, and launching the connected IoT solutions. We believe that the future holds big promise for IoT and companies embracing it!',
+    path: '/service/iot-development',
+  },
+  {
+    name: 'Digital Transformation',
+    img: service4,
+    desc:
+      'The modern world offers unique strategic opportunities for lots of businesses. The key is to capture the ones that matter most and execute them. Digital transformation will completely shift the way you deliver value to customers, solve problems, and support your team.',
+    path: '/service/digital-transformation',
+  },
+  {
+    name: 'Game Development',
+    img: service4,
+    desc:
+      'The modern world offers unique strategic opportunities for lots of businesses. The key is to capture the ones that matter most and execute them. Digital transformation will completely shift the way you deliver value to customers, solve problems, and support your team.',
+    path: '/service/game-development',
+  },
+  {
+    name: 'Blockchain Technology',
+    img: service4,
+    desc:
+      'The modern world offers unique strategic opportunities for lots of businesses. The key is to capture the ones that matter most and execute them. Digital transformation will completely shift the way you deliver value to customers, solve problems, and support your team.',
+    path: '/service/blockchain-technology',
+  },
+  {
+    name: 'SASS Web Application',
+    img: service4,
+    desc:
+      'The modern world offers unique strategic opportunities for lots of businesses. The key is to capture the ones that matter most and execute them. Digital transformation will completely shift the way you deliver value to customers, solve problems, and support your team.',
+    path: '/service/sass-web-app',
+  },
+  {
+    name: 'Native Desktop - Mobile Application Development',
+    img: service4,
+    desc:
+      'The modern world offers unique strategic opportunities for lots of businesses. The key is to capture the ones that matter most and execute them. Digital transformation will completely shift the way you deliver value to customers, solve problems, and support your team.',
+    path: '/service/mobile-development',
+  },
+]
+
 export const specializeItem = [
   {
     title: 'PropTech',
     desc:
       'Given the pace of technology development, innovation in real estate is long overdue. Everything about owning, leasing, property management, and even navigating upfront government hurdles should become easier, both for owners and tenants. We help businesses lead new ways in the Real Estate industry.',
     image: sp1,
+    path: '/expertise/PropTech',
   },
   {
     title: 'FinTech',
     desc:
       "Whether it's consumer banking, commercial lending, or trading, startups are taking over every industry imaginable. Having worked on multiple financial services over the years, we are happy to bring our expertise to your team.",
     image: sp2,
+    path: '/expertise/FinTech',
   },
   {
     title: 'Marketplace',
     desc:
-      'ORIL develops engaging online marketplace platforms that drive traffic, boost conversion, and increase sales. We build high-quality, scalable, and successful platforms that your users will love.',
+      'DreamHighTech develops engaging online marketplace platforms that drive traffic, boost conversion, and increase sales. We build high-quality, scalable, and successful platforms that your users will love.',
     image: sp3,
+    path: '/expertise/Marketplace',
   },
   {
     title: 'Health & Fitness',
     desc:
-      "Medical professionals are slowly embracing technology in their practice. The general public is also waking up to the importance of staying healthy. Now is the best time to tap into this niche. ORIL team develops interactive, creative, secure, and HIPAA compliant solutions that fulfill people's needs in healthcare, fitness, and lifestyle.",
+      "Medical professionals are slowly embracing technology in their practice. The general public is also waking up to the importance of staying healthy. Now is the best time to tap into this niche. DreamHighTech team develops interactive, creative, secure, and HIPAA compliant solutions that fulfill people's needs in healthcare, fitness, and lifestyle.",
     image: sp4,
+    path: '/expertise/Health',
   },
 ]
 
@@ -418,7 +489,7 @@ export const portfolioItem = [
     name: 'John Liu ',
     position: 'Co-founder, Automatic',
     quote:
-      'ORIL has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
     alt: '',
   },
   {
@@ -431,7 +502,7 @@ export const portfolioItem = [
     name: 'John Liu ',
     position: 'Co-founder, Automatic',
     quote:
-      'ORIL has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
     alt: 'Health',
   },
   {
@@ -444,7 +515,7 @@ export const portfolioItem = [
     name: 'John Liu ',
     position: 'Co-founder, Automatic',
     quote:
-      'ORIL has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
     alt: 'Marketplatform',
   },
   {
@@ -457,7 +528,7 @@ export const portfolioItem = [
     name: 'John Liu ',
     position: 'Co-founder, Automatic',
     quote:
-      'ORIL has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
     alt: '',
   },
   {
@@ -470,7 +541,7 @@ export const portfolioItem = [
     name: 'John Liu ',
     position: 'Co-founder, Automatic',
     quote:
-      'ORIL has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
     alt: '',
   },
   {
@@ -483,7 +554,7 @@ export const portfolioItem = [
     name: 'John Liu ',
     position: 'Co-founder, Automatic',
     quote:
-      'ORIL has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
     alt: '',
   },
   {
@@ -496,7 +567,7 @@ export const portfolioItem = [
     name: 'John Liu ',
     position: 'Co-founder, Automatic',
     quote:
-      'ORIL has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
     alt: '',
   },
   {
@@ -516,7 +587,7 @@ export const portfolioItem = [
     name: 'John Liu ',
     position: 'Co-founder, Automatic',
     quote:
-      'ORIL has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
     alt: '',
   },
 ]
@@ -548,7 +619,7 @@ export const serviceItem = [
   },
 ]
 
-export const designaboutItem = [
+export const designAboutItem = [
   {
     img: designabout1,
     title: 'Integrated team',
@@ -557,15 +628,15 @@ export const designaboutItem = [
   },
   {
     img: designabout2,
-    title: 'Integrated team',
+    title: 'Design for development',
     desc:
-      'We approach every project holistically. In addition to the designers, business analysts, and project managers, we have our software engineers validate concepts early in the process.',
+      'Our priority is to provide the best user experience possible. Our design deliverables are cross-platform and fit various screens, which enables very efficient development.',
   },
   {
     img: designabout3,
-    title: 'Integrated team',
+    title: 'Proven and tested process',
     desc:
-      'We approach every project holistically. In addition to the designers, business analysts, and project managers, we have our software engineers validate concepts early in the process.',
+      'Over the years, we have come up with an effective and well-structured iterative process so that we can ensure a better understanding of the user and meet our clients’ goals.',
   },
 ]
 
@@ -595,16 +666,16 @@ export const approachItem = [
   },
   {
     id: '03',
-    image: approach1,
-    title: 'Prototype',
+    image: approach3,
+    title: 'User Roles',
     desc:
       'A prototype is an early sample, model, or release of a product built to test a concept or process.',
     list: ['Ability to test out the system.'],
   },
   {
     id: '04',
-    image: approach1,
-    title: 'Prototype',
+    image: approach4,
+    title: 'Jobs to be done',
     desc:
       'A prototype is an early sample, model, or release of a product built to test a concept or process.',
     list: [
@@ -615,8 +686,8 @@ export const approachItem = [
   },
   {
     id: '05',
-    image: approach3,
-    title: 'Prototype',
+    image: approach5,
+    title: 'User Flow',
     desc:
       'A prototype is an early sample, model, or release of a product built to test a concept or process.',
     list: [
@@ -626,8 +697,8 @@ export const approachItem = [
   },
   {
     id: '06',
-    image: approach4,
-    title: 'Prototype',
+    image: approach6,
+    title: 'Wireframes',
     desc:
       'A prototype is an early sample, model, or release of a product built to test a concept or process.',
     list: [
@@ -637,7 +708,7 @@ export const approachItem = [
   },
   {
     id: '07',
-    image: approach5,
+    image: approach7,
     title: 'Prototype',
     desc:
       'A prototype is an early sample, model, or release of a product built to test a concept or process.',
@@ -648,8 +719,8 @@ export const approachItem = [
   },
   {
     id: '08',
-    image: approach1,
-    title: 'Prototype',
+    image: approach8,
+    title: 'UI Design',
     desc:
       'A prototype is an early sample, model, or release of a product built to test a concept or process.',
     list: [
@@ -666,10 +737,10 @@ export const planningItem = [
       'We provide recommendations for the most suitable programming languages, frameworks, and testing tools for the development process, determine the product infrastructure, and make sure that our design allows for third-party services and integrations.',
     list: [
       'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
-      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
-      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
-      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
-      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+      'List of technology recommendations: programming languages, databases, frameworks, and more.',
+      'Third-party integrations analysis and recommendations.',
+      'Application security strategy and recommendations.',
+      'Other project-specific technical recommendations.',
     ],
   },
   {
@@ -682,17 +753,17 @@ export const planningItem = [
   {
     title: 'Security',
     desc:
-      'Your product is an innovation. As it happens when you create something new, it is hard to predict every single scenario. We don’t hide the risks from you. Rather, we want you to always be informed and therefore prepared for any situation.',
+      'User experience is one of our highest priorities. Each member of our design team collaborates to ensure your product is secure from the very first iteration. We review common threats and apply best practices for protecting the system against them.',
     list: [],
   },
   {
-    title: 'Security',
+    title: 'Implementation recommendations',
     desc:
-      'Your product is an innovation. As it happens when you create something new, it is hard to predict every single scenario. We don’t hide the risks from you. Rather, we want you to always be informed and therefore prepared for any situation.',
+      'Our experts want to make sure that their ideas and your vision are implemented successfully once the design is complete. That’s why we provide recommendations on how to approach the development phase efficiently, backed by decades of expertise in this area.',
     list: [
       'Recommended team composition.',
-      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
-      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+      'Project milestone breakdown',
+      'Delivery time and cost estimates.',
     ],
   },
   {
@@ -700,8 +771,8 @@ export const planningItem = [
     desc:
       'Your product is an innovation. As it happens when you create something new, it is hard to predict every single scenario. We don’t hide the risks from you. Rather, we want you to always be informed and therefore prepared for any situation.',
     list: [
-      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
-      'Infrastructure (Architecture concept / Preliminary infrastructure cost calculations).',
+      'QA approach recommendations based on project requirements (Manual / Automated / System performance and load testing).X',
+      'Static code analysis recommendations.',
       'QA approach.',
     ],
   },
@@ -712,19 +783,19 @@ export const webAboutItem = [
     img: webabout1,
     title: 'Innovation',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
     img: webabout1,
     title: 'Project Leadership',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
     img: webabout1,
     title: 'Professional Team',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
 ]
 
@@ -733,37 +804,37 @@ export const webDeliverItem = [
     img: deliver1,
     title: 'Web app',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
     img: deliver1,
     title: 'Mobile app',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
     img: deliver1,
     title: 'Innovation',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
     img: deliver1,
-    title: 'Dasjhboard',
+    title: 'Dashboard',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
-  },
-  {
-    img: deliver1,
-    title: 'Innovation',
-    desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
     img: deliver1,
     title: 'Innovation',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at ORIL, we are constantly striving to develop new concepts for our clients' businesses.",
+      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
+  },
+  {
+    img: deliver1,
+    title: 'Innovation',
+    desc:
+      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
 ]
 
@@ -787,7 +858,7 @@ export const webAbout = [
   },
   {
     desc:
-      "Here at ORIL, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+      "Here at DreamHighTech, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
     data: webDeliverItem,
   },
 ]
@@ -829,7 +900,7 @@ export const gameAbout = [
   },
   {
     desc:
-      "Here at ORIL, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+      "Here at DreamHighTech, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
     data: webDeliverItem,
   },
 ]
@@ -859,7 +930,7 @@ export const mobileAbout = [
   },
   {
     desc:
-      "Here at ORIL, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+      "Here at DreamHighTech, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
     data: webDeliverItem,
   },
 ]
@@ -889,7 +960,7 @@ export const blockChainAbout = [
   },
   {
     desc:
-      "Here at ORIL, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+      "Here at DreamHighTech, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
     data: webDeliverItem,
   },
 ]
@@ -968,7 +1039,7 @@ export const technologyData = [
 export const newsData = [
   {
     img: newsImg1,
-    title: 'ORIL Front-end Digest (July 2020)',
+    title: 'DreamHighTech Front-end Digest (July 2020)',
     desc:
       'The primary focus is often on the product itself, and the development process comes second when it comes to innovation and digital product development. Product managers must strike a careful balance between quality and how long it takes to develop. Moving too slowly and the consumer demand could wane. With relentless competition, time criticality, and […]',
     avatar: newsAvatar,
@@ -978,7 +1049,7 @@ export const newsData = [
   },
   {
     img: newsImg1,
-    title: 'ORIL Front-end Digest (July 2020)',
+    title: 'DreamHighTech Front-end Digest (July 2020)',
     desc:
       'The primary focus is often on the product itself, and the development process comes second when it comes to innovation and digital product development. Product managers must strike a careful balance between quality and how long it takes to develop. Moving too slowly and the consumer demand could wane. With relentless competition, time criticality, and […]',
     avatar: newsAvatar,

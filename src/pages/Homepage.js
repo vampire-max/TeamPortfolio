@@ -4,12 +4,11 @@ import Services from '../components/Services'
 import Special from '../components/Special'
 import Projects from '../components/Projects'
 import CardCarousel from '../components/Testimonials/Carousel'
-import Articles from '../components/Articles'
 import banner from '../image/oril-banner-updated-1.jpg'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="container">
       <Banner
         bannerImg={banner}
         title={'Your go-to partner for building incredible digital products'}
@@ -22,7 +21,6 @@ const HomePage = () => {
       <Special />
       <Projects />
       <CardCarousel />
-      <Articles title={'Recent articles'} />
     </div>
   )
 }

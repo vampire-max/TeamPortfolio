@@ -12,7 +12,7 @@ const Expertise = () => {
         <TopBlock
           title={'Domain and technical Expertise that you can rely on'}
           desc={
-            'ORIL’s deep technology and domain knowledge allows you to rely on us to deliver a great technological solution while you can continue focusing on your business.'
+            'DreamHighTech’s deep technology and domain knowledge allows you to rely on us to deliver a great technological solution while you can continue focusing on your business.'
           }
           path={'Get in touch'}
         />

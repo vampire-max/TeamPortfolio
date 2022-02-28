@@ -40,7 +40,7 @@ const projects_data = [
     name: 'Sean Lozano ',
     position: 'CEO, LACED',
     quote:
-      'The team has been extremely responsive and has used their best efforts to offer solutions, workarounds, and options. Communication is key and the team values close communication with the client. We are very much looking forward to the ongoing development of future features with the team.',
+      'DreamHighTech team delivered an intuitive and user friendly platform with a help of which our business gained 50,000 users within the first year. They have a very transparent business with clear and consistent communication which makes working with them a pleasure.',
   },
   {
     imgSrc: pr3,
@@ -52,7 +52,7 @@ const projects_data = [
     name: 'John Liu ',
     position: 'Co-founder, Automatic',
     quote:
-      'ORIL has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
   },
 ]
 

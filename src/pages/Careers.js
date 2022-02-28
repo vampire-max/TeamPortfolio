@@ -11,15 +11,15 @@ const Careers = () => {
     <div className="o-careers">
       <Banner
         bannerImg={careerBanner}
-        title={'Build  a great career  with ORIL'}
+        title={'Build  a great career  with DreamHighTech'}
         desc={
-          "With ORIL you can reveal your full potential, collaborate with open-minded colleagues, build and deliver challenging products. Let's create together!"
+          "With DreamHighTech you can reveal your full potential, collaborate with open-minded colleagues, build and deliver challenging products. Let's create together!"
         }
       />
       <div className="container">
         <Position />
         <div className="o-careers-about">
-          <SectionTitle>Build your career with ORIL</SectionTitle>
+          <SectionTitle>Build your career with DreamHighTech</SectionTitle>
           {careersData.map((item, index) => (
             <div
               className={`row about-item ${
