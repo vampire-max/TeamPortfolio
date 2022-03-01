@@ -61,7 +61,7 @@ const Design = () => {
                       <mark>.</mark>
                     </h3>
                     <div className="item-desc">
-                      <p className="">{item.desc}</p>
+                      <p>{item.desc}</p>
                       <ul>
                         {item.list.map((tag, idx) => (
                           <li key={idx}>{tag}</li>
@@ -87,7 +87,7 @@ const Design = () => {
                     <mark>.</mark>
                   </h3>
                   <div className="item-desc">
-                    <p className="">{item.desc}</p>
+                    <p>{item.desc}</p>
                     <ul>
                       {item.list.map((tag, idx) => (
                         <li key={idx}>{tag}</li>

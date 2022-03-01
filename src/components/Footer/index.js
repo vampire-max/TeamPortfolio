@@ -47,7 +47,10 @@ const Footer = () => {
                   <p className="info-label">
                     <b>Email</b>
                   </p>
-                  <a className="info-link" href="#">
+                  <a
+                    className="info-link"
+                    href="mailto:miyashitakoki719@gmail.com"
+                  >
                     miyashitakoki719@gmail.com
                   </a>
                 </div>
@@ -55,7 +58,10 @@ const Footer = () => {
                   <p className="info-label">
                     <b>Address</b>
                   </p>
-                  <a className="info-link" href="#">
+                  <a
+                    className="info-link"
+                    href="https://maps.google.com/?q=298 Shomen-cho, Higashiyama Ward, Kyoto, Japan"
+                  >
                     298 Shomen-cho, Higashiyama Ward, Kyoto, Japan
                   </a>
                 </div>
@@ -168,22 +174,18 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/service/digital-transformation">
-                      Game Development
-                    </Link>
+                    <Link to="/service/game-development">Game Development</Link>
                   </li>
                   <li>
-                    <Link to="/service/digital-transformation">
+                    <Link to="/service/blockchain-technology">
                       Blockchain Technology
                     </Link>
                   </li>
                   <li>
-                    <Link to="/service/digital-transformation">
-                      SASS Web Application
-                    </Link>
+                    <Link to="/service/sass-web-app">SASS Web Application</Link>
                   </li>
                   <li>
-                    <Link to="/service/digital-transformation">
+                    <Link to="/service/mobile-development">
                       Native Desktop - Mobile Application Development
                     </Link>
                   </li>
@@ -215,31 +217,17 @@ const Footer = () => {
                     opened === 'Industries' && 'opened'
                   }`}
                 >
-                  <li className="">
-                    <a className="" href="https://oril.co/industries/fintech/">
-                      FinTech
-                    </a>
+                  <li>
+                    <Link to="industries/fintech">FinTech</Link>
                   </li>
-                  <li className="">
-                    <a className="" href="https://oril.co/industries/proptech/">
-                      PropTech
-                    </a>
+                  <li>
+                    <Link to="industries/PropTech">PropTech</Link>
                   </li>
-                  <li className="">
-                    <a
-                      className=""
-                      href="https://oril.co/industries/marketplace/"
-                    >
-                      Marketplace
-                    </a>
+                  <li>
+                    <Link to="industries/Marketplace">Marketplace</Link>
                   </li>
-                  <li className="">
-                    <a
-                      className=""
-                      href="https://oril.co/industries/health-fitness/"
-                    >
-                      Health &amp; Fitness
-                    </a>
+                  <li>
+                    <Link to="industries/Health">Health &amp; Fitness</Link>
                   </li>
                 </ul>
               </div>
@@ -266,18 +254,13 @@ const Footer = () => {
                     opened === 'Company' && 'opened'
                   }`}
                 >
-                  <li className="">
-                    <a className="" href="https://oril.co/about-us/">
-                      About Us
-                    </a>
+                  <li>
+                    <Link to="/">About Us</Link>
                   </li>
                   <li className="hide_on_mobile">
-                    <a
-                      className="highlighted"
-                      href="https://oril.co/contact-us/"
-                    >
+                    <Link className="highlighted" to="/">
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -291,10 +274,10 @@ const Footer = () => {
 
             <ul className="o-footer__additional-nav">
               <li>
-                <a href="https://oril.co/privacy-policy/">Privacy Policy</a>
+                <Link to="/">Privacy Policy</Link>
               </li>
               <li>
-                <a href="https://oril.co/cookie-policy/">Cookie Policy</a>
+                <Link to="/">Cookie Policy</Link>
               </li>
             </ul>
           </div>

@@ -12,9 +12,9 @@ const SpecialCard = ({ item }) => {
             <p className="o_special_item_desc">{item.desc}</p>
             <Link
               to={item.path}
-              className={`o-btn o-btn-primary o_special_item_btn`}
+              className="o-btn o-btn-primary o_special_item_btn"
             >
-              'Learn more'
+              Learn more
             </Link>
           </div>
         </div>
