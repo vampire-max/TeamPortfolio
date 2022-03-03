@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import Position from '../components/Posiotion'
+import Position from '../components/Position'
 import careerBanner from '../image/careers/careers-banner.png'
 import '../styles/careers.scss'
 import { SectionTitle } from '../UI/Typography'

@@ -9,6 +9,7 @@ const ServiceSlider = ({ progressData }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     dotsClass: 'slick-dots slick-thumb',
+    dots: true,
     width: 670,
 
     customPaging: function (i) {

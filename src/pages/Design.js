@@ -48,7 +48,7 @@ const Design = () => {
             implement all kinds of successful products for our clients.
           </p>
           {approachItem.map((item, index) => {
-            if (index % 2 === 0) {
+            if (index % 2 === 1) {
               return (
                 <div className="row d-approach-item" key={index}>
                   <div className="col-lg-5 col-md-6">
@@ -125,7 +125,7 @@ const Design = () => {
           </div>
         </div>
         <Ads bgImage={`url(${adsBanner})`} title={'Got an Idea?'} />
-        <Projects />
+        <Projects hasSecond divider />
       </div>
     </div>
   )

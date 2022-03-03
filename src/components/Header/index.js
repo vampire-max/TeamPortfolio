@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import '../../styles/header.scss'
 import '../../styles/dropdown.scss'
-import logo from '../../image/logo.svg'
+import logo from '../../image/logo.jpg'
 import { Dropdown, NavDropdown } from 'react-bootstrap'
 import { dropdownItems } from '../../data/constant'
 
@@ -68,7 +68,7 @@ const Header = () => {
                       onMouseEnter={() => setShow('Service')}
                       onMouseLeave={() => setShow('')}
                       onClick={(e) => {
-                        navigate('/service')
+                        // navigate('/service')
                         setOpened(false)
                       }}
                     >

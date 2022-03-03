@@ -2,61 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { SectionTitle, Typography } from '../../UI/Typography'
 import '../../styles/projects.scss'
-import pr1 from '../../image/projects/pr1.png'
-import pr2 from '../../image/projects/pr2.png'
-import pr3 from '../../image/projects/pr3.png'
-import person1 from '../../image/projects/person1.png'
-import person2 from '../../image/projects/person2.jpg'
-import person3 from '../../image/projects/person3.jpeg'
-
 import ProjectsItem from './item'
 
-const projects_data = [
-  {
-    imgSrc: pr1,
-    title: 'LUCA App',
-    tags: [
-      '#HealthTech',
-      '#MobileApp',
-      '#Platform',
-      '#UI/UX Design',
-      '#WebApp',
-    ],
-    desc:
-      'Medibio is a mental health technology company pioneering the use of objective measures to aid in the early detection and screening of mental health conditions. They offer mental wellbeing solutions for individuals through their new consumer app, LUCA and for businesses through our Corporate Health product, Ilumen. Medibio is also developing products to serve the healthcare provider market.',
-    CliImage: person1,
-    name: 'Jennifer Solitario ',
-    position: 'Senior Vice President, Medibio Limitedh',
-    quote:
-      'The team has been extremely responsive and has used their best efforts to offer solutions, workarounds, and options. Communication is key and the team values close communication with the client. We are very much looking forward to the ongoing development of future features with the team.',
-  },
-  {
-    imgSrc: pr2,
-    title: 'LACED',
-    tags: ['#Auction', '#MobileApp', '#UI/UX Design'],
-    desc:
-      'A mobile app for online sneaker auctions where you can buy and place bids to participate and claim a reward in the loyalty section. Bid small and win big.',
-    CliImage: person2,
-    name: 'Sean Lozano ',
-    position: 'CEO, LACED',
-    quote:
-      'DreamHighTech team delivered an intuitive and user friendly platform with a help of which our business gained 50,000 users within the first year. They have a very transparent business with clear and consistent communication which makes working with them a pleasure.',
-  },
-  {
-    imgSrc: pr3,
-    title: 'Automatic Web Platform',
-    tags: ['#FineTech', '#Platform', '#UI/UX Design', '#WebApp'],
-    desc:
-      'Automatic platform is a paradigm shift for used car financing companies and auto dealerships, which streamlines the entire loan process, helps dealerships boost vehicle sales by reducing the funding and titling, and maintains transparency at every step.',
-    CliImage: person3,
-    name: 'John Liu ',
-    position: 'Co-founder, Automatic',
-    quote:
-      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
-  },
-]
-
-const Projects = () => {
+const Projects = ({ hasSecond, divider, projectsData }) => {
   return (
     <div id="o-projects" className="o_projects section">
       <div className="container">
@@ -67,8 +15,13 @@ const Projects = () => {
           We make things happen. Always. Our high-powered tech experts set up
           the entire development processes, detect problems, and solve them.
         </Typography>
-        {projects_data.map((item, index) => (
-          <ProjectsItem item={item} index={index} key={index} />
+        {projectsData.map((item, index) => (
+          <ProjectsItem
+            item={item}
+            index={index}
+            key={index}
+            hasSecond={hasSecond}
+          />
         ))}
         <Link to="portfolio" className="o-projects-inks">
           See all projects
@@ -87,7 +40,7 @@ const Projects = () => {
             ></path>
           </svg>
         </Link>
-        <div className="o-divider o-projects-divider"></div>
+        {!divider && <div className="o-divider o-projects-divider"></div>}
       </div>
     </div>
   )

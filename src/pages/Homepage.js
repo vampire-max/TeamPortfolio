@@ -5,6 +5,8 @@ import Special from '../components/Special'
 import Projects from '../components/Projects'
 import CardCarousel from '../components/Testimonials/Carousel'
 import banner from '../image/oril-banner-updated-1.jpg'
+import Feedback from '../components/Feedback'
+import { projects_data } from '../data/constant'
 
 const HomePage = () => {
   return (
@@ -13,14 +15,15 @@ const HomePage = () => {
         bannerImg={banner}
         title={'Your go-to partner for building incredible digital products'}
         desc={
-          'We help businesses win new markets with innovative solutions thatdisrupt industries.'
+          'We help businesses win new markets with innovative solutions that disrupt industries.'
         }
         link={'View Case Study'}
       />
       <Services />
       <Special />
-      <Projects />
+      <Projects projectsData={projects_data} />
       <CardCarousel />
+      <Feedback />
     </div>
   )
 }

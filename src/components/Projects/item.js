@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { ProjectsBtn } from '../../UI/Btn'
 import '../../styles/projects.scss'
 
-const ProjectsItem = ({ item, index }) => {
+const ProjectsItem = ({ item, index, hasSecond }) => {
   const isMobile = window.innerWidth < 768
 
   const variants = {
@@ -69,53 +69,55 @@ const ProjectsItem = ({ item, index }) => {
           </motion.div>
         </div>
       </div>
-      <div className="col-lg-10 offset-lg-1 o-projects_feedback">
-        <motion.div
-          viewport={{ once: true, amount: 0.2 }}
-          whileInView="onscreen"
-          initial="offscreen"
-          variants={variantsTwo}
-        >
-          <div className="o-projects-feedback-info d-flex align-items-center">
-            <div
-              className="o-projects_feedback-client-photo s-back-switch"
-              style={{ backgroundImage: `url(${item.CliImage})` }}
-            ></div>
-            <div className="o-projects_feedback-client-info">
-              <p className="o-projects_feedback-client-name">{item.name}</p>
-              <p className="o-projects_feedback-client-position">
-                {item.position}
-              </p>
+      {!hasSecond && (
+        <div className="col-lg-10 offset-lg-1 o-projects_feedback">
+          <motion.div
+            viewport={{ once: true, amount: 0.2 }}
+            whileInView="onscreen"
+            initial="offscreen"
+            variants={variantsTwo}
+          >
+            <div className="o-projects-feedback-info d-flex align-items-center">
+              <div
+                className="o-projects_feedback-client-photo s-back-switch"
+                style={{ backgroundImage: `url(${item.CliImage})` }}
+              ></div>
+              <div className="o-projects_feedback-client-info">
+                <p className="o-projects_feedback-client-name">{item.name}</p>
+                <p className="o-projects_feedback-client-position">
+                  {item.position}
+                </p>
+              </div>
             </div>
-          </div>
-        </motion.div>
-        <motion.div
-          viewport={{ once: true, amount: 0.2 }}
-          whileInView="onscreen"
-          initial="offscreen"
-          variants={variants}
-        >
-          <p className="o-projects__feedback-text">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5 8H19V20.7692L13.3859 31H6.40704L11.993 20.7692H5V8Z"
-                fill="#FFB248"
-              ></path>
-              <path
-                d="M21 8H35V20.7692L29.3859 31H22.407L27.993 20.7692H21V8Z"
-                fill="#FFB248"
-              ></path>
-            </svg>{' '}
-            {item.quote}
-          </p>
-        </motion.div>
-      </div>
+          </motion.div>
+          <motion.div
+            viewport={{ once: true, amount: 0.2 }}
+            whileInView="onscreen"
+            initial="offscreen"
+            variants={variants}
+          >
+            <p className="o-projects__feedback-text">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 8H19V20.7692L13.3859 31H6.40704L11.993 20.7692H5V8Z"
+                  fill="#FFB248"
+                ></path>
+                <path
+                  d="M21 8H35V20.7692L29.3859 31H22.407L27.993 20.7692H21V8Z"
+                  fill="#FFB248"
+                ></path>
+              </svg>{' '}
+              {item.quote}
+            </p>
+          </motion.div>
+        </div>
+      )}
     </div>
   )
 }

@@ -1,11 +1,8 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../styles/footer.scss'
-import footerLogo from '../../image/footer-logo.svg'
-import Award from '../Awards'
-
+import footerLogo from '../../image/logo.jpg'
+import { dropdownItems } from '../../data/constant'
 import { Link } from 'react-router-dom'
-import { logoImgTwo } from '../../data/constant'
-import { linkItem } from '../../data/constant'
 
 const Footer = () => {
   const [opened, setOpened] = useState('')
@@ -155,40 +152,11 @@ const Footer = () => {
                     opened === 'Service' && 'opened'
                   }`}
                 >
-                  <li>
-                    <Link to="/service/ui-ux-design">UI/UX Design</Link>
-                  </li>
-                  <li>
-                    <Link to="/service/product-development">
-                      Product Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/service/ioT-software-development">
-                      IoT Software Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/service/digital-transformation">
-                      Digital Transformation
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/service/game-development">Game Development</Link>
-                  </li>
-                  <li>
-                    <Link to="/service/blockchain-technology">
-                      Blockchain Technology
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/service/sass-web-app">SASS Web Application</Link>
-                  </li>
-                  <li>
-                    <Link to="/service/mobile-development">
-                      Native Desktop - Mobile Application Development
-                    </Link>
-                  </li>
+                  {dropdownItems.service.map((item) => (
+                    <li key={item.url}>
+                      <Link to={item.url}>{item.title}</Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div

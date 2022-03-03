@@ -46,6 +46,9 @@ import pr8 from '../image/projects/pr8.png'
 import pr9 from '../image/projects/pr9.png'
 import pr10 from '../image/projects/pr10.png'
 import pr11 from '../image/projects/pr11.png'
+import pr12 from '../image/projects/pr12.png'
+import pr13 from '../image/projects/pr13.png'
+import pr14 from '../image/projects/pr14.png'
 import person1 from '../image/projects/person1.png'
 import person2 from '../image/projects/person2.jpg'
 import person3 from '../image/projects/person3.jpeg'
@@ -57,8 +60,15 @@ import designabout2 from '../image/uxdesign/about2.png'
 import designabout3 from '../image/uxdesign/about3.png'
 
 import webabout1 from '../image/web/webabout1.png'
+import webabout2 from '../image/web/webabout2.png'
+import webabout3 from '../image/web/webabout3.png'
 
 import deliver1 from '../image/web/deliver1.png'
+import deliver2 from '../image/web/deliver2.png'
+import deliver3 from '../image/web/deliver3.png'
+import deliver4 from '../image/web/deliver4.png'
+import deliver5 from '../image/web/deliver5.png'
+import deliver6 from '../image/web/deliver6.png'
 
 import approach1 from '../image/uxdesign/approach1.png'
 import approach2 from '../image/uxdesign/approach2.png'
@@ -79,7 +89,7 @@ import newsAvatar from '../image/avatar1.png'
 import teamImg1 from '../image/team/team1.png'
 import teamImg1_1 from '../image/team/team1_1.jpeg'
 
-import careerAboutImg1 from '../image/careers/careers-about1.png'
+// import careerAboutImg1 from '../image/careers/careers-about1.png'
 import benefitImg1 from '../image/careers/benefit1.png'
 
 export const logoImgOne = [
@@ -182,20 +192,32 @@ export const dropdownItems = {
       title: 'UI/UX Design',
     },
     {
-      url: '/service/website-development',
-      title: 'website development',
+      url: '/service/product-development',
+      title: 'product development',
     },
     {
-      url: '/service/mobile-app-development',
-      title: 'mobile app development',
+      url: '/service/ioT-development',
+      title: 'IoT Software Development',
     },
     {
       url: '/service/game-development',
-      title: 'game development',
+      title: 'Game Development',
     },
     {
       url: '/service/blockchain-development',
-      title: 'blockchain development',
+      title: 'Blockchain Technology',
+    },
+    {
+      url: '/service/digital-transformation',
+      title: 'Digital Transformation',
+    },
+    {
+      url: '/service/sass-web-app',
+      title: 'SASS Web Application',
+    },
+    {
+      url: '/service/mobile-development',
+      title: 'Native Desktop - Mobile Application Development',
     },
   ],
   expertise: [
@@ -208,7 +230,7 @@ export const dropdownItems = {
       title: 'Product Development',
     },
     {
-      url: '/expertise/ioT-software-development',
+      url: '/expertise/ioT-development',
       title: 'IoT Software Development',
     },
     {
@@ -220,10 +242,6 @@ export const dropdownItems = {
     {
       url: '/blog/about-us',
       title: 'About Us',
-    },
-    {
-      url: '/blog/careers',
-      title: 'Careers',
     },
   ],
 }
@@ -625,22 +643,22 @@ export const approachItem = [
     image: approach1,
     title: 'Value Proposition Canvas (VPC)',
     desc:
-      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+      'Value Proposition Canvas is a diagram of the relationship between user’s needs and product’s value proposition.',
     list: [
-      'Ability to test out the system.',
-      'Ability to test out the system.',
+      'Identifying core business objectives.',
+      'Systematization of business objectives.',
     ],
   },
   {
     id: '02',
     image: approach2,
-    title: 'Prototype',
+    title: 'Competitive analysis',
     desc:
-      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+      'Competitive Analysis is the process of identifying your competitors and evaluating their strategies to determine their strengths and weaknesses relative to your own business, product, and service.',
     list: [
-      'Ability to test out the system.',
-      'Ability to test out the system.',
-      'Ability to test out the system.',
+      'View into the competitive field, comparison to the product in question.',
+      'A chance to innovate.',
+      'Search for creative ways of approaching different core features.',
     ],
   },
   {
@@ -648,19 +666,19 @@ export const approachItem = [
     image: approach3,
     title: 'User Roles',
     desc:
-      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
-    list: ['Ability to test out the system.'],
+      'User Roles is a part of Business Model Canvas, it is divided from it and used in our Product Design Phase to achieve better understanding of business to user and user to business relationship in terms of future product.',
+    list: ['Creating & roles interactions.'],
   },
   {
     id: '04',
     image: approach4,
     title: 'Jobs to be done',
     desc:
-      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+      'Jobs to be Done is a methodology that perceives each product as means for the user to get their objectives achieved.',
     list: [
-      'Ability to test out the system.',
-      'Ability to test out the system.',
-      'Ability to test out the system.',
+      'Systematization of selected features.',
+      'Features can be improved while studying them under diffrent circumstances.',
+      'Division of the system into integral parts(using Job Statements) has a positive impact on the next steps of design process.',
     ],
   },
   {
@@ -668,10 +686,10 @@ export const approachItem = [
     image: approach5,
     title: 'User Flow',
     desc:
-      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+      'User Flows or flowcharts are diagrams that display the complete path a user takes when using a product.',
     list: [
-      'Ability to test out the system.',
-      'Ability to test out the system.',
+      'Outlays mechanisms of interaction between a system part and user in detail, a much-needed design artifact for unique/innovative parts of the system.',
+      'A technical artifact that helps explain interaction for various team members such as, but not limited to: Product Owners, UX/UI Designers, Software Developers, QA.',
     ],
   },
   {
@@ -679,10 +697,10 @@ export const approachItem = [
     image: approach6,
     title: 'Wireframes',
     desc:
-      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
+      'Wireframes is a visual guide that represents the skeletal framework of a product.',
     list: [
-      'Ability to test out the system.',
-      'Ability to test out the system.',
+      'Structure definition for all partsof the system.',
+      'Chance to iterate through design solutions quickly.',
     ],
   },
   {
@@ -693,7 +711,8 @@ export const approachItem = [
       'A prototype is an early sample, model, or release of a product built to test a concept or process.',
     list: [
       'Ability to test out the system.',
-      'Ability to test out the system.',
+      'Interactivity of the system helps find ways to improve existing design.',
+      'Helps present the product to a broad non-technical crowd.',
     ],
   },
   {
@@ -701,11 +720,8 @@ export const approachItem = [
     image: approach8,
     title: 'UI Design',
     desc:
-      'A prototype is an early sample, model, or release of a product built to test a concept or process.',
-    list: [
-      'Ability to test out the system.',
-      'Ability to test out the system.',
-    ],
+      'User interface design or user interface engineering is the design of user interfaces for machines and software.',
+    list: ['Making the product visually appealing for the users’ eyes.'],
   },
 ]
 
@@ -765,16 +781,16 @@ export const webAboutItem = [
       "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
-    img: webabout1,
+    img: webabout2,
     title: 'Project Leadership',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
+      'We take a proactive approach with every project. Throughout the development process, our DevOps and team leaders ensure that products are built on time and within budget.',
   },
   {
-    img: webabout1,
+    img: webabout3,
     title: 'Professional Team',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
+      'DreamHighTech experts pay close attention to details, resulting in quality code and smooth collaboration. We focus on best practices to ensure high service quality and reliability.',
   },
 ]
 
@@ -786,31 +802,31 @@ export const webDeliverItem = [
       "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
-    img: deliver1,
+    img: deliver2,
     title: 'Mobile app',
     desc:
       "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
-    img: deliver1,
+    img: deliver3,
     title: 'Innovation',
     desc:
       "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
-    img: deliver1,
+    img: deliver4,
     title: 'Dashboard',
     desc:
       "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
-    img: deliver1,
+    img: deliver5,
     title: 'Innovation',
     desc:
       "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
   },
   {
-    img: deliver1,
+    img: deliver6,
     title: 'Innovation',
     desc:
       "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
@@ -819,6 +835,9 @@ export const webDeliverItem = [
 
 export const webBanner = {
   bannerImg: webBannerImg,
+  title: 'Product Development',
+  desc:
+    'Transform your vision into a strong, efficient product. With the right product development services, your software can become your competitive advantage.',
   link: 'Get started',
 }
 
@@ -859,8 +878,34 @@ export const webProgressData = {
   ],
 }
 
+export const digitalProgressData = {
+  title: 'Cross-functional approach',
+  desc:
+    "Our experts have overlapping and complementary skill sets that allow for a broad range of functionality. By approaching every project holistically, we avoid silos in the development process and get to see the progress faster. Whether it's a new client idea or user feedback, changes and iterations are always a part of our workflow.",
+  progress: [
+    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
+    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
+    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
+    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
+  ],
+}
+
+export const ioTProgressData = {
+  title: 'Cross-functional approach',
+  desc:
+    "Our experts have overlapping and complementary skill sets that allow for a broad range of functionality. By approaching every project holistically, we avoid silos in the development process and get to see the progress faster. Whether it's a new client idea or user feedback, changes and iterations are always a part of our workflow.",
+  progress: [
+    "The first step is aligning business needs and customer expectations. We work closely with the client's team to determine the problem and figure out how the software will solve it",
+    'At this stage, we discuss the project goals, select the technology that will meet client requirements, and decide on the deliverables of the development process.',
+    'We create a basic prototype for the software so it can be rigorously tested by a small number of users to make sure the development process is moving in the right direction.',
+    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
+  ],
+}
+
 export const gameBanner = {
   bannerImg: webBannerImg,
+  title: '',
+  desc: '',
   link: 'Get started',
 }
 
@@ -889,8 +934,140 @@ export const gameAds = {
   title: 'Ready to Grow Together?',
 }
 
+export const ioTBanner = {
+  bannerImg: webBannerImg,
+  title: 'Mobile Application Development + IOT',
+  desc:
+    'We build smart mobile app and IoT solutions that live up to the market standards and stay relevant over time.',
+  link: 'Get started',
+}
+
+export const ioTSectionTitle = [
+  {
+    title: 'Mobile app and IoT technologies to power up our business',
+  },
+  { title: 'Deliverables' },
+]
+
+export const ioTAbout = [
+  {
+    desc:
+      'We develop a variety of mobile app and IoT solutions for connected systems. Here are our main areas of focus',
+    data: webAboutItem,
+  },
+  {
+    desc:
+      "Here at DreamHighTech, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+    data: webDeliverItem,
+  },
+]
+
+export const ioTAds = {
+  bgImage: `url(${webAdsImg})`,
+  title: 'Ready to Grow Together?',
+}
+
+export const blockChainBanner = {
+  bannerImg: webBannerImg,
+  title: '',
+  desc: '',
+  link: 'Get started',
+}
+
+export const blockChainSectionTitle = [
+  {
+    title: 'Logical Roadmap & Reliable Programming',
+  },
+  { title: 'Deliverables' },
+]
+
+export const blockChainAbout = [
+  {
+    desc:
+      'Our software engineers, business analysts, DevOps, and product managers all work together to help our clients achieve their business goals. From the design concept to product support and maintenance, we’ll take care of the entire process every step of the way. ',
+    data: webAboutItem,
+  },
+  {
+    desc:
+      "Here at DreamHighTech, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+    data: webDeliverItem,
+  },
+]
+
+export const blockChainAds = {
+  bgImage: `url(${webAdsImg})`,
+  title: 'Ready to Grow Together?',
+}
+
+export const digitalBanner = {
+  bannerImg: webBannerImg,
+  title: 'Product Development',
+  desc:
+    'Transform your vision into a strong, efficient product. With the right product development services, your software can become your competitive advantage.',
+  link: 'Get started',
+}
+
+export const digitalSectionTitle = [
+  {
+    title: 'Logical Roadmap & Reliable Programming',
+  },
+  { title: 'Deliverables' },
+]
+
+export const digitalAbout = [
+  {
+    desc:
+      'Our software engineers, business analysts, DevOps, and product managers all work together to help our clients achieve their business goals. From the design concept to product support and maintenance, we’ll take care of the entire process every step of the way. ',
+    data: webAboutItem,
+  },
+  {
+    desc:
+      "Here at DreamHighTech, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+    data: webDeliverItem,
+  },
+]
+
+export const digitalAds = {
+  bgImage: `url(${webAdsImg})`,
+  title: 'Ready to Grow Together?',
+}
+export const sassBanner = {
+  bannerImg: webBannerImg,
+  title: 'Product Development',
+  desc:
+    'Transform your vision into a strong, efficient product. With the right product development services, your software can become your competitive advantage.',
+  link: 'Get started',
+}
+
+export const sassSectionTitle = [
+  {
+    title: 'Logical Roadmap & Reliable Programming',
+  },
+  { title: 'Deliverables' },
+]
+
+export const sassAbout = [
+  {
+    desc:
+      'Our software engineers, business analysts, DevOps, and product managers all work together to help our clients achieve their business goals. From the design concept to product support and maintenance, we’ll take care of the entire process every step of the way. ',
+    data: webAboutItem,
+  },
+  {
+    desc:
+      "Here at DreamHighTech, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
+    data: webDeliverItem,
+  },
+]
+
+export const sassAds = {
+  bgImage: `url(${webAdsImg})`,
+  title: 'Ready to Grow Together?',
+}
 export const mobileBanner = {
   bannerImg: webBannerImg,
+  title: 'Product Development',
+  desc:
+    'Transform your vision into a strong, efficient product. With the right product development services, your software can become your competitive advantage.',
   link: 'Get started',
 }
 
@@ -919,35 +1096,173 @@ export const mobileAds = {
   title: 'Ready to Grow Together?',
 }
 
-export const blockChainBanner = {
-  bannerImg: webBannerImg,
-  link: 'Get started',
-}
-
-export const blockChainSectionTitle = [
+export const projects_data = [
   {
-    title: 'Logical Roadmap & Reliable Programming',
+    imgSrc: pr1,
+    title: 'LUCA App',
+    tags: [
+      '#HealthTech',
+      '#MobileApp',
+      '#Platform',
+      '#UI/UX Design',
+      '#WebApp',
+    ],
+    desc:
+      'Medibio is a mental health technology company pioneering the use of objective measures to aid in the early detection and screening of mental health conditions. They offer mental wellbeing solutions for individuals through their new consumer app, LUCA and for businesses through our Corporate Health product, Ilumen. Medibio is also developing products to serve the healthcare provider market.',
+    CliImage: person1,
+    name: 'Jennifer Solitario ',
+    position: 'Senior Vice President, Medibio Limitedh',
+    quote:
+      'The team has been extremely responsive and has used their best efforts to offer solutions, workarounds, and options. Communication is key and the team values close communication with the client. We are very much looking forward to the ongoing development of future features with the team.',
   },
-  { title: 'Deliverables' },
+  {
+    imgSrc: pr2,
+    title: 'LACED',
+    tags: ['#Auction', '#MobileApp', '#UI/UX Design'],
+    desc:
+      'A mobile app for online sneaker auctions where you can buy and place bids to participate and claim a reward in the loyalty section. Bid small and win big.',
+    CliImage: person2,
+    name: 'Sean Lozano ',
+    position: 'CEO, LACED',
+    quote:
+      'DreamHighTech team delivered an intuitive and user friendly platform with a help of which our business gained 50,000 users within the first year. They have a very transparent business with clear and consistent communication which makes working with them a pleasure.',
+  },
+  {
+    imgSrc: pr3,
+    title: 'Automatic Web Platform',
+    tags: ['#FineTech', '#Platform', '#UI/UX Design', '#WebApp'],
+    desc:
+      'Automatic platform is a paradigm shift for used car financing companies and auto dealerships, which streamlines the entire loan process, helps dealerships boost vehicle sales by reducing the funding and titling, and maintains transparency at every step.',
+    CliImage: person3,
+    name: 'John Liu ',
+    position: 'Co-founder, Automatic',
+    quote:
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+  },
 ]
 
-export const blockChainAbout = [
+export const webProjects_data = [
   {
+    imgSrc: pr3,
+    title: 'Automatic Web Platform',
+    tags: ['#FineTech', '#Platform', '#UI/UX Design', '#WebApp'],
     desc:
-      'Our software engineers, business analysts, DevOps, and product managers all work together to help our clients achieve their business goals. From the design concept to product support and maintenance, we’ll take care of the entire process every step of the way. ',
-    data: webAboutItem,
+      'Automatic platform is a paradigm shift for used car financing companies and auto dealerships, which streamlines the entire loan process, helps dealerships boost vehicle sales by reducing the funding and titling, and maintains transparency at every step.',
+    CliImage: person3,
+    name: 'John Liu ',
+    position: 'Co-founder, Automatic',
+    quote:
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
   },
   {
+    imgSrc: pr2,
+    title: 'LACED',
+    tags: ['#Auction', '#MobileApp', '#UI/UX Design'],
     desc:
-      "Here at DreamHighTech, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
-    data: webDeliverItem,
+      'A mobile app for online sneaker auctions where you can buy and place bids to participate and claim a reward in the loyalty section. Bid small and win big.',
+    CliImage: person2,
+    name: 'Sean Lozano ',
+    position: 'CEO, LACED',
+    quote:
+      'DreamHighTech team delivered an intuitive and user friendly platform with a help of which our business gained 50,000 users within the first year. They have a very transparent business with clear and consistent communication which makes working with them a pleasure.',
+  },
+  {
+    imgSrc: pr14,
+    title: 'GOWAGO',
+    tags: ['#Auto', '#E-commerce', '#Platform', '#WebApp'],
+    desc:
+      "Switzerland's first car leasing comparison service and the digital car marketplace of the future. Find the right leasing deal and apply online, saving you time and money.",
+    CliImage: person3,
+    name: 'John Liu ',
+    position: 'Co-founder, Automatic',
+    quote:
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
   },
 ]
 
-export const blockChainAds = {
-  bgImage: `url(${webAdsImg})`,
-  title: 'Ready to Grow Together?',
-}
+export const ioTProjects_data = [
+  {
+    imgSrc: pr1,
+    title: 'LUCA App',
+    tags: [
+      '#HealthTech',
+      '#MobileApp',
+      '#Platform',
+      '#UI/UX Design',
+      '#WebApp',
+    ],
+    desc:
+      'Medibio is a mental health technology company pioneering the use of objective measures to aid in the early detection and screening of mental health conditions. They offer mental wellbeing solutions for individuals through their new consumer app, LUCA and for businesses through our Corporate Health product, Ilumen. Medibio is also developing products to serve the healthcare provider market.',
+    CliImage: person1,
+    name: 'Jennifer Solitario ',
+    position: 'Senior Vice President, Medibio Limitedh',
+    quote:
+      'The team has been extremely responsive and has used their best efforts to offer solutions, workarounds, and options. Communication is key and the team values close communication with the client. We are very much looking forward to the ongoing development of future features with the team.',
+  },
+  {
+    imgSrc: pr5,
+    title: 'VICKI Rewards IoT mobile app',
+    tags: ['#AI', '#IoT', '#MobileApp', '#Retail'],
+    desc:
+      'ViaTouch Media is a software technology company focused on delivering solutions to disrupt the retail shopping industry. At the core of ViaTouch Media is the VICKI software platform.',
+    CliImage: person2,
+    name: 'Sean Lozano ',
+    position: 'CEO, LACED',
+    quote:
+      'DreamHighTech team delivered an intuitive and user friendly platform with a help of which our business gained 50,000 users within the first year. They have a very transparent business with clear and consistent communication which makes working with them a pleasure.',
+  },
+  {
+    imgSrc: pr14,
+    title: 'GOWAGO',
+    tags: ['#Auto', '#E-commerce', '#Platform', '#WebApp'],
+    desc:
+      "Switzerland's first car leasing comparison service and the digital car marketplace of the future. Find the right leasing deal and apply online, saving you time and money.",
+    CliImage: person3,
+    name: 'John Liu ',
+    position: 'Co-founder, Automatic',
+    quote:
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+  },
+]
+
+export const digitalProjects_data = [
+  {
+    imgSrc: pr3,
+    title: 'Automatic Web Platform',
+    tags: ['#FineTech', '#Platform', '#UI/UX Design', '#WebApp'],
+    desc:
+      'Automatic platform is a paradigm shift for used car financing companies and auto dealerships, which streamlines the entire loan process, helps dealerships boost vehicle sales by reducing the funding and titling, and maintains transparency at every step.',
+    CliImage: person3,
+    name: 'John Liu ',
+    position: 'Co-founder, Automatic',
+    quote:
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+  },
+  {
+    imgSrc: pr2,
+    title: 'LACED',
+    tags: ['#Auction', '#MobileApp', '#UI/UX Design'],
+    desc:
+      'A mobile app for online sneaker auctions where you can buy and place bids to participate and claim a reward in the loyalty section. Bid small and win big.',
+    CliImage: person2,
+    name: 'Sean Lozano ',
+    position: 'CEO, LACED',
+    quote:
+      'DreamHighTech team delivered an intuitive and user friendly platform with a help of which our business gained 50,000 users within the first year. They have a very transparent business with clear and consistent communication which makes working with them a pleasure.',
+  },
+  {
+    imgSrc: pr14,
+    title: 'GOWAGO',
+    tags: ['#Auto', '#E-commerce', '#Platform', '#WebApp'],
+    desc:
+      "Switzerland's first car leasing comparison service and the digital car marketplace of the future. Find the right leasing deal and apply online, saving you time and money.",
+    CliImage: person3,
+    name: 'John Liu ',
+    position: 'Co-founder, Automatic',
+    quote:
+      'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
+  },
+]
 
 export const popularData = [
   {
@@ -1128,20 +1443,20 @@ export const positionData = [
   },
 ]
 
-export const careersData = [
-  {
-    img: careerAboutImg1,
-    title: 'Our Approaches',
-    desc:
-      'People-first - it’s our motto that pilots us towards the continuous enhancement of our internal relationships. We know how important it is to hear and understand each need of our team, that’s why transparency and communication became an integral part of our culture.',
-  },
-  {
-    img: careerAboutImg1,
-    title: 'Our Approaches',
-    desc:
-      'People-first - it’s our motto that pilots us towards the continuous enhancement of our internal relationships. We know how important it is to hear and understand each need of our team, that’s why transparency and communication became an integral part of our culture.',
-  },
-]
+// export const careersData = [
+//   {
+//     img: careerAboutImg1,
+//     title: 'Our Approaches',
+//     desc:
+//       'People-first - it’s our motto that pilots us towards the continuous enhancement of our internal relationships. We know how important it is to hear and understand each need of our team, that’s why transparency and communication became an integral part of our culture.',
+//   },
+//   {
+//     img: careerAboutImg1,
+//     title: 'Our Approaches',
+//     desc:
+//       'People-first - it’s our motto that pilots us towards the continuous enhancement of our internal relationships. We know how important it is to hear and understand each need of our team, that’s why transparency and communication became an integral part of our culture.',
+//   },
+// ]
 
 export const benefitData = [
   {
@@ -1202,5 +1517,64 @@ export const projectFilterMenu = [
   {
     label: 'Marketplace',
     tag: ['#Auction', '#RealEstate', '#Social'],
+  },
+]
+
+export const singleServiceData = [
+  {
+    path: '/service/product-development',
+    banner: webBanner,
+    sectionTitle: webSectionTitle,
+    about: webAbout,
+    ads: webAds,
+    projectData: webProjects_data,
+  },
+  {
+    path: '/service/iot-development',
+    banner: ioTBanner,
+    sectionTitle: ioTSectionTitle,
+    about: ioTAbout,
+    ads: ioTAds,
+    projectData: ioTProjects_data,
+  },
+  {
+    path: '/service/game-development',
+    banner: gameBanner,
+    sectionTitle: gameSectionTitle,
+    about: gameAbout,
+    ads: gameAds,
+    projectData: webProjects_data,
+  },
+  {
+    path: '/service/blockchain-development',
+    banner: blockChainBanner,
+    sectionTitle: blockChainSectionTitle,
+    about: blockChainAbout,
+    ads: blockChainAds,
+    projectData: webProjects_data,
+  },
+  {
+    path: '/service/digital-transformation',
+    banner: digitalBanner,
+    sectionTitle: digitalSectionTitle,
+    about: digitalAbout,
+    ads: digitalAds,
+    projectData: digitalProjects_data,
+  },
+  {
+    path: '/service/sass-web-app',
+    banner: sassBanner,
+    sectionTitle: sassSectionTitle,
+    about: sassAbout,
+    ads: sassAds,
+    projectData: webProjects_data,
+  },
+  {
+    path: '/service/mobile-development',
+    banner: mobileBanner,
+    sectionTitle: mobileSectionTitle,
+    about: mobileAbout,
+    ads: mobileAds,
+    projectData: webProjects_data,
   },
 ]

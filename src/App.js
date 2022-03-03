@@ -2,35 +2,15 @@ import './App.scss'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/Homepage'
 import Header from './components/Header'
-import Feedback from './components/Feedback'
 import Footer from './components/Footer'
 import Portfolio from './pages/Portfolio'
-import ServicePage from './pages/Service'
 import Expertise from './pages/Expertise'
 import Design from './pages/Design'
 import SingleService from './pages/SingleService'
-import {
-  webBanner,
-  webSectionTitle,
-  webAbout,
-  webAds,
-  webProgressData,
-  gameBanner,
-  gameSectionTitle,
-  gameAbout,
-  gameAds,
-  mobileBanner,
-  mobileSectionTitle,
-  mobileAbout,
-  mobileAds,
-  blockChainBanner,
-  blockChainSectionTitle,
-  blockChainAbout,
-  blockChainAds,
-} from './data/constant'
+import { singleServiceData } from './data/constant'
 import Blog from './pages/Blog'
 import AboutUs from './pages/AboutUs'
-import Careers from './pages/Careers'
+// import Careers from './pages/Careers'
 
 function App() {
   return (
@@ -39,64 +19,28 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/service" element={<ServicePage />} />
           <Route path="/expertise" element={<Expertise />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/service/ux-design" element={<Design />} />
-          <Route
-            path="/service/website-development"
-            element={
-              <SingleService
-                bannerProps={webBanner}
-                sectionTitleProps={webSectionTitle}
-                aboutProps={webAbout}
-                adsProps={webAds}
-                progressData={webProgressData}
-              />
-            }
-          />
-
-          <Route
-            path="/service/game-development"
-            element={
-              <SingleService
-                bannerProps={gameBanner}
-                sectionTitleProps={gameSectionTitle}
-                aboutProps={gameAbout}
-                adsProps={gameAds}
-              />
-            }
-          />
-
-          <Route
-            path="/service/mobile-app-development"
-            element={
-              <SingleService
-                bannerProps={mobileBanner}
-                sectionTitleProps={mobileSectionTitle}
-                aboutProps={mobileAbout}
-                adsProps={mobileAds}
-              />
-            }
-          />
-
-          <Route
-            path="/service/blockchain-development"
-            element={
-              <SingleService
-                bannerProps={blockChainBanner}
-                sectionTitleProps={blockChainSectionTitle}
-                aboutProps={blockChainAbout}
-                adsProps={blockChainAds}
-              />
-            }
-          />
-
+          {singleServiceData.map((item) => (
+            <Route
+              key={item.path}
+              path={item.path}
+              element={
+                <SingleService
+                  bannerProps={item.banner}
+                  sectionTitleProps={item.sectionTitle}
+                  aboutProps={item.about}
+                  adsProps={item.ads}
+                  projectsDataProps={item.projectData}
+                />
+              }
+            />
+          ))}
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/about-us" element={<AboutUs />} />
-          <Route path="/blog/careers" element={<Careers />} />
+          {/* <Route path="/blog/careers" element={<Careers />} /> */}
         </Routes>
-        <Feedback />
         <Footer />
       </BrowserRouter>
     </div>
