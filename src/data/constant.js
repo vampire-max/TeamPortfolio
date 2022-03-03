@@ -49,6 +49,7 @@ import pr11 from '../image/projects/pr11.png'
 import pr12 from '../image/projects/pr12.png'
 import pr13 from '../image/projects/pr13.png'
 import pr14 from '../image/projects/pr14.png'
+import pr15 from '../image/projects/pr15.png'
 import person1 from '../image/projects/person1.png'
 import person2 from '../image/projects/person2.jpg'
 import person3 from '../image/projects/person3.jpeg'
@@ -58,6 +59,25 @@ import avatar1 from '../image/test/avatar1.jpeg'
 import designabout1 from '../image/uxdesign/about1.png'
 import designabout2 from '../image/uxdesign/about2.png'
 import designabout3 from '../image/uxdesign/about3.png'
+
+import digitalabout1 from '../image/singleService/digital1.png'
+import digitalabout2 from '../image/singleService/digital2.png'
+import digitalabout3 from '../image/singleService/digital3.png'
+
+import iotabout1 from '../image/singleService/iot1.png'
+import iotabout2 from '../image/singleService/iot2.png'
+import iotabout3 from '../image/singleService/iot3.png'
+import iot4 from '../image/singleService/iot4.png'
+import iot5 from '../image/singleService/iot5.png'
+import iot6 from '../image/singleService/iot6.png'
+import iot7 from '../image/singleService/iot7.png'
+
+import digital4 from '../image/singleService/digital4.png'
+import digital5 from '../image/singleService/digital5.png'
+import digital6 from '../image/singleService/digital6.png'
+import digital7 from '../image/singleService/digital7.png'
+import digital8 from '../image/singleService/digital8.png'
+import digital9 from '../image/singleService/digital9.png'
 
 import webabout1 from '../image/web/webabout1.png'
 import webabout2 from '../image/web/webabout2.png'
@@ -200,16 +220,16 @@ export const dropdownItems = {
       title: 'IoT Software Development',
     },
     {
+      url: '/service/digital-transformation',
+      title: 'Digital Transformation',
+    },
+    {
       url: '/service/game-development',
       title: 'Game Development',
     },
     {
       url: '/service/blockchain-development',
       title: 'Blockchain Technology',
-    },
-    {
-      url: '/service/digital-transformation',
-      title: 'Digital Transformation',
     },
     {
       url: '/service/sass-web-app',
@@ -274,33 +294,33 @@ export const article = [
   },
 ]
 
-export const linkItem = [
-  {
-    url: '#',
-    linkImg: facebook,
-    alt: 'facebook',
-  },
-  {
-    url: '#',
-    linkImg: linkedin,
-    alt: 'linkedin',
-  },
-  {
-    url: '#',
-    linkImg: twitter,
-    alt: 'twitter',
-  },
-  {
-    url: '#',
-    linkImg: behance,
-    alt: 'behance',
-  },
-  {
-    url: '#',
-    linkImg: instagram,
-    alt: 'instagram',
-  },
-]
+// export const linkItem = [
+//   {
+//     url: '#',
+//     linkImg: facebook,
+//     alt: 'facebook',
+//   },
+//   {
+//     url: '#',
+//     linkImg: linkedin,
+//     alt: 'linkedin',
+//   },
+//   {
+//     url: '#',
+//     linkImg: twitter,
+//     alt: 'twitter',
+//   },
+//   {
+//     url: '#',
+//     linkImg: behance,
+//     alt: 'behance',
+//   },
+//   {
+//     url: '#',
+//     linkImg: instagram,
+//     alt: 'instagram',
+//   },
+// ]
 
 export const ourServices = [
   {
@@ -776,9 +796,9 @@ export const planningItem = [
 export const webAboutItem = [
   {
     img: webabout1,
-    title: 'Innovation',
+    title: 'Web App',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
+      'We create everything from easy-to-use consumer web applications to niche products.',
   },
   {
     img: webabout2,
@@ -799,37 +819,145 @@ export const webDeliverItem = [
     img: deliver1,
     title: 'Web app',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
+      'We create everything from easy-to-use consumer web applications to niche products.',
   },
   {
     img: deliver2,
     title: 'Mobile app',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
+      'We design, develop and maintain both native and hybrid mobile applications.',
   },
   {
     img: deliver3,
-    title: 'Innovation',
+    title: 'Dashboard',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
+      'We create dashboards that help businesses track KPIs and monitor success metrics.',
   },
   {
     img: deliver4,
-    title: 'Dashboard',
+    title: 'Custom Application',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
+      'We provide you with powerful, scalable solutions that meet your requirements and fuel business growth.',
   },
   {
     img: deliver5,
-    title: 'Innovation',
+    title: 'Documentation',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
+      'We share with you everything, from general architecture, database schemas, to functional requirements.',
   },
   {
     img: deliver6,
-    title: 'Innovation',
+    title: 'Source Code',
     desc:
-      "Take advantage of emerging technology to maximize your product's potential. Here at DreamHighTech, we are constantly striving to develop new concepts for our clients' businesses.",
+      'All source code is made available via dedicated repositories, which your team can access and own',
+  },
+]
+
+export const iotAboutItem = [
+  {
+    img: iotabout1,
+    title: 'Industrial IoT solutions',
+    desc:
+      'Bring together cloud computing, analytics, people, and machines to improve the efficiency of industrial processes, boost productivity, and reduce waste.',
+  },
+  {
+    img: iotabout2,
+    title: 'IoT for enterprise',
+    desc:
+      'Monitor and optimize your business operations, and collect big data to get timely insights that will propel the progress of your enterprise forward.',
+  },
+  {
+    img: iotabout3,
+    title: 'Consumer IoT solutions',
+    desc:
+      'Unleash the capabilities of smartphones, wearables, and smart home appliances to bring more convenience and control to your customers.',
+  },
+]
+
+export const iotDeliverItem = [
+  {
+    img: iot4,
+    title: 'Full-cycle development',
+    desc:
+      'Our skilled engineers cover all components of an IoT architecture. We will handle the development of your IoT-capable software ‒ from the analysis and design to support and maintenance.',
+  },
+  {
+    img: iot5,
+    title: 'IoT app management',
+    desc:
+      'In an increasingly connected world, combining hardware with mobile apps is what keeps your IoT product relevant and usable. We plan, design, and develop companion apps for iOS and Android that work seamlessly with your devices.',
+  },
+  {
+    img: iot6,
+    title: 'Management dashboard',
+    desc:
+      'A functional and usable dashboard can help you control, manage, monitor, and analyze the data collected from the IoT sensors. We create web applications that allow users to get the most of their devices.',
+  },
+  {
+    img: iot7,
+    title: 'IoT cloud infrastructure',
+    desc:
+      'Take advantage of leading industry providers like Amazon IoT that enable seamless setup and 24/7 support. In the right environment, your system will be able to autoscale easily and support all types of devices that use MQTT and other industry standard protocols.',
+  },
+]
+
+export const digitalAboutItem = [
+  {
+    img: digitalabout1,
+    title: 'Research and discovery',
+    desc:
+      'During the research and discovery stage, we help organizations establish the groundwork for integrating agility and innovation into their business and communicate new ways of digital thinking.',
+  },
+  {
+    img: digitalabout2,
+    title: 'Reestablishing business processes',
+    desc:
+      'With digital transformation, organizations can completely rebuild their business processes. We will help you integrate digital technology into all aspects of your work, fundamentally changing and improving the way you operate and bring value to your customers.',
+  },
+  {
+    img: digitalabout3,
+    title: 'Connect with your customers the new way',
+    desc:
+      'These days, customers expect top-of-the-line service anytime, anywhere, and in any form they like. Organizations that adopt digital transformation can deliver a seamless customer experience regardless of the channel or location.',
+  },
+]
+
+export const digitalDeliverItem = [
+  {
+    img: digital4,
+    title: 'Digital transformation consulting',
+    desc:
+      "Change is an integral component of staying competitive in a crowded market. Our experts will examine your company's infrastructure and processes to identify ways to boost short-term performance and keep the company sustainable over time.",
+  },
+  {
+    img: digital5,
+    title: 'IoT engineering',
+    desc:
+      'Incorporating awareness into products helps create exceptional experiences, increase performance, and unleash new possibilities. As part of your IoT initiatives, we collect data, extract insights, and help you anticipate customer needs so you can act on it immediately.',
+  },
+  {
+    img: digital6,
+    title: 'Mobile & web apps',
+    desc:
+      'For organizations that want to provide their customers with the most compelling experience, mobile and web platforms are essential. Here at ORIL, we develop best-in-class digital products that not only serve customers but help the teams do their job more efficiently.',
+  },
+  {
+    img: digital7,
+    title: 'Automated processes',
+    desc:
+      'Using the latest automation technologies and our expertise, we will uncover new approaches to maximize the benefits of automation for your organization. It will accelerate the transformation and help your businesses work towards the future.',
+  },
+  {
+    img: digital8,
+    title: 'Modernized legacy systems',
+    desc:
+      "In today's fast-paced world, enterprises must enhance their operations and become more agile. As part of our legacy modernization services, we upgrade the outdated systems and help you implement the new ones.",
+  },
+  {
+    img: digital9,
+    title: 'Transformed customer experience',
+    desc:
+      "The cornerstone of any company's success is excellent customer service and a smooth customer experience. Well-planned and carefully executed digital transformation will forever change the way people interact with your business.",
   },
 ]
 
@@ -867,14 +995,20 @@ export const webAds = {
 }
 
 export const webProgressData = {
-  title: 'Cross-functional approach',
+  title: 'Our Approach',
   desc:
-    "Our experts have overlapping and complementary skill sets that allow for a broad range of functionality. By approaching every project holistically, we avoid silos in the development process and get to see the progress faster. Whether it's a new client idea or user feedback, changes and iterations are always a part of our workflow.",
+    "We believe that the best possible way to create awesome products is by aligning with the client's business goals. Our result-oriented team takes a holistic approach to bring maximum value to every organization we work with. DreamHighTech experts work hart to find the most cost-effective and time-efficient strategy for any given project. Tje iterative nature of each development phase allows us to provide client-focused service, constantly  improving each phase, from ideation and prototyping to product support and maintenance",
+  paging: [
+    'Product Design',
+    'Development',
+    'iteration & Enhancement',
+    'Maintenance & Support',
+  ],
   progress: [
-    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
-    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
-    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
-    'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
+    'From market research and wireframing to delivering high-quality prototypes, we create usable, beautiful, and scalable designs to help our clients visualize their concepts.',
+    'We are building products iteratively using the Agile framework. Our engineers adhere to the client’s priorities and roadmaps, yet stay flexible enough to change the course if necessary.',
+    'We continually check user engagement metrics and client roadmaps to regularly update and improve products and features that delight the existing customers and generate new business.',
+    'All software products need regular maintenance. We ensure that your solution meets the full scope of functions and maintains efficient processes to keep your customers satisfied.',
   ],
 }
 
@@ -882,6 +1016,7 @@ export const digitalProgressData = {
   title: 'Cross-functional approach',
   desc:
     "Our experts have overlapping and complementary skill sets that allow for a broad range of functionality. By approaching every project holistically, we avoid silos in the development process and get to see the progress faster. Whether it's a new client idea or user feedback, changes and iterations are always a part of our workflow.",
+  paging: ['', '', '', ''],
   progress: [
     'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
     'Our engineers develop, test, and deploy the solution. Further on, we provide software maintenance and support, release updates, and respond to new customer requirements.',
@@ -894,6 +1029,7 @@ export const ioTProgressData = {
   title: 'Cross-functional approach',
   desc:
     "Our experts have overlapping and complementary skill sets that allow for a broad range of functionality. By approaching every project holistically, we avoid silos in the development process and get to see the progress faster. Whether it's a new client idea or user feedback, changes and iterations are always a part of our workflow.",
+  paging: ['', '', '', ''],
   progress: [
     "The first step is aligning business needs and customer expectations. We work closely with the client's team to determine the problem and figure out how the software will solve it",
     'At this stage, we discuss the project goals, select the technology that will meet client requirements, and decide on the deliverables of the development process.',
@@ -946,19 +1082,19 @@ export const ioTSectionTitle = [
   {
     title: 'Mobile app and IoT technologies to power up our business',
   },
-  { title: 'Deliverables' },
+  { title: 'Our services' },
 ]
 
 export const ioTAbout = [
   {
     desc:
       'We develop a variety of mobile app and IoT solutions for connected systems. Here are our main areas of focus',
-    data: webAboutItem,
+    data: iotAboutItem,
   },
   {
     desc:
-      "Here at DreamHighTech, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
-    data: webDeliverItem,
+      'We build secure IoT solutions that let you connect and manage devices so that you can make data-driven business decisions. Reach out to our team today to get business value tomorrow.',
+    data: iotDeliverItem,
   },
 ]
 
@@ -1001,15 +1137,15 @@ export const blockChainAds = {
 
 export const digitalBanner = {
   bannerImg: webBannerImg,
-  title: 'Product Development',
+  title: 'Digital Transformation',
   desc:
-    'Transform your vision into a strong, efficient product. With the right product development services, your software can become your competitive advantage.',
+    'Technology is evolving, so should your business. Transform your non-digital processes and services to stay competitive and meet ever-changing customer expectations.',
   link: 'Get started',
 }
 
 export const digitalSectionTitle = [
   {
-    title: 'Logical Roadmap & Reliable Programming',
+    title: 'From physical to digital',
   },
   { title: 'Deliverables' },
 ]
@@ -1017,13 +1153,13 @@ export const digitalSectionTitle = [
 export const digitalAbout = [
   {
     desc:
-      'Our software engineers, business analysts, DevOps, and product managers all work together to help our clients achieve their business goals. From the design concept to product support and maintenance, we’ll take care of the entire process every step of the way. ',
-    data: webAboutItem,
+      "There's more to digital transformation than just technology. For modern organizations, it has to do with people, processes, business value, and the opportunity to rapidly adapt when required through intelligent use of the latest technologies and information. So the question is no longer whether enterprises should transform; it's how they will do it.",
+    data: digitalAboutItem,
   },
   {
     desc:
-      "Here at DreamHighTech, we're dedicated to delivering business value. That’s why we only take on projects in which we can genuinely help. We know we can do a lot for your business as a result-oriented product development partner.",
-    data: webDeliverItem,
+      'All digital transformation initiatives have their own specific goals, but the focus is always on improving your current operations and empowering you to grow much faster.',
+    data: digitalDeliverItem,
   },
 ]
 
@@ -1031,6 +1167,7 @@ export const digitalAds = {
   bgImage: `url(${webAdsImg})`,
   title: 'Ready to Grow Together?',
 }
+
 export const sassBanner = {
   bannerImg: webBannerImg,
   title: 'Product Development',
@@ -1063,6 +1200,7 @@ export const sassAds = {
   bgImage: `url(${webAdsImg})`,
   title: 'Ready to Grow Together?',
 }
+
 export const mobileBanner = {
   bannerImg: webBannerImg,
   title: 'Product Development',
@@ -1239,21 +1377,21 @@ export const digitalProjects_data = [
       'DreamHighTech has been a great partner in our digital transformation. They are always responsive and attentive to details.                      ',
   },
   {
-    imgSrc: pr2,
-    title: 'LACED',
-    tags: ['#Auction', '#MobileApp', '#UI/UX Design'],
+    imgSrc: pr4,
+    title: 'Real Estate Bidding Platform',
+    tags: ['#platform', '#PropTech', '#RealEstate', '#WebApp'],
     desc:
-      'A mobile app for online sneaker auctions where you can buy and place bids to participate and claim a reward in the loyalty section. Bid small and win big.',
-    CliImage: person2,
-    name: 'Sean Lozano ',
-    position: 'CEO, LACED',
-    quote:
-      'DreamHighTech team delivered an intuitive and user friendly platform with a help of which our business gained 50,000 users within the first year. They have a very transparent business with clear and consistent communication which makes working with them a pleasure.',
+      'The company offers a PropTech service that transparently connects all parties in a real estate transaction to attract better offers and quicker closings. They provide a user-friendly service that modernizes the home buying and selling experience by allowing sellers to interact and manage home sales directly via a web-based platform.',
+    // CliImage: person2,
+    // name: 'Sean Lozano ',
+    // position: 'CEO, LACED',
+    // quote:
+    //   'DreamHighTech team delivered an intuitive and user friendly platform with a help of which our business gained 50,000 users within the first year. They have a very transparent business with clear and consistent communication which makes working with them a pleasure.',
   },
   {
-    imgSrc: pr14,
-    title: 'GOWAGO',
-    tags: ['#Auto', '#E-commerce', '#Platform', '#WebApp'],
+    imgSrc: pr15,
+    title: 'Research & Analytics Platform',
+    tags: ['#AI', '#MarTech', '#Platform', '#WebApp'],
     desc:
       "Switzerland's first car leasing comparison service and the digital car marketplace of the future. Find the right leasing deal and apply online, saving you time and money.",
     CliImage: person3,
