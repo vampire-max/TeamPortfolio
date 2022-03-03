@@ -2,7 +2,7 @@ import React from 'react'
 import Projects from '../components/Projects'
 import Banner from '../components/Banner'
 import designBanner from '../image/uxdesign/ux design.png'
-import { approachItem, planningItem } from '../data/constant'
+import { approachItem, planningItem, projects_data } from '../data/constant'
 import { SectionTitle } from '../UI/Typography'
 import schema from '../image/uxdesign/schema1.png'
 import About from '../components/About'
@@ -125,7 +125,7 @@ const Design = () => {
           </div>
         </div>
         <Ads bgImage={`url(${adsBanner})`} title={'Got an Idea?'} />
-        <Projects hasSecond divider />
+        <Projects hasSecond divider projectsData={projects_data} />
       </div>
     </div>
   )
