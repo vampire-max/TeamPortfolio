@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../../styles/footer.scss'
-import footerLogo from '../../image/logo.jpg'
+import footerLogo from '../../image/logo.png'
 import { dropdownItems } from '../../data/constant'
 import { Link } from 'react-router-dom'
 

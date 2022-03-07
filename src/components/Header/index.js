@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import '../../styles/header.scss'
 import '../../styles/dropdown.scss'
-import logo from '../../image/logo.jpg'
+import logo from '../../image/logo.png'
 import { Dropdown, NavDropdown } from 'react-bootstrap'
 import { dropdownItems } from '../../data/constant'
 
@@ -68,44 +68,10 @@ const Header = () => {
                       onMouseEnter={() => setShow('Service')}
                       onMouseLeave={() => setShow('')}
                       onClick={(e) => {
-                        // navigate('/service')
                         setOpened(false)
                       }}
                     >
                       {dropdownItems.service.map((item, index) => {
-                        return (
-                          <Dropdown.Item
-                            key={index}
-                            eventKey={index}
-                            onClick={(e) => {
-                              e.stopPropagation()
-                              navigate(item.url)
-                              setOpened(false)
-                            }}
-                          >
-                            {item.title}
-                          </Dropdown.Item>
-                        )
-                      })}
-                    </NavDropdown>
-                  </li>
-                  <li
-                    className={`header_menu_item ${
-                      pathname.includes('/expertise') && 'current_menu'
-                    }`}
-                  >
-                    <NavDropdown
-                      title="Expertise"
-                      id="collasible-nav-dropdown"
-                      show={show === 'Expertise' ? true : false}
-                      onMouseEnter={() => setShow('Expertise')}
-                      onMouseLeave={() => setShow('')}
-                      onClick={(e) => {
-                        navigate('/expertise')
-                        setOpened(false)
-                      }}
-                    >
-                      {dropdownItems.expertise.map((item, index) => {
                         return (
                           <Dropdown.Item
                             key={index}
@@ -147,7 +113,6 @@ const Header = () => {
                       onMouseEnter={() => setShow('Company')}
                       onMouseLeave={() => setShow('')}
                       onClick={(e) => {
-                        navigate('/blog/')
                         setOpened(false)
                       }}
                     >
@@ -169,24 +134,14 @@ const Header = () => {
                       })}
                     </NavDropdown>
                   </li>
-                  <li
-                    className={`header_menu_item ${
-                      pathname === '/blog' && 'current_menu'
-                    }`}
-                  >
-                    <Link
-                      className="header-menu-tag"
-                      to="/blog"
-                      onClick={(e) => setOpened(false)}
-                    >
-                      Blog
-                    </Link>
-                  </li>
                 </ul>
                 <div className="header_nav_btn">
-                  <a href="#" className="o-btn btn-contact header-btn-contact">
+                  <Link
+                    to="/contact-us"
+                    className="o-btn btn-contact header-btn-contact"
+                  >
                     Contact Us
-                  </a>
+                  </Link>
                 </div>
               </nav>
             </div>

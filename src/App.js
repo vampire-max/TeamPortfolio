@@ -4,13 +4,11 @@ import HomePage from './pages/Homepage'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Portfolio from './pages/Portfolio'
-import Expertise from './pages/Expertise'
 import Design from './pages/Design'
 import SingleService from './pages/SingleService'
 import { singleServiceData } from './data/constant'
-import Blog from './pages/Blog'
 import AboutUs from './pages/AboutUs'
-// import Careers from './pages/Careers'
+import ContactUs from './pages/ContactUs'
 
 function App() {
   return (
@@ -19,7 +17,6 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/expertise" element={<Expertise />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/service/ux-design" element={<Design />} />
           {singleServiceData.map((item) => (
@@ -37,9 +34,8 @@ function App() {
               }
             />
           ))}
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/about-us" element={<AboutUs />} />
-          {/* <Route path="/blog/careers" element={<Careers />} /> */}
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
       </BrowserRouter>

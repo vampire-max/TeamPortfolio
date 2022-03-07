@@ -1,0 +1,99 @@
+.o-contact {
+  padding: 170px 0 140px;
+
+  @media (max-width: 991px) {
+    padding: 120px 0 100px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .desc {
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .form {
+    position: relative;
+  }
+
+  .input-control {
+    font-size: 16px;
+    color: #363645;
+    background-color: #f8f8f8;
+    padding: 18px 32px;
+    border: 1px solid rgba(54, 54, 69, 0.1);
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 24px;
+    &:focus {
+      border-color: #ffb248;
+      outline: none;
+    }
+  }
+  .send-btn-wrapper {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    .policy {
+      max-width: 260px;
+      margin-bottom: 20px;
+
+      a {
+        font-weight: 600;
+        color: #ffb248;
+        border-bottom: 1px solid #ffb248;
+        transition: 0.3s all;
+
+        &:hover {
+          color: #ffd36a;
+          border-color: #ffd36a;
+        }
+      }
+    }
+  }
+
+  .send-btn {
+    font-weight: 700;
+    color: #fff;
+    background-color: #ffb248;
+    border-radius: 12px;
+    padding: 10px 24px;
+    border: 0;
+    outline: 0;
+  }
+
+  .contact-item {
+    padding-top: 150px;
+    margin-bottom: 150px;
+    .contact-item-email {
+      font-size: 24px;
+      font-weight: 700;
+      text-decoration: underline;
+      line-height: 1;
+      color: #ffb248;
+      margin-bottom: 16px;
+    }
+  }
+
+  .contact-us-person {
+    .item-flag {
+      width: 60px;
+      margin-bottom: 24px;
+    }
+    .item-person {
+      margin-bottom: 24px;
+    }
+
+    .item-btn {
+      color: #363645;
+      background-color: #fff;
+      border: 2px solid #ffb248;
+      padding: 8px 16px 8px 16px;
+      border-radius: 12px;
+      transition: 0.3s all;
+    }
+  }
+}

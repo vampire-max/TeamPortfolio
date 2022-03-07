@@ -39,9 +39,7 @@
     a {
       z-index: 9999;
       img {
-        @media (max-width: 991px) {
-          max-height: 32px;
-        }
+        width: 60px;
       }
     }
   }

@@ -26,12 +26,7 @@ const FeedbackForm = () => {
   return (
     <div>
       <div className="footer-form-wrapper">
-        <form
-          className="footer-form"
-          action=""
-          // method="post"
-          noValidate="novalidate"
-        >
+        <form className="footer-form" action="" noValidate="novalidate">
           <input
             type="email"
             placeholder="Email"

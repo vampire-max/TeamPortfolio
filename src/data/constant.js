@@ -24,12 +24,6 @@ import service2 from '../image/service/service2.png'
 import service3 from '../image/service/service3.png'
 import service4 from '../image/service/service4.png'
 
-import facebook from '../image/links/facebook.svg'
-import linkedin from '../image/links/linkedin.svg'
-import twitter from '../image/links/twitter.svg'
-import behance from '../image/links/behance.svg'
-import instagram from '../image/links/instagram.svg'
-
 import sp1 from '../image/special/special1.png'
 import sp2 from '../image/special/special2.png'
 import sp3 from '../image/special/special3.png'
@@ -109,101 +103,7 @@ import newsAvatar from '../image/avatar1.png'
 import teamImg1 from '../image/team/team1.png'
 import teamImg1_1 from '../image/team/team1_1.jpeg'
 
-// import careerAboutImg1 from '../image/careers/careers-about1.png'
 import benefitImg1 from '../image/careers/benefit1.png'
-
-export const logoImgOne = [
-  {
-    url: 'https://clutch.co/profile/oril',
-    img: logo1_2,
-    hover: logo1,
-    alt: 'clutch-1',
-  },
-  {
-    url: 'https://www.upwork.com/o/companies/~0165fed1df7da21a1d/',
-    img: logo2_2,
-    hover: logo2,
-    alt: 'upwork-2-1',
-  },
-  {
-    url: 'https://youteam.io/partners/oril-inc',
-    img: logo3_2,
-    hover: logo3,
-    alt: 'You team',
-  },
-  {
-    url: 'https://jobs.dou.ua/companies/oril/',
-    img: logo4_2,
-    hover: logo4,
-    alt: 'DOU',
-  },
-]
-
-export const logoImgTwo = [
-  {
-    url: 'https://clutch.co/profile/oril',
-    img: logo1_3,
-    hover: logo1,
-    alt: 'clutch-1',
-  },
-  {
-    url: 'https://www.upwork.com/o/companies/~0165fed1df7da21a1d/',
-    img: logo2_3,
-    hover: logo2,
-    alt: 'upwork-2-1',
-  },
-  {
-    url: 'https://youteam.io/partners/oril-inc',
-    img: logo3_3,
-    hover: logo3,
-    alt: 'You team',
-  },
-  {
-    url: 'https://jobs.dou.ua/companies/oril/',
-    img: logo4_3,
-    hover: logo4,
-    alt: 'DOU',
-  },
-  {
-    url: 'https://jobs.dou.ua/companies/oril/',
-    img: logo5_3,
-    hover: logo5,
-    alt: 'DOU',
-  },
-]
-
-export const logoImgThree = [
-  {
-    url: 'https://clutch.co/profile/oril',
-    img: logo1_2,
-    hover: logo1,
-    alt: 'clutch-1',
-  },
-  {
-    url: 'https://www.upwork.com/o/companies/~0165fed1df7da21a1d/',
-    img: logo2_2,
-    hover: logo2,
-    alt: 'upwork-2-1',
-  },
-  {
-    url: 'https://youteam.io/partners/oril-inc',
-    img: logo3_2,
-    hover: logo3,
-    alt: 'You team',
-  },
-  {
-    url: 'https://jobs.dou.ua/companies/oril/',
-    img: logo4_2,
-    hover: logo4,
-    alt: 'DOU',
-  },
-  {
-    url: 'https://jobs.dou.ua/companies/oril/',
-    img: logo5_2,
-    hover: logo5,
-    alt: 'DOU',
-  },
-]
 
 export const dropdownItems = {
   service: [
@@ -240,27 +140,9 @@ export const dropdownItems = {
       title: 'Native Desktop - Mobile Application Development',
     },
   ],
-  expertise: [
-    {
-      url: '/expertise/ui-ux-design',
-      title: 'UI/UX Design',
-    },
-    {
-      url: '/expertise/product-development',
-      title: 'Product Development',
-    },
-    {
-      url: '/expertise/ioT-development',
-      title: 'IoT Software Development',
-    },
-    {
-      url: '/expertise/digital-transformation',
-      title: 'Digital Transformation',
-    },
-  ],
   company: [
     {
-      url: '/blog/about-us',
+      url: '/about-us',
       title: 'About Us',
     },
   ],
@@ -293,34 +175,6 @@ export const article = [
     time: '7 min read',
   },
 ]
-
-// export const linkItem = [
-//   {
-//     url: '#',
-//     linkImg: facebook,
-//     alt: 'facebook',
-//   },
-//   {
-//     url: '#',
-//     linkImg: linkedin,
-//     alt: 'linkedin',
-//   },
-//   {
-//     url: '#',
-//     linkImg: twitter,
-//     alt: 'twitter',
-//   },
-//   {
-//     url: '#',
-//     linkImg: behance,
-//     alt: 'behance',
-//   },
-//   {
-//     url: '#',
-//     linkImg: instagram,
-//     alt: 'instagram',
-//   },
-// ]
 
 export const ourServices = [
   {
@@ -1580,21 +1434,6 @@ export const positionData = [
     tags: ['Full Time', 'Lviv, Ukraine'],
   },
 ]
-
-// export const careersData = [
-//   {
-//     img: careerAboutImg1,
-//     title: 'Our Approaches',
-//     desc:
-//       'People-first - it’s our motto that pilots us towards the continuous enhancement of our internal relationships. We know how important it is to hear and understand each need of our team, that’s why transparency and communication became an integral part of our culture.',
-//   },
-//   {
-//     img: careerAboutImg1,
-//     title: 'Our Approaches',
-//     desc:
-//       'People-first - it’s our motto that pilots us towards the continuous enhancement of our internal relationships. We know how important it is to hear and understand each need of our team, that’s why transparency and communication became an integral part of our culture.',
-//   },
-// ]
 
 export const benefitData = [
   {
