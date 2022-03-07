@@ -1,19 +1,3 @@
-import logo1 from '../image/logos/logo1.png'
-import logo1_2 from '../image/logos/logo1_2.png'
-import logo2 from '../image/logos/logo2.png'
-import logo2_2 from '../image/logos/logo2_2.png'
-import logo3 from '../image/logos/logo3.png'
-import logo3_2 from '../image/logos/logo3_2.png'
-import logo4 from '../image/logos/logo4.png'
-import logo4_2 from '../image/logos/logo4_2.png'
-import logo5 from '../image/logos/logo5.png'
-import logo5_2 from '../image/logos/logo5_2.png'
-import logo1_3 from '../image/logos/logo1_3.png'
-import logo2_3 from '../image/logos/logo2_3.png'
-import logo3_3 from '../image/logos/logo3_3.png'
-import logo4_3 from '../image/logos/logo4_3.png'
-import logo5_3 from '../image/logos/logo5_3.png'
-
 import post1 from '../image/post/post1.png'
 import post2 from '../image/post/post2.png'
 import post3 from '../image/post/post3.png'
@@ -105,6 +89,10 @@ import teamImg1_1 from '../image/team/team1_1.jpeg'
 
 import benefitImg1 from '../image/careers/benefit1.png'
 
+import blockchainBannerImg from '../image/2.jpg'
+import GameBannerImg from '../image/3.jpg'
+import mobileBannerImg from '../image/4.jpg'
+
 export const dropdownItems = {
   service: [
     {
@@ -124,16 +112,12 @@ export const dropdownItems = {
       title: 'Digital Transformation',
     },
     {
-      url: '/service/game-development',
-      title: 'Game Development',
+      url: '/service/game-crypto-development',
+      title: 'Cryptocurrency/Game Development',
     },
     {
-      url: '/service/blockchain-development',
-      title: 'Blockchain Technology',
-    },
-    {
-      url: '/service/sass-web-app',
-      title: 'SASS Web Application',
+      url: '/service/saas-web-app',
+      title: 'SAAS Web Application',
     },
     {
       url: '/service/mobile-development',
@@ -220,11 +204,11 @@ export const ourServices = [
     path: '/service/blockchain-technology',
   },
   {
-    name: 'SASS Web Application',
+    name: 'SAAS Web Application',
     img: service4,
     desc:
       'The modern world offers unique strategic opportunities for lots of businesses. The key is to capture the ones that matter most and execute them. Digital transformation will completely shift the way you deliver value to customers, solve problems, and support your team.',
-    path: '/service/sass-web-app',
+    path: '/service/saas-web-app',
   },
   {
     name: 'Native Desktop - Mobile Application Development',
@@ -893,9 +877,10 @@ export const ioTProgressData = {
 }
 
 export const gameBanner = {
-  bannerImg: webBannerImg,
-  title: '',
-  desc: '',
+  bannerImg: gameBannerImg,
+  title: 'Welcome to DIGIGame',
+  desc:
+    'Transform your vision into a strong, efficient product. With the right product development services, your software can become your competitive advantage.',
   link: 'Get started',
 }
 
@@ -958,9 +943,10 @@ export const ioTAds = {
 }
 
 export const blockChainBanner = {
-  bannerImg: webBannerImg,
-  title: '',
-  desc: '',
+  bannerImg: blockchainBannerImg,
+  title: 'Cryptocurrency',
+  desc:
+    'Transform your vision into a strong, efficient product. With the right product development services, your software can become your competitive advantage.',
   link: 'Get started',
 }
 
@@ -1022,22 +1008,22 @@ export const digitalAds = {
   title: 'Ready to Grow Together?',
 }
 
-export const sassBanner = {
+export const saasBanner = {
   bannerImg: webBannerImg,
-  title: 'Product Development',
+  title: 'SAAS Development',
   desc:
     'Transform your vision into a strong, efficient product. With the right product development services, your software can become your competitive advantage.',
   link: 'Get started',
 }
 
-export const sassSectionTitle = [
+export const saasSectionTitle = [
   {
     title: 'Logical Roadmap & Reliable Programming',
   },
   { title: 'Deliverables' },
 ]
 
-export const sassAbout = [
+export const saasAbout = [
   {
     desc:
       'Our software engineers, business analysts, DevOps, and product managers all work together to help our clients achieve their business goals. From the design concept to product support and maintenance, we’ll take care of the entire process every step of the way. ',
@@ -1050,14 +1036,14 @@ export const sassAbout = [
   },
 ]
 
-export const sassAds = {
+export const saasAds = {
   bgImage: `url(${webAdsImg})`,
   title: 'Ready to Grow Together?',
 }
 
 export const mobileBanner = {
-  bannerImg: webBannerImg,
-  title: 'Product Development',
+  bannerImg: mobileBannerImg,
+  title: 'Mobile Development',
   desc:
     'Transform your vision into a strong, efficient product. With the right product development services, your software can become your competitive advantage.',
   link: 'Get started',
@@ -1539,11 +1525,11 @@ export const singleServiceData = [
     projectData: digitalProjects_data,
   },
   {
-    path: '/service/sass-web-app',
-    banner: sassBanner,
-    sectionTitle: sassSectionTitle,
-    about: sassAbout,
-    ads: sassAds,
+    path: '/service/saas-web-app',
+    banner: saasBanner,
+    sectionTitle: saasSectionTitle,
+    about: saasAbout,
+    ads: saasAds,
     projectData: webProjects_data,
   },
   {
