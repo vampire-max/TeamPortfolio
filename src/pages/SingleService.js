@@ -31,7 +31,6 @@ const SingleService = ({
           data={aboutProps[0].data}
           itemClass={'col-lg-10'}
         />
-        {/* <ServiceSlider progressData={progressData} /> */}
         <Ads bgImage={adsProps.bgImage} title={adsProps.title} />
         <Projects hasSecond projectsData={projectsDataProps} />
         <SectionTitle className={'text-start'}>

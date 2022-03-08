@@ -90,7 +90,7 @@ import teamImg1_1 from '../image/team/team1_1.jpeg'
 import benefitImg1 from '../image/careers/benefit1.png'
 
 import blockchainBannerImg from '../image/2.jpg'
-import GameBannerImg from '../image/3.jpg'
+import gameBannerImg from '../image/3.jpg'
 import mobileBannerImg from '../image/4.jpg'
 
 export const dropdownItems = {
@@ -112,7 +112,7 @@ export const dropdownItems = {
       title: 'Digital Transformation',
     },
     {
-      url: '/service/game-crypto-development',
+      url: '/service/crypto-game-development',
       title: 'Cryptocurrency/Game Development',
     },
     {
@@ -194,14 +194,14 @@ export const ourServices = [
     img: service4,
     desc:
       'The modern world offers unique strategic opportunities for lots of businesses. The key is to capture the ones that matter most and execute them. Digital transformation will completely shift the way you deliver value to customers, solve problems, and support your team.',
-    path: '/service/game-development',
+    path: '/service/crypto-game-development',
   },
   {
     name: 'Blockchain Technology',
     img: service4,
     desc:
       'The modern world offers unique strategic opportunities for lots of businesses. The key is to capture the ones that matter most and execute them. Digital transformation will completely shift the way you deliver value to customers, solve problems, and support your team.',
-    path: '/service/blockchain-technology',
+    path: '/service/crypto-game-development',
   },
   {
     name: 'SAAS Web Application',
@@ -1501,15 +1501,7 @@ export const singleServiceData = [
     projectData: ioTProjects_data,
   },
   {
-    path: '/service/game-development',
-    banner: gameBanner,
-    sectionTitle: gameSectionTitle,
-    about: gameAbout,
-    ads: gameAds,
-    projectData: webProjects_data,
-  },
-  {
-    path: '/service/blockchain-development',
+    path: '/service/crypto-game-development',
     banner: blockChainBanner,
     sectionTitle: blockChainSectionTitle,
     about: blockChainAbout,

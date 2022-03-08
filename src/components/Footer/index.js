@@ -72,7 +72,9 @@ const Footer = () => {
                   <p className="info-label">
                     <b>Discord</b>
                   </p>
-                  <a className="info-link" href="#"></a>
+                  <a className="info-link" href="#">
+                    Dreamhigh!#4890
+                  </a>
                 </div>
               </div>
             )}
@@ -125,7 +127,9 @@ const Footer = () => {
                       <a href="#" target="_blank"></a>
                     </li>
                     <li>
-                      <a href="#" target="_blank"></a>
+                      <a href="#" target="_blank">
+                        Dreamhigh!#4890
+                      </a>
                     </li>
                   </ul>
                 </div>
