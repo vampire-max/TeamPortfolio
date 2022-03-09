@@ -89,9 +89,12 @@ import teamImg1_1 from '../image/team/team1_1.jpeg'
 
 import benefitImg1 from '../image/careers/benefit1.png'
 
+import digitalBannerImg from '../image/digitalBanner.png'
+import iotBannerImg from '../image/iotBanner.png'
+import saasBannerImg from '../image/sassBanner.png'
 import blockchainBannerImg from '../image/2.jpg'
 import gameBannerImg from '../image/3.jpg'
-import mobileBannerImg from '../image/4.jpg'
+import mobileBannerImg from '../image/mobileBanner.png'
 
 export const dropdownItems = {
   service: [
@@ -910,7 +913,7 @@ export const gameAds = {
 }
 
 export const ioTBanner = {
-  bannerImg: webBannerImg,
+  bannerImg: iotBannerImg,
   title: 'Mobile Application Development + IOT',
   desc:
     'We build smart mobile app and IoT solutions that live up to the market standards and stay relevant over time.',
@@ -976,7 +979,7 @@ export const blockChainAds = {
 }
 
 export const digitalBanner = {
-  bannerImg: webBannerImg,
+  bannerImg: digitalBannerImg,
   title: 'Digital Transformation',
   desc:
     'Technology is evolving, so should your business. Transform your non-digital processes and services to stay competitive and meet ever-changing customer expectations.',
@@ -1009,7 +1012,7 @@ export const digitalAds = {
 }
 
 export const saasBanner = {
-  bannerImg: webBannerImg,
+  bannerImg: saasBannerImg,
   title: 'SAAS Development',
   desc:
     'Transform your vision into a strong, efficient product. With the right product development services, your software can become your competitive advantage.',
