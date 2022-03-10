@@ -8,26 +8,26 @@ const ServiceItem = ({ item, index }) => {
 
   const variants = {
     offscreen: {
-      x: isMobile ? '50%' : '90%',
+      x: isMobile ? '50%' : '100%',
     },
     onscreen: {
       x: 0,
       transition: {
         type: 'spring',
-        duration: 0.7,
+        duration: 1.2,
       },
     },
   }
 
   const variantsTwo = {
     offscreen: {
-      x: isMobile ? '-50%' : '-90%',
+      x: isMobile ? '-50%' : '-100%',
     },
     onscreen: {
       x: 0,
       transition: {
         type: 'spring',
-        duration: 0.7,
+        duration: 1.2,
       },
     },
   }

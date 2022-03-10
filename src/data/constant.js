@@ -3,7 +3,7 @@ import post2 from '../image/post/post2.png'
 import post3 from '../image/post/post3.png'
 import avatar from '../image/post/avatar.png'
 
-import service1 from '../image/service/IMG-20220228-WA0007.jpg'
+import service1 from '../image/service/service1.png'
 import service2 from '../image/service/service2.png'
 import service3 from '../image/service/service3.png'
 import service4 from '../image/service/service4.png'

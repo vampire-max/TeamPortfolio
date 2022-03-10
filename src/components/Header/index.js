@@ -23,13 +23,13 @@ const Header = () => {
         <div className="row position-relative">
           <div className="col-12">
             <div className="header_wrap">
-              <a href="#">
+              <Link to="/">
                 <img src={logo} />
-              </a>
+              </Link>
               <div className="header_button_mobile">
-                <a href="#" className="header_link_mobile">
+                <Link to="/" className="header_link_mobile text-white">
                   Contact Us
-                </a>
+                </Link>
                 <a
                   className={`header_burger ${opened && 'opened'}`}
                   onClick={(e) => {
@@ -49,7 +49,7 @@ const Header = () => {
                     }`}
                   >
                     <Link
-                      className="header-menu-tag"
+                      className="header-menu-tag text-xl-white"
                       to="/"
                       onClick={(e) => setOpened(false)}
                     >
@@ -89,12 +89,12 @@ const Header = () => {
                     </NavDropdown>
                   </li>
                   <li
-                    className={`header_menu_item ${
+                    className={`header_menu_item text-white ${
                       pathname === '/portfolio' && 'current_menu'
                     }`}
                   >
                     <Link
-                      className="header-menu-tag"
+                      className="header-menu-tag text-xl-white"
                       to="/portfolio"
                       onClick={(e) => setOpened(false)}
                     >
